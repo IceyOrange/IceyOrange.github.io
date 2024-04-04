@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://IceyOrange.github.io/sitemap.xml
