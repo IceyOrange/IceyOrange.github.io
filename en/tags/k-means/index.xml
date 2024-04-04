@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>K-Means on Orange&#39;s Blog</title>
+    <link>/en/tags/k-means/</link>
+    <description>Recent content in K-Means on Orange&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/en/tags/k-means/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>航空公司客户价值分析——基于LRFMC模型</title>
+      <link>/en/posts/experiments/2024-03-05/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/en/posts/experiments/2024-03-05/</guid>
+      <description>&lt;p&gt;Airline Customer Value Analysis based on the LRFMC Model.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
