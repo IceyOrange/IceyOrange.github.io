@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://iceyorange.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2024-04-05T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2024-04-05T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/experiments/</loc>
+    <loc>/posts/experiments/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/categories/experiment-reports/</loc>
+    <loc>/categories/experiment-reports/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/tags/k-means/</loc>
+    <loc>/tags/k-means/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/experiments/2024-03-05/</loc>
+    <loc>/posts/experiments/2024-03-05/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/tags/birppy/</loc>
+    <loc>/tags/birppy/</loc>
     <lastmod>2022-11-18T23:46:16+08:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/tags/love/</loc>
+    <loc>/tags/love/</loc>
     <lastmod>2022-11-18T23:46:16+08:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/fondin/</loc>
+    <loc>/posts/fondin/</loc>
     <lastmod>2022-11-18T23:46:16+08:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/links/</loc>
+    <loc>/links/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>https://iceyorange.github.io/archives/</loc>
+    <loc>/archives/</loc>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/statistics/</loc>
+    <loc>/posts/statistics/</loc>
   </url><url>
-    <loc>https://iceyorange.github.io/posts/reading/</loc>
+    <loc>/posts/reading/</loc>
   </url><url>
-    <loc>https://iceyorange.github.io/search/</loc>
+    <loc>/search/</loc>
   </url><url>
-    <loc>https://iceyorange.github.io/series/</loc>
+    <loc>/series/</loc>
   </url>
 </urlset>

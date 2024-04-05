@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Orange&#39;s Blog</title>
-    <link>https://iceyorange.github.io/</link>
+    <link>/</link>
     <description>Recent content on Orange&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orange</copyright>
     <lastBuildDate>Fri, 05 Apr 2024 10:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iceyorange.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://iceyorange.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Fri, 05 Apr 2024 10:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>Name: Orange (Jude) Job: Student major in Statistics Interest: &amp;#x1f3c0;&amp;#x1f52d;&amp;#x1f3b8;&amp;#x1f3b5; Contact Information
 Email: uasgwr@gmail.com</description>
     </item>
     <item>
       <title>航空公司客户价值分析——基于LRFMC模型</title>
-      <link>https://iceyorange.github.io/posts/experiments/2024-03-05/</link>
+      <link>/posts/experiments/2024-03-05/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/experiments/2024-03-05/</guid>
+      <guid>/posts/experiments/2024-03-05/</guid>
       <description>&lt;p&gt;Airline Customer Value Analysis based on the LRFMC Model.&lt;/p&gt;</description>
     </item>
     <item>
       <title>That&#39;s all about love</title>
-      <link>https://iceyorange.github.io/posts/fondin/</link>
+      <link>/posts/fondin/</link>
       <pubDate>Fri, 18 Nov 2022 23:46:16 +0800</pubDate>
-      <guid>https://iceyorange.github.io/posts/fondin/</guid>
+      <guid>/posts/fondin/</guid>
       <description>Record Happy Moments with Little Birppy~</description>
     </item>
     <item>
       <title>🤝Links</title>
-      <link>https://iceyorange.github.io/links/</link>
+      <link>/links/</link>
       <pubDate>Sat, 06 Nov 2021 15:15:53 +0800</pubDate>
-      <guid>https://iceyorange.github.io/links/</guid>
+      <guid>/links/</guid>
       <description>Sulv&amp;#39;s Blog 一个记录技术、阅读、生活的博客</description>
     </item>
   </channel>

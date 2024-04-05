@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>💻Projects on Orange&#39;s Blog</title>
-    <link>https://iceyorange.github.io/posts/experiments/</link>
+    <link>/posts/experiments/</link>
     <description>Recent content in 💻Projects on Orange&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orange</copyright>
     <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iceyorange.github.io/posts/experiments/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/experiments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>航空公司客户价值分析——基于LRFMC模型</title>
-      <link>https://iceyorange.github.io/posts/experiments/2024-03-05/</link>
+      <link>/posts/experiments/2024-03-05/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/experiments/2024-03-05/</guid>
+      <guid>/posts/experiments/2024-03-05/</guid>
       <description>&lt;p&gt;Airline Customer Value Analysis based on the LRFMC Model.&lt;/p&gt;</description>
     </item>
   </channel>

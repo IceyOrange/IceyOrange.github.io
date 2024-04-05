@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>📈Statistics on Orange&#39;s Blog</title>
-    <link>https://iceyorange.github.io/posts/statistics/</link>
+    <link>/posts/statistics/</link>
     <description>Recent content in 📈Statistics on Orange&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orange</copyright>
-    <atom:link href="https://iceyorange.github.io/posts/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/statistics/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

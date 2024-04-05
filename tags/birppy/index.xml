@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Birppy on Orange&#39;s Blog</title>
-    <link>https://iceyorange.github.io/tags/birppy/</link>
+    <link>/tags/birppy/</link>
     <description>Recent content in Birppy on Orange&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orange</copyright>
     <lastBuildDate>Fri, 18 Nov 2022 23:46:16 +0800</lastBuildDate>
-    <atom:link href="https://iceyorange.github.io/tags/birppy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/birppy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>That&#39;s all about love</title>
-      <link>https://iceyorange.github.io/posts/fondin/</link>
+      <link>/posts/fondin/</link>
       <pubDate>Fri, 18 Nov 2022 23:46:16 +0800</pubDate>
-      <guid>https://iceyorange.github.io/posts/fondin/</guid>
+      <guid>/posts/fondin/</guid>
       <description>Record Happy Moments with Little Birppy~</description>
     </item>
   </channel>
