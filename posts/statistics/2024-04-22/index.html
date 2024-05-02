@@ -1,0 +1,97 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>时间序列分析笔记 | Orange's Blog</title>
+<meta name=keywords content="Time Series"><meta name=description content="时间序列分析"><meta name=author content="Orange"><link rel=canonical href=https://iceyorange.github.io/posts/statistics/2024-04-22/><meta name=google-site-verification content="G-LZESR1K8WK"><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://iceyorange.github.io/img/xx.gif><link rel=icon type=image/png sizes=16x16 href=https://iceyorange.github.io/img/xx.gif><link rel=icon type=image/png sizes=32x32 href=https://iceyorange.github.io/img/xx.gif><link rel=apple-touch-icon href=https://iceyorange.github.io/xx.gif><link rel=mask-icon href=https://iceyorange.github.io/xx.gif><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://iceyorange.github.io/posts/statistics/2024-04-22/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-LZESR1K8WK"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-LZESR1K8WK",{anonymize_ip:!1})}</script><meta property="og:title" content="时间序列分析笔记"><meta property="og:description" content="时间序列分析"><meta property="og:type" content="article"><meta property="og:url" content="https://iceyorange.github.io/posts/statistics/2024-04-22/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-04-22T21:53:41+08:00"><meta property="article:modified_time" content="2024-04-22T21:53:41+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="时间序列分析笔记"><meta name=twitter:description content="时间序列分析"><script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iceyorange.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "📈Statistics",
+      "item": "https://iceyorange.github.io/posts/statistics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "时间序列分析笔记",
+      "item": "https://iceyorange.github.io/posts/statistics/2024-04-22/"
+    }
+  ]
+}
+</script><script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "时间序列分析笔记",
+  "name": "时间序列分析笔记",
+  "description": "时间序列分析",
+  "keywords": [
+    "Time Series"
+  ],
+  "articleBody": "《时间序列分析 —— 基于R》 王燕 第2版 复习笔记\nChapter 1 两类时间序列分析方法：\n频域分析，频率角度； 时域分析，序列自相关角度。 横向和纵向：\n“纵向\"在数据分析中通常指的是对同一对象或者同一组对象在一段时间内的连续或多次观察和分析；具体来说，“纵向”数据分析关注的是变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。 “横向”分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现如何。 Chapter 2 平稳性检验：\n时序图检验，直接plot 自相关图检验，acf() 单位根检验， 纯随机性检验：Box.test(), type = “Ljung-Box” / “Box-Pierce”\nChapter 3 ARMA\nAuto Regreesion Model - AR模型 模型拟合：arima.sim(), filter(), 其中filter()只能拟合AR模型\n平稳性判别：特征根判别(单位圆) \u0026 平稳域判别\n",
+  "wordCount" : "378",
+  "inLanguage": "en",
+  "datePublished": "2024-04-22T21:53:41+08:00",
+  "dateModified": "2024-04-22T21:53:41+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Orange"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iceyorange.github.io/posts/statistics/2024-04-22/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Orange's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iceyorange.github.io/img/xx.gif"
+    }
+  }
+}
+</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://iceyorange.github.io/ accesskey=h title="Orange's Blog (Alt + H)"><img src=https://iceyorange.github.io/img/xx.gif alt aria-label=logo height=35>Orange's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://iceyorange.github.io/search title="🔍Search (Alt + /)" accesskey=/><span>🔍Search</span></a></li><li><a href=https://iceyorange.github.io/ title=🏠Home><span>🏠Home</span></a></li><li><a href=https://iceyorange.github.io/posts title=📚Post><span>📚Post</span></a></li><li><a href=https://iceyorange.github.io/archives title=⏱Archives><span>⏱Archives</span></a></li><li><a href=https://iceyorange.github.io/tags title=🔖Tags><span>🔖Tags</span></a></li><li><a href=https://iceyorange.github.io/about title=🙋🏻‍♂️About><span>🙋🏻‍♂️About</span></a></li><li><a href=https://iceyorange.github.io/links title=🤝Links><span>🤝Links</span></a></li></ul></nav></header><main class=main><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}</style><article class=post-single><div id=single-content><header class=post-header><div class=breadcrumbs><a href=https://iceyorange.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/>Posts</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/statistics/>📈Statistics</a></div><h1 class=post-title>时间序列分析笔记</h1><div class=post-description>时间序列分析</div><div class=post-meta><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}.parent-post-meta{display:flex;flex-wrap:wrap;opacity:.8}</style><span class=parent-post-meta><span id=post_meta_style_1><span class="fa fa-calendar-check-o"></span>
+<span>2024-04-22
+&nbsp;&nbsp;
+</span></span><span id=post_meta_style_3><span class="fa fa-file-word-o"></span>
+<span>378 words
+&nbsp;&nbsp;
+</span></span><span id=post_meta_style_4><span class="fa fa-clock-o"></span>
+<span>1 minutes
+&nbsp;&nbsp;
+</span></span><span id=post_meta_style_5><span class="fa fa-user-o"></span>
+<span>Orange
+&nbsp;&nbsp;
+</span></span><span id=post_meta_style_6><span class="fa fa-tags" style=opacity:.8></span>
+<span><span class=post-tags-meta><a href=https://iceyorange.github.io/tags/time-series/ style=color:var(--secondary)!important>Time Series</a>
+</span></span></span></span><span style=opacity:.8><span id=post_meta_style_7>&nbsp;&nbsp;
+<span class="fa fa-eye"></span>
+<span><span id=busuanzi_container_page_pv><span id=busuanzi_value_page_pv></span></span>
+&nbsp;&nbsp;
+</span></span><span id=post_meta_style_8><span class="fa fa-commenting-o"></span>
+<span><script src=https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js></script><script>let url=document.documentURI,dnsUrl="https://iceyorange.github.io/",urlSplit=url.split(dnsUrl),finalUrl=urlSplit[1];finalUrl[0]!=="/"&&(finalUrl="/"+finalUrl),twikoo.getCommentsCount({envId:"https://twikoo-api-pi-ten.vercel.app/",region:null,urls:[finalUrl],includeReply:!1}).then(function(e){let t=e[0].count;const n=document.getElementById("comment_count");n.innerText=t}).catch(function(e){console.error(e)})</script><span id=comment_count></span></span></span></span></div></header><aside id=toc-container class="toc-container wide"><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#chapter-1 aria-label="Chapter 1">Chapter 1</a></li><li><a href=#chapter-2 aria-label="Chapter 2">Chapter 2</a></li><li><a href=#chapter-3 aria-label="Chapter 3">Chapter 3</a><ul><li><a href=#auto-regreesion-model---ar%e6%a8%a1%e5%9e%8b aria-label="Auto Regreesion Model - AR模型">Auto Regreesion Model - AR模型</a></li></ul></li></ul></div></details></div></aside><script>let activeElement,elements;window.addEventListener("DOMContentLoaded",function(){checkTocPosition(),elements=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]"),activeElement=elements[0];const t=encodeURI(activeElement.getAttribute("id")).toLowerCase();document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active")},!1),window.addEventListener("resize",function(){checkTocPosition()},!1),window.addEventListener("scroll",()=>{activeElement=Array.from(elements).find(e=>{if(getOffsetTop(e)-window.pageYOffset>0&&getOffsetTop(e)-window.pageYOffset<window.innerHeight/2)return e})||activeElement,elements.forEach(e=>{const t=encodeURI(e.getAttribute("id")).toLowerCase();e===activeElement?document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active"):document.querySelector(`.inner ul li a[href="#${t}"]`).classList.remove("active")})},!1);const main=parseInt(getComputedStyle(document.body).getPropertyValue("--article-width"),10),toc=parseInt(getComputedStyle(document.body).getPropertyValue("--toc-width"),10),gap=parseInt(getComputedStyle(document.body).getPropertyValue("--gap"),10);function checkTocPosition(){const e=document.body.scrollWidth;e-main-toc*2-gap*4>0?document.getElementById("toc-container").classList.add("wide"):document.getElementById("toc-container").classList.remove("wide")}function getOffsetTop(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect(),n=e.ownerDocument.defaultView;return t.top+n.pageYOffset}</script><div class=post-content><p>《时间序列分析 —— 基于R》 王燕 第2版 复习笔记</p><h1 id=chapter-1>Chapter 1<a hidden class=anchor aria-hidden=true href=#chapter-1>#</a></h1><p>两类时间序列分析方法：</p><ul><li>频域分析，频率角度；</li><li>时域分析，序列自相关角度。</li></ul><p>横向和纵向：</p><ul><li>&ldquo;纵向"在数据分析中通常指的是对同一对象或者同一组对象在一段时间内的连续或多次观察和分析；具体来说，“纵向”数据分析关注的是变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。</li><li>“横向”分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现如何。</li></ul><h1 id=chapter-2>Chapter 2<a hidden class=anchor aria-hidden=true href=#chapter-2>#</a></h1><p>平稳性检验：</p><ul><li>时序图检验，直接plot</li><li>自相关图检验，acf()</li><li>单位根检验，</li></ul><p>纯随机性检验：Box.test(), type = &ldquo;Ljung-Box&rdquo; / &ldquo;Box-Pierce&rdquo;</p><h1 id=chapter-3>Chapter 3<a hidden class=anchor aria-hidden=true href=#chapter-3>#</a></h1><p>ARMA</p><h2 id=auto-regreesion-model---ar模型>Auto Regreesion Model - AR模型<a hidden class=anchor aria-hidden=true href=#auto-regreesion-model---ar模型>#</a></h2><p><strong>模型拟合</strong>：arima.sim(), filter(), 其中filter()只能拟合AR模型</p><p><strong>平稳性判别</strong>：特征根判别(单位圆) & 平稳域判别</p></div><div style="padding:10px 0;margin:20px auto;width:100%;font-size:16px;text-align:center"><button id=rewardButton disable=enable onclick='var qr=document.getElementById("QR");qr.style.display==="none"?qr.style.display="block":qr.style.display="none"'>
+<span>☕Support</span></button><div id=QR style=display:none><div id=wechat style=display:inline-block><a class=fancybox rel=group><img id=wechat_qr src=https://iceyorange.github.io/img/wechat_pay.png alt="WeChat Pay" style=width:140px;height:140px></a><p>WeChat</p></div><div id=alipay style=display:inline-block><a class=fancybox rel=group><img id=alipay_qr src=https://iceyorange.github.io/img/alipay.png alt=Alipay style=width:140px;height:140px></a><p>Alipay</p></div></div></div><footer class=post-footer><nav class=paginav><a class=prev href=https://iceyorange.github.io/posts/fondin/><span class=title>« Prev</span><br><span>That's all about love</span>
+</a><a class=next href=https://iceyorange.github.io/posts/statistics/introduction2statistics/><span class=title>Next »</span><br><span>统计学概论笔记</span></a></nav></footer></div><div><div class=pagination__title><span class=pagination__title-h style=font-size:20px>💬Comment</span><hr></div><div id=tcomment></div><script src=https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js></script><script>twikoo.init({envId:"https://twikoo-api-pi-ten.vercel.app/",el:"#tcomment",lang:"zh-CN",region:"ap-guangzhou",path:window.TWIKOO_MAGIC_PATH||window.location.pathname})</script></div></article></main><footer class=footer><span>Copyright
+&copy;
+2024-2024
+<a href=https://iceyorange.github.io/ style=color:#939393>Orange's Blog</a>
+All Rights Reserved</span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><span class=topInner><svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+<span id=read_progress></span>
+</span></a><script>document.addEventListener("scroll",function(){const t=document.getElementById("read_progress"),n=document.documentElement.scrollHeight,s=document.documentElement.clientHeight,o=document.documentElement.scrollTop||document.body.scrollTop;t.innerText=((o/(n-s)).toFixed(2)*100).toFixed(0)})</script><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>let mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>200||document.documentElement.scrollTop>200?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{(function(){document.cookie="change-themes="+escape("false")})(),document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.body.addEventListener("copy",function(e){if(window.getSelection().toString()&&window.getSelection().toString().length>50){let t=e.clipboardData||window.clipboardData;if(t){e.preventDefault();let n=window.getSelection().toString()+`
+
+————————————————
+版权声明：本文为「Orange's Blog」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：`+location.href,s=window.getSelection().toString()+`
+
+————————————————
+版权声明：本文为「Orange's Blog」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：`+location.href;t.setData("text/html",n),t.setData("text/plain",s)}}})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const s=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerText="copy";function i(){t.innerText="copied!",setTimeout(()=>{t.innerText="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){let t=e.textContent+`
+————————————————
+版权声明：本文为「Orange's Blog」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：`+location.href;navigator.clipboard.writeText(t),i();return}const n=document.createRange();n.selectNodeContents(e);const s=window.getSelection();s.removeAllRanges(),s.addRange(n);try{document.execCommand("copy"),i()}catch{}s.removeRange(n)});let l=e.className.replaceAll("language-",""),n=document.createElement("div"),a=document.createElement("div"),r=document.createElement("div"),c=document.createElement("div"),o=document.createElement("div");o.innerText=l,n.setAttribute("class","mac-tool"),a.setAttribute("class","mac bb1"),r.setAttribute("class","mac bb2"),c.setAttribute("class","mac bb3"),o.setAttribute("class","language-type"),n.appendChild(a),n.appendChild(r),n.appendChild(c),n.appendChild(o),s.classList.contains("highlight")?(s.appendChild(t),s.appendChild(n)):s.parentNode.firstChild==s||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?(e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t),s.appendChild(n)):e.parentNode.appendChild(t))})</script></body></html>
