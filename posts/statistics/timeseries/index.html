@@ -35,7 +35,7 @@
     "Time Series"
   ],
   "articleBody": "《时间序列分析 —— 基于R》 王燕 第2版 复习笔记\nChapter 1 1.1 两类时间序列分析方法：\n频域分析，频率角度； 时域分析，序列自相关角度。 1.2 横向和纵向：\n“纵向\"指对同一对象或者同一组对象在一段时间内的连续或多次观察和分析, 关注变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。 “横向\"分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现。 Chapter 2 2.1 平稳性检验：\n时序图检验plot() 自相关图检验acf() 单位根检验 2.2 纯随机性检验Box.test(), type = \"Ljung-Box\" / \"Box-Pierce\"\nChapter 3 Wold分解定理, 任意一个离散平稳序列{$x_t$}都可以分解为两个不相关的平稳序列之和, 其中一个为确定性的, 一个为随机性的.\n3.1 延迟算子 \u0026 差分运算 延迟算子: 时间的指针\n差分运算: 时间序列的导数\n3.1.1 延迟算子\n$$x_{t-1}=Bx_t \\\\ x_{t-2}=B^2x_t \\\\ … \\\\ x_{t-p}=B^px_t$$\n3.1.2 差分运算\np阶差分 $\\nabla ^p x_t =(1-B)^px_t, $ 连续做p次一阶差分\nk步差分 $\\nabla _k x_t =(1-B^k)x_t, $ 隔k步做差分\n3.2 Auto Regreesion Model - AR模型 $$ \\begin{cases} x_t=\\phi_0+\\phi_1x_{t-1}+\\phi_2x_{t-2}+…+\\phi_px_{t-p} \\\\ \\phi_p\\not=0 \\\\ E(\\epsilon_t)=0, Var(\\epsilon_t)=\\sigma_{_{\\epsilon}}^2, E(\\epsilon_t\\epsilon_s)=0, \\forall{s\\not=t} \\\\ E(x_s\\epsilon_t)=0, s",
-  "wordCount" : "875",
+  "wordCount" : "883",
   "inLanguage": "en",
   "datePublished": "2024-04-22T21:53:41+08:00",
   "dateModified": "2024-04-22T21:53:41+08:00",
@@ -60,7 +60,7 @@
 <span>2024-04-22
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_3><span class="fa fa-file-word-o"></span>
-<span>875 words
+<span>883 words
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_4><span class="fa fa-clock-o"></span>
 <span>2 minutes
@@ -95,7 +95,9 @@ $ 其中, $
 $</p><p><strong>AR(1) Model</strong></p><p>$$
 G_0=1 \\
 G_1 = \phi_1 G_0 = \phi_1 \\
-G_2 = \phi_1 G_1 = \phi_1^2
+G_2 = \phi_1 G_1 + \phi_2 G_0= \phi_1^2 \\
+&mldr;&mldr; \\
+G_t = \phi_1^t
 $$</p><p><strong>AR(2) Model</strong></p><p>$$
 G_0=1 \\
 G_1 = \phi_1 G_0 = \phi_1 \\
