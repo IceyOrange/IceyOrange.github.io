@@ -34,8 +34,8 @@
   "keywords": [
     "Time Series"
   ],
-  "articleBody": "《时间序列分析 —— 基于R》 王燕 第2版 复习笔记\nChapter 1 1.1 两类时间序列分析方法：\n频域分析，频率角度； 时域分析，序列自相关角度。 1.2 横向和纵向：\n“纵向\"指对同一对象或者同一组对象在一段时间内的连续或多次观察和分析, 关注变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。 “横向\"分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现。 Chapter 2 2.1 平稳性检验：\n时序图检验plot() 自相关图检验acf() 单位根检验 2.2 纯随机性检验Box.test(), type = \"Ljung-Box\" / \"Box-Pierce\"\nChapter 3 Wold分解定理, 任意一个离散平稳序列{$x_t$}都可以分解为两个不相关的平稳序列之和, 其中一个为确定性的, 一个为随机性的.\n3.1 延迟算子 \u0026 差分运算 延迟算子: 时间的指针\n差分运算: 时间序列的导数\n3.1.1 延迟算子\n$$x_{t-1}=Bx_t \\\\ x_{t-2}=B^2x_t \\\\ … \\\\ x_{t-p}=B^px_t$$\n3.1.2 差分运算\np阶差分 $\\nabla ^p x_t =(1-B)^px_t, $ 连续做p次一阶差分\nk步差分 $\\nabla _k x_t =(1-B^k)x_t, $ 隔k步做差分\n3.2 Auto Regreesion Model - AR模型 $$ \\begin{cases} x_t=\\phi_0+\\phi_1x_{t-1}+\\phi_2x_{t-2}+…+\\phi_px_{t-p} \\\\ \\phi_p\\not=0 \\\\ E(\\epsilon_t)=0, Var(\\epsilon_t)=\\sigma_{_{\\epsilon}}^2, E(\\epsilon_t\\epsilon_s)=0, \\forall{s\\not=t} \\\\ E(x_s\\epsilon_t)=0, s",
-  "wordCount" : "883",
+  "articleBody": "《时间序列分析 —— 基于R》 王燕 第2版 复习笔记\nChapter 1 1.1 两类时间序列分析方法：\n频域分析，频率角度； 时域分析，序列自相关角度。 1.2 横向和纵向：\n“纵向\"指对同一对象或者同一组对象在一段时间内的连续或多次观察和分析, 关注变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。 “横向\"分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现。 Chapter 2 2.1 平稳性检验：\n时序图检验plot() 自相关图检验acf() 单位根检验 2.2 纯随机性检验Box.test(), type = \"Ljung-Box\" / \"Box-Pierce\"\n2.3 特征统计量\n$$ \\gamma(t, s) = E(X_t-\\mu_t)(X_s-\\mu_s) \\\\ \\rho(t, s) = \\frac{\\gamma(t, s)}{\\sqrt{DX_t \\cdot DX_s}} $$\nChapter 3 Wold分解定理, 任意一个离散平稳序列{$x_t$}都可以分解为两个不相关的平稳序列之和, 其中一个为确定性的, 一个为随机性的.\n3.1 延迟算子 \u0026 差分运算 延迟算子: 时间的指针\n差分运算: 时间序列的导数\n3.1.1 延迟算子\n$$x_{t-1}=Bx_t \\\\ x_{t-2}=B^2x_t \\\\ \\cdots \\\\ x_{t-p}=B^px_t$$\n3.1.2 差分运算\np阶差分 $\\nabla ^p x_t =(1-B)^px_t, $ 连续做p次一阶差分\nk步差分 $\\nabla _k x_t =(1-B^k)x_t, $ 隔k步做差分\n3.2 Auto Regreesion Model - AR模型 $$ \\begin{cases} x_t=\\phi_0+\\phi_1x_{t-1}+\\phi_2x_{t-2}+…+\\phi_px_{t-p} \\\\ \\phi_p\\not=0 \\\\ E(\\epsilon_t)=0, Var(\\epsilon_t)=\\sigma_{_{\\epsilon}}^2, E(\\epsilon_t\\epsilon_s)=0, \\forall{s\\not=t} \\\\ E(x_s\\epsilon_t)=0, s",
+  "wordCount" : "1363",
   "inLanguage": "en",
   "datePublished": "2024-04-22T21:53:41+08:00",
   "dateModified": "2024-04-22T21:53:41+08:00",
@@ -56,14 +56,14 @@
     }
   }
 }
-</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://iceyorange.github.io/ accesskey=h title="Orange's Blog (Alt + H)"><img src=https://iceyorange.github.io/img/xx.gif alt aria-label=logo height=35>Orange's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://iceyorange.github.io/search title="🔍Search (Alt + /)" accesskey=/><span>🔍Search</span></a></li><li><a href=https://iceyorange.github.io/ title=🏠Home><span>🏠Home</span></a></li><li><a href=https://iceyorange.github.io/posts title=📚Post><span>📚Post</span></a></li><li><a href=https://iceyorange.github.io/archives title=⏱Archives><span>⏱Archives</span></a></li><li><a href=https://iceyorange.github.io/tags title=🔖Tags><span>🔖Tags</span></a></li><li><a href=https://iceyorange.github.io/about title=🙋🏻‍♂️About><span>🙋🏻‍♂️About</span></a></li><li><a href=https://iceyorange.github.io/links title=🤝Links><span>🤝Links</span></a></li></ul></nav></header><main class=main><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}</style><article class=post-single><div id=single-content><header class=post-header><div class=breadcrumbs><a href=https://iceyorange.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/>Posts</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/statistics/>📈Statistics</a></div><h1 class=post-title>时间序列分析笔记</h1><div class=post-description>时间序列分析</div><div class=post-meta><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}.parent-post-meta{display:flex;flex-wrap:wrap;opacity:.8}</style><span class=parent-post-meta><span id=post_meta_style_1><span class="fa fa-calendar-check-o"></span>
+</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://iceyorange.github.io/ accesskey=h title="IceyOrange's Blog (Alt + H)"><img src=https://iceyorange.github.io/img/xx.gif alt aria-label=logo height=35>IceyOrange's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://iceyorange.github.io/search title="🔍Search (Alt + /)" accesskey=/><span>🔍Search</span></a></li><li><a href=https://iceyorange.github.io/ title=🏠Home><span>🏠Home</span></a></li><li><a href=https://iceyorange.github.io/posts title=📚Post><span>📚Post</span></a></li><li><a href=https://iceyorange.github.io/archives title=⏱Archives><span>⏱Archives</span></a></li><li><a href=https://iceyorange.github.io/tags title=🔖Tags><span>🔖Tags</span></a></li><li><a href=https://iceyorange.github.io/about title=🙋🏻‍♂️About><span>🙋🏻‍♂️About</span></a></li><li><a href=https://iceyorange.github.io/links title=🤝Links><span>🤝Links</span></a></li></ul></nav></header><main class=main><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}</style><article class=post-single><div id=single-content><header class=post-header><div class=breadcrumbs><a href=https://iceyorange.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/>Posts</a>&nbsp;»&nbsp;<a href=https://iceyorange.github.io/posts/statistics/>📈Statistics</a></div><h1 class=post-title>时间序列分析笔记</h1><div class=post-description>时间序列分析</div><div class=post-meta><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css><style>i[id*=post_meta_style]{display:flex;align-items:center;margin:0 0 10px}.parent-post-meta{display:flex;flex-wrap:wrap;opacity:.8}</style><span class=parent-post-meta><span id=post_meta_style_1><span class="fa fa-calendar-check-o"></span>
 <span>2024-04-22
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_3><span class="fa fa-file-word-o"></span>
-<span>883 words
+<span>1363 words
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_4><span class="fa fa-clock-o"></span>
-<span>2 minutes
+<span>3 minutes
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_5><span class="fa fa-user-o"></span>
 <span>Orange
@@ -75,14 +75,17 @@
 <span><span id=busuanzi_container_page_pv><span id=busuanzi_value_page_pv></span></span>
 &nbsp;&nbsp;
 </span></span><span id=post_meta_style_8><span class="fa fa-commenting-o"></span>
-<span><script src=https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js></script><script>let url=document.documentURI,dnsUrl="https://iceyorange.github.io/",urlSplit=url.split(dnsUrl),finalUrl=urlSplit[1];finalUrl[0]!=="/"&&(finalUrl="/"+finalUrl),twikoo.getCommentsCount({envId:"https://twikoo-api-pi-ten.vercel.app/",region:null,urls:[finalUrl],includeReply:!1}).then(function(e){let t=e[0].count;const n=document.getElementById("comment_count");n.innerText=t}).catch(function(e){console.error(e)})</script><span id=comment_count></span></span></span></span></div></header><aside id=toc-container class="toc-container wide"><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#chapter-1 aria-label="Chapter 1">Chapter 1</a></li><li><a href=#chapter-2 aria-label="Chapter 2">Chapter 2</a></li><li><a href=#chapter-3 aria-label="Chapter 3">Chapter 3</a><ul><li><a href=#31-%e5%bb%b6%e8%bf%9f%e7%ae%97%e5%ad%90--%e5%b7%ae%e5%88%86%e8%bf%90%e7%ae%97 aria-label="3.1 延迟算子 &amp;amp; 差分运算">3.1 延迟算子 & 差分运算</a></li><li><a href=#32-auto-regreesion-model---ar%e6%a8%a1%e5%9e%8b aria-label="3.2 Auto Regreesion Model - AR模型">3.2 Auto Regreesion Model - AR模型</a></li><li><a href=#33-moving-average-model---ma%e6%a8%a1%e5%9e%8b aria-label="3.3 Moving Average Model - MA模型">3.3 Moving Average Model - MA模型</a></li></ul></li></ul></div></details></div></aside><script>let activeElement,elements;window.addEventListener("DOMContentLoaded",function(){checkTocPosition(),elements=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]"),activeElement=elements[0];const t=encodeURI(activeElement.getAttribute("id")).toLowerCase();document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active")},!1),window.addEventListener("resize",function(){checkTocPosition()},!1),window.addEventListener("scroll",()=>{activeElement=Array.from(elements).find(e=>{if(getOffsetTop(e)-window.pageYOffset>0&&getOffsetTop(e)-window.pageYOffset<window.innerHeight/2)return e})||activeElement,elements.forEach(e=>{const t=encodeURI(e.getAttribute("id")).toLowerCase();e===activeElement?document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active"):document.querySelector(`.inner ul li a[href="#${t}"]`).classList.remove("active")})},!1);const main=parseInt(getComputedStyle(document.body).getPropertyValue("--article-width"),10),toc=parseInt(getComputedStyle(document.body).getPropertyValue("--toc-width"),10),gap=parseInt(getComputedStyle(document.body).getPropertyValue("--gap"),10);function checkTocPosition(){const e=document.body.scrollWidth;e-main-toc*2-gap*4>0?document.getElementById("toc-container").classList.add("wide"):document.getElementById("toc-container").classList.remove("wide")}function getOffsetTop(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect(),n=e.ownerDocument.defaultView;return t.top+n.pageYOffset}</script><div class=post-content><p>《时间序列分析 —— 基于R》 王燕 第2版 复习笔记</p><h1 id=chapter-1>Chapter 1<a hidden class=anchor aria-hidden=true href=#chapter-1>#</a></h1><p>1.1 两类时间序列分析方法：</p><ul><li>频域分析，频率角度；</li><li>时域分析，序列自相关角度。</li></ul><p>1.2 横向和纵向：</p><ul><li>&ldquo;纵向"指对同一对象或者同一组对象在一段时间内的连续或多次观察和分析, 关注变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。</li><li>&ldquo;横向"分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现。</li></ul><h1 id=chapter-2>Chapter 2<a hidden class=anchor aria-hidden=true href=#chapter-2>#</a></h1><p>2.1 平稳性检验：</p><ul><li>时序图检验<code>plot()</code></li><li>自相关图检验<code>acf()</code></li><li>单位根检验</li></ul><p>2.2 纯随机性检验<code>Box.test(), type = "Ljung-Box" / "Box-Pierce"</code></p><h1 id=chapter-3>Chapter 3<a hidden class=anchor aria-hidden=true href=#chapter-3>#</a></h1><blockquote><p>Wold分解定理, 任意一个离散平稳序列{$x_t$}都可以分解为两个不相关的平稳序列之和, 其中一个为确定性的, 一个为随机性的.</p></blockquote><h2 id=31-延迟算子--差分运算>3.1 延迟算子 & 差分运算<a hidden class=anchor aria-hidden=true href=#31-延迟算子--差分运算>#</a></h2><p>延迟算子: 时间的指针</p><p>差分运算: 时间序列的导数</p><p><strong>3.1.1 延迟算子</strong></p><p>$$x_{t-1}=Bx_t \\ x_{t-2}=B^2x_t \\ &mldr; \\ x_{t-p}=B^px_t$$</p><p><strong>3.1.2 差分运算</strong></p><p>p阶差分 $\nabla ^p x_t =(1-B)^px_t, $ 连续做p次一阶差分</p><p>k步差分 $\nabla _k x_t =(1-B^k)x_t, $ 隔k步做差分</p><h2 id=32-auto-regreesion-model---ar模型>3.2 Auto Regreesion Model - AR模型<a hidden class=anchor aria-hidden=true href=#32-auto-regreesion-model---ar模型>#</a></h2><p>$$
+<span><script src=https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js></script><script>let url=document.documentURI,dnsUrl="https://iceyorange.github.io/",urlSplit=url.split(dnsUrl),finalUrl=urlSplit[1];finalUrl[0]!=="/"&&(finalUrl="/"+finalUrl),twikoo.getCommentsCount({envId:"https://twikoo-api-pi-ten.vercel.app/",region:null,urls:[finalUrl],includeReply:!1}).then(function(e){let t=e[0].count;const n=document.getElementById("comment_count");n.innerText=t}).catch(function(e){console.error(e)})</script><span id=comment_count></span></span></span></span></div></header><aside id=toc-container class="toc-container wide"><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#chapter-1 aria-label="Chapter 1">Chapter 1</a></li><li><a href=#chapter-2 aria-label="Chapter 2">Chapter 2</a></li><li><a href=#chapter-3 aria-label="Chapter 3">Chapter 3</a><ul><li><a href=#31-%e5%bb%b6%e8%bf%9f%e7%ae%97%e5%ad%90--%e5%b7%ae%e5%88%86%e8%bf%90%e7%ae%97 aria-label="3.1 延迟算子 &amp;amp; 差分运算">3.1 延迟算子 & 差分运算</a></li><li><a href=#32-auto-regreesion-model---ar%e6%a8%a1%e5%9e%8b aria-label="3.2 Auto Regreesion Model - AR模型">3.2 Auto Regreesion Model - AR模型</a></li><li><a href=#33-moving-average-model---ma%e6%a8%a1%e5%9e%8b aria-label="3.3 Moving Average Model - MA模型">3.3 Moving Average Model - MA模型</a></li><li><a href=#34-arma-%e6%a8%a1%e5%9e%8b aria-label="3.4 ARMA 模型">3.4 ARMA 模型</a></li></ul></li></ul></div></details></div></aside><script>let activeElement,elements;window.addEventListener("DOMContentLoaded",function(){checkTocPosition(),elements=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]"),activeElement=elements[0];const t=encodeURI(activeElement.getAttribute("id")).toLowerCase();document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active")},!1),window.addEventListener("resize",function(){checkTocPosition()},!1),window.addEventListener("scroll",()=>{activeElement=Array.from(elements).find(e=>{if(getOffsetTop(e)-window.pageYOffset>0&&getOffsetTop(e)-window.pageYOffset<window.innerHeight/2)return e})||activeElement,elements.forEach(e=>{const t=encodeURI(e.getAttribute("id")).toLowerCase();e===activeElement?document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active"):document.querySelector(`.inner ul li a[href="#${t}"]`).classList.remove("active")})},!1);const main=parseInt(getComputedStyle(document.body).getPropertyValue("--article-width"),10),toc=parseInt(getComputedStyle(document.body).getPropertyValue("--toc-width"),10),gap=parseInt(getComputedStyle(document.body).getPropertyValue("--gap"),10);function checkTocPosition(){const e=document.body.scrollWidth;e-main-toc*2-gap*4>0?document.getElementById("toc-container").classList.add("wide"):document.getElementById("toc-container").classList.remove("wide")}function getOffsetTop(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect(),n=e.ownerDocument.defaultView;return t.top+n.pageYOffset}</script><div class=post-content><p>《时间序列分析 —— 基于R》 王燕 第2版 复习笔记</p><h1 id=chapter-1>Chapter 1<a hidden class=anchor aria-hidden=true href=#chapter-1>#</a></h1><p>1.1 两类时间序列分析方法：</p><ul><li>频域分析，频率角度；</li><li>时域分析，序列自相关角度。</li></ul><p>1.2 横向和纵向：</p><ul><li>&ldquo;纵向"指对同一对象或者同一组对象在一段时间内的连续或多次观察和分析, 关注变量随时间的变化情况，如同一人群的收入如何随时间变化，或者个体的身高如何随着年龄的增长而变化等。</li><li>&ldquo;横向"分析聚焦于在单一时间点上不同对象之间的比较。例如，不同年龄段的人的平均收入如何差别，或各个公司同一年度的财务表现。</li></ul><h1 id=chapter-2>Chapter 2<a hidden class=anchor aria-hidden=true href=#chapter-2>#</a></h1><p>2.1 平稳性检验：</p><ul><li>时序图检验<code>plot()</code></li><li>自相关图检验<code>acf()</code></li><li>单位根检验</li></ul><p>2.2 纯随机性检验<code>Box.test(), type = "Ljung-Box" / "Box-Pierce"</code></p><p>2.3 特征统计量</p><p>$$
+\gamma(t, s) = E(X_t-\mu_t)(X_s-\mu_s) \\
+\rho(t, s) = \frac{\gamma(t, s)}{\sqrt{DX_t \cdot DX_s}}
+$$</p><h1 id=chapter-3>Chapter 3<a hidden class=anchor aria-hidden=true href=#chapter-3>#</a></h1><blockquote><p>Wold分解定理, 任意一个离散平稳序列{$x_t$}都可以分解为两个不相关的平稳序列之和, 其中一个为确定性的, 一个为随机性的.</p></blockquote><h2 id=31-延迟算子--差分运算>3.1 延迟算子 & 差分运算<a hidden class=anchor aria-hidden=true href=#31-延迟算子--差分运算>#</a></h2><p>延迟算子: 时间的指针</p><p>差分运算: 时间序列的导数</p><p><strong>3.1.1 延迟算子</strong></p><p>$$x_{t-1}=Bx_t \\ x_{t-2}=B^2x_t \\ \cdots \\ x_{t-p}=B^px_t$$</p><p><strong>3.1.2 差分运算</strong></p><p>p阶差分 $\nabla ^p x_t =(1-B)^px_t, $ 连续做p次一阶差分</p><p>k步差分 $\nabla _k x_t =(1-B^k)x_t, $ 隔k步做差分</p><h2 id=32-auto-regreesion-model---ar模型>3.2 Auto Regreesion Model - AR模型<a hidden class=anchor aria-hidden=true href=#32-auto-regreesion-model---ar模型>#</a></h2><p>$$
 \begin{cases}
 x_t=\phi_0+\phi_1x_{t-1}+\phi_2x_{t-2}+&mldr;+\phi_px_{t-p} \\
 \phi_p\not=0 \\
 E(\epsilon_t)=0, Var(\epsilon_t)=\sigma_{_{\epsilon}}^2, E(\epsilon_t\epsilon_s)=0, \forall{s\not=t} \\
 E(x_s\epsilon_t)=0, s&lt;t
 \end{cases}
-$$</p><p><strong>3.2.1 模型拟合</strong>：<code>arima.sim(), filter()</code>, 其中<code>filter()</code>只能拟合AR模型</p><p><strong>3.2.2 平稳性判别</strong>：特征根判别(单位圆) & 平稳域判别</p><p>AR模型<strong>自回归系数多项式的解</strong>与<strong>特征根</strong>之间具有倒函数关系, 特征根都在单位圆内$\Leftrightarrow$自回归系数多项式的解都在单位圆外</p><p>AR(1)模型 平稳域 $\lbrace\phi _1 | -1 &lt; \phi _1 &lt; 1\rbrace$</p><p>AR(2)模型 平稳域 $\lbrace \phi _1, \phi_2 \mid |\phi_2| &lt;1, \phi_2+\phi_1&lt;1, \phi_2-\phi_1 &lt; 1 \rbrace$</p><p><strong>3.2.3 格林函数</strong></p><p>任意平稳AR(p)模型的Green函数递推公式</p><p>$
+$$</p><p><strong>3.2.1 模型拟合</strong>：<code>arima.sim(), filter(method="recursive")</code>, 其中<code>arima.sim()</code>只能拟合AR模型</p><p><strong>3.2.2 平稳性判别</strong>：特征根判别(单位圆) & 平稳域判别</p><p>AR模型<strong>自回归系数多项式的解</strong>与<strong>特征根</strong>之间具有倒函数关系, 特征根都在单位圆内$\Leftrightarrow$自回归系数多项式的解都在单位圆外</p><p>AR(1)模型 平稳域 $\lbrace\phi _1 | -1 &lt; \phi _1 &lt; 1\rbrace$</p><p>AR(2)模型 平稳域 $\lbrace \phi _1, \phi_2 \mid |\phi_2| &lt;1, \phi_2+\phi_1&lt;1, \phi_2-\phi_1 &lt; 1 \rbrace$</p><p><strong>3.2.3 格林函数</strong></p><p>将时间序列{$x_t$}表示为纯随机序列{$\epsilon_t$}的线性组合: $x_t = G_0 \epsilon_t + G_1 \epsilon_{t-1} + G_2\epsilon_{t-2} + \ldots$</p><p>其中常数序列{$G_j$}为Green函数, 任意平稳AR(p)模型的Green函数递推公式如下:</p><p>$
 G_j=\begin{cases}
 1, \quad j=0 \\
 \sum_{k=1}^j \phi_k{&rsquo;}G_{j-k}, \quad j \geq 1
@@ -92,31 +95,72 @@ $ 其中, $
 \phi_k, \quad k \leq p \\
 0, \quad k > p
 \end{cases}
-$</p><p><strong>AR(1) Model</strong></p><p>$$
+$</p><hr><p>$\mathcal{AR(1) Model}$</p><p>$$
 G_0=1 \\
 G_1 = \phi_1 G_0 = \phi_1 \\
 G_2 = \phi_1 G_1 + \phi_2 G_0= \phi_1^2 \\
-&mldr;&mldr; \\
+\cdots \\
 G_t = \phi_1^t
-$$</p><p><strong>AR(2) Model</strong></p><p>$$
+$$</p><p>$\mathcal{AR(2) Model}$</p><p>$$
 G_0=1 \\
 G_1 = \phi_1 G_0 = \phi_1 \\
 G_2 = \phi_1 G_1 + \phi_2 G_0 = \phi_1^2 + \phi_2 \\
-&mldr;&mldr; \\
+\cdots \\
 G_t = \phi_1 G(t-1) + \phi_2 G(t-2)
-$$</p><p><strong>AR(3) Model</strong></p><p>$$
+$$</p><p>$\mathcal{AR(3) Model}$</p><p>$$
 G_0=1 \\
 G_1 = \phi_1 G_0 = \phi_1 \\
 G_2 = \phi_1 G_1 + \phi_2 G_0 = \phi_1^2 + \phi_2 \\
 G_3 = \phi_1 G_2 + \phi_2 G_1 + \phi_3 G_0 = \phi_1^3 + 2 \phi_1 \phi_2 + \phi_3 \\
-&mldr;&mldr; \\
+\cdots \\
 G_t = \phi_1 G(t-1) + \phi_2 G(t-2) + \phi_3 G(t-3)
 $$</p><p><strong>3.2.4 统计性质</strong></p><p>$$
-\mu = \frac{\phi_0}{1-\phi_1-&mldr;-\phi_p} \\
+\mu = \frac{\phi_0}{1-\phi_1-\cdots-\phi_p} \\
 Var(x_t) = \sum_{j=1}^{\infin}G_j^2 \sigma_{\epsilon}^2 \\
-\gamma_k = \phi_1 \gamma_{k-1} + \phi_2 \gamma_{k-2} &mldr; + \phi_p \gamma_{k-p} \\
-\rho_k = \phi_1 \rho_{k-1} + \phi_2 \rho_{k-2} &mldr; + \phi_p \rho_{k-p}
-$$</p><p><code>AR(p) 模型: 偏自相关系数p阶截尾, 自相关系数拖尾</code></p><h2 id=33-moving-average-model---ma模型>3.3 Moving Average Model - MA模型<a hidden class=anchor aria-hidden=true href=#33-moving-average-model---ma模型>#</a></h2><hr><blockquote><p><a href=https://zhuanlan.zhihu.com/p/588321388>https://zhuanlan.zhihu.com/p/588321388</a></p></blockquote></div><div style="padding:10px 0;margin:20px auto;width:100%;font-size:16px;text-align:center"><button id=rewardButton disable=enable onclick='var qr=document.getElementById("QR");qr.style.display==="none"?qr.style.display="block":qr.style.display="none"'>
+\gamma_k = \phi_1 \gamma_{k-1} + \phi_2 \gamma_{k-2} + \cdots + \phi_p \gamma_{k-p} \\
+\rho_k = \phi_1 \rho_{k-1} + \phi_2 \rho_{k-2} + \cdots + \phi_p \rho_{k-p}
+$$</p><p><strong>平稳 AR(p) 模型:</strong></p><p>自相关系数拖尾, 指数衰减 <code>acf()</code></p><p>偏自相关系数(剔除中间$k-1$个随机变量后$x_{t-k}$对$x_t$的影响程度), p阶截尾$\phi_{kk}=0(\forall{k>p})$ <code>pacf()</code></p><hr><p>$\mathcal{AR(1) Model}$</p><p>$$\begin{aligned}
+\mu &= \frac{\phi_0}{1-\phi_1}=0 \\ \\
+Var(x_t) &= Var(G_0\epsilon_t + G_1\epsilon_{t-1} + G_2\epsilon_{t-2} + \cdots) \\
+&=(G_0^2 + G_1^2 + G_2^2 + \cdots) \sigma_{\epsilon}^2 \\
+&= (1 + \phi_1^2 + \phi_2^4 + \cdots) \sigma_{\epsilon}^2 \\
+&= \frac{\sigma_{\epsilon}^2}{1-\phi_1^2} \\ \\
+\gamma_k &= \phi_1 \gamma_{k-1} \\
+&= \phi_1^k \gamma_0 \\
+&= \phi_1^k \frac{\sigma_{\epsilon}^2}{1-\phi_1^2} \\ \\
+\rho_k &= \frac{\gamma_k}{\gamma_0} = \phi_1^k, k \geq 0 \\ \\
+\phi_{kk} &= \begin{cases}
+\phi_1, \quad k=1 \\
+0, \quad k \geq 2
+\end{cases}
+\end{aligned}$$</p><p>$\mathcal{AR(2) Model}$</p><p>$$\begin{aligned}
+\mu &= \frac{\phi_0}{1-\phi_1 - \phi_2} = 0 \\ \\
+Var(x_t) &= Var(G_0\epsilon_t + G_1\epsilon_{t-1} + G_2\epsilon_{t-2} + \cdots) \\
+&=(G_0^2 + G_1^2 + G_2^2 + \cdots) \sigma_{\epsilon}^2 \\
+&= \cdots\\
+&= \frac{1-\phi_2}{(1+\phi_2)(1-\phi_1-\phi_2)(1+\phi_1-\phi_2)} \sigma_{\epsilon}^2 \\ \\
+\gamma_k &= \begin{cases}
+\frac{1-\phi_2}{(1+\phi_2)(1-\phi_1-\phi_2)(1+\phi_1-\phi_2)} \sigma_{\epsilon}^2, \quad k=0 \\
+\frac{\phi_1\gamma_0}{1-\phi_2}, \quad k =1 \\
+\gamma_k = \phi_1\gamma_{k-1} + \phi_2 \gamma_{k-2}, \quad k \geq 2
+\end{cases} \\ \\
+\rho_k &= \frac{\gamma_k}{\gamma_0} = \begin{cases}
+1, \quad k=0 \\
+\frac{\phi_1}{1-\phi_2}, \quad k=1 \\
+\phi_1\rho_{k-1} + \phi_2\rho_{k-2}, \quad k \geq 2
+\end{cases} \\ \\
+\phi_{kk} &= \begin{cases}
+\frac{\phi_1}{1-\phi_2}, \quad k=1 \\
+\phi_2, \quad k=2 \\
+0, \quad k \geq 3
+\end{cases}
+\end{aligned}$$</p><h2 id=33-moving-average-model---ma模型>3.3 Moving Average Model - MA模型<a hidden class=anchor aria-hidden=true href=#33-moving-average-model---ma模型>#</a></h2><p>$$
+\begin{cases}
+x_t=\mu + \epsilon_t - \theta_1\epsilon_{t-1} - \theta_2\epsilon_{t-2} - \cdots - \theta_q\epsilon_{t-q} \\
+\theta_q\not=0 \\
+E(\epsilon_t)=0, Var(\epsilon_t)=\sigma_{_{\epsilon}}^2, E(\epsilon_t\epsilon_s)=0, \quad s\not=t
+\end{cases}
+$$</p><p>使用延迟算子, 中心化MA(q)模型可记为: $x_t = \Theta(B)\epsilon_t, \Theta(B)=1-\theta_1B-\theta_2B^2 - \cdots - \theta_qB^q$ 为q阶移动平均系数多项式.</p><p><strong>3.3.1 模型拟合</strong>：<code>filter(method="convolution", circular=T)</code></p><p><strong>3.3.3 统计性质</strong></p><h2 id=34-arma-模型>3.4 ARMA 模型<a hidden class=anchor aria-hidden=true href=#34-arma-模型>#</a></h2><hr><blockquote><p><a href=https://zhuanlan.zhihu.com/p/588321388>https://zhuanlan.zhihu.com/p/588321388</a></p></blockquote></div><div style="padding:10px 0;margin:20px auto;width:100%;font-size:16px;text-align:center"><button id=rewardButton disable=enable onclick='var qr=document.getElementById("QR");qr.style.display==="none"?qr.style.display="block":qr.style.display="none"'>
 <span>☕Support</span></button><div id=QR style=display:none><div id=wechat style=display:inline-block><a class=fancybox rel=group><img id=wechat_qr src=https://iceyorange.github.io/img/wechat_pay.png alt="WeChat Pay" style=width:140px;height:140px></a><p>WeChat</p></div><div id=alipay style=display:inline-block><a class=fancybox rel=group><img id=alipay_qr src=https://iceyorange.github.io/img/alipay.png alt=Alipay style=width:140px;height:140px></a><p>Alipay</p></div></div></div><footer class=post-footer><nav class=paginav><a class=prev href=https://iceyorange.github.io/posts/fondin/><span class=title>« Prev</span><br><span>That's all about love</span>
 </a><a class=next href=https://iceyorange.github.io/posts/statistics/introduction2statistics/><span class=title>Next »</span><br><span>统计学概论笔记</span></a></nav></footer></div><div><div class=pagination__title><span class=pagination__title-h style=font-size:20px>💬Comment</span><hr></div><div id=tcomment></div><script src=https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js></script><script>twikoo.init({envId:"https://twikoo-api-pi-ten.vercel.app/",el:"#tcomment",lang:"zh-CN",region:"ap-guangzhou",path:window.TWIKOO_MAGIC_PATH||window.location.pathname})</script></div></article></main><footer class=footer><span>Copyright
 &copy;
