@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://iceyorange.github.io/sitemap.xml
