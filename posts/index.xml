@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>IceyOrange&#39;s Blog</title>
-    <link>https://iceyorange.github.io/</link>
-    <description>Recent content on IceyOrange&#39;s Blog</description>
+    <title>Posts on IceyOrange&#39;s Blog</title>
+    <link>https://iceyorange.github.io/posts/</link>
+    <description>Recent content in Posts on IceyOrange&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iceyorange.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iceyorange.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>未命名</title>
       <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
@@ -21,21 +21,6 @@
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</guid>
       <description>知识库 KB 知识库（Knowledge base）是用于知识管理的一种==特殊的数据库==，以便于有关领域知识的采集、整理以及提取。知识库中的知识源于领域专家，它是求解问题所需领域知识的集合，包括基本事实、规则和其它有关信息。 - Wikipedia 例如：法院判例库、医院病例库、产品数据库、某领域论文库、</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>https://iceyorange.github.io/about/</link>
-      <pubDate>Fri, 05 Apr 2024 10:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/about/</guid>
-      <description>Name: Orange (Jude) Job: Student major in Statistics Interest: &amp;#x1f3c0;&amp;#x1f52d;&amp;#x1f3b8;&amp;#x1f3b5; Contact Information
-Email: uasgwr@gmail.com</description>
-    </item>
-    <item>
-      <title>🤝Links</title>
-      <link>https://iceyorange.github.io/links/</link>
-      <pubDate>Sat, 06 Nov 2021 15:15:53 +0800</pubDate>
-      <guid>https://iceyorange.github.io/links/</guid>
-      <description>As We Are 一个记录生活，随便写写的博客</description>
     </item>
   </channel>
 </rss>
