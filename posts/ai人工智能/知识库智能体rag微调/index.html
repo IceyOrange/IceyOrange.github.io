@@ -499,6 +499,91 @@ Low-rank adaptation (==LoRA==) is an adapter-based technique for efficiently fin
 <p>形象的比喻：微调是<strong>考前复习</strong>，RAG 是开卷考试。</p>
 <p>然而本地部署并微调一个大模型，对于个人来说成本是极大的；如果退而求其次，微调一个小一点的模型，效果又可能不好；所以实践证实:==在本地部署一个蒸馏版的大模型+RAG 技术是一个更优的解决方案==。</p>
 
+<p>本地部署都很吃配置</p>
+<h1 id="知识库-kb">知识库 KB</h1>
+<blockquote>
+<p>知识库（Knowledge base）是用于知识管理的一种<mark>特殊的数据库</mark>，以便于有关领域知识的采集、整理以及提取。知识库中的知识源于领域专家，它是求解问题所需领域知识的集合，包括基本事实、规则和其它有关信息。 - Wikipedia</p>
+</blockquote>
+<p>例如：法院判例库、医院病例库、产品数据库、某领域论文库、哈利波特魔咒库、章鱼哥的食谱……</p>
+<p>注意！知识库与 LLM 预训练语料库两者不是一个概念，预训练语料库为非结构化文本（乱七八糟的文字, 未清洗）, 且一旦模型预训练完成就不能再更改预训练语料 (如ChatGPT 4o的预训练语料库便截止2023年10月); 而知识库则为结构化或半结构化文本 (有一级标题、二级标题或其他逻辑结构)，且是定期更新与维护的。</p>
+<p>看到很多人推荐 IMA 来搭建知识库.</p>
+<hr>
+<h1 id="智能体-agent">智能体 Agent</h1>
+<blockquote>
+<p>智能体（英语：intelligent agent）指一个可以<mark>观察周遭环境并作出行动以达致目标</mark>的自主实体。它通常是指（但不一定是）一个软件程序。“智能体”是目前人工智能研究的一个核心概念，统御和联系着各个子领域的研究。 - Wikipedia</p>
+<p>智能体（Agent）是指能够<mark>感知环境并采取行动以实现特定目标</mark>的代理体。它可以是软件、硬件或一个系统，具备自主性、适应性和交互能力。智能体通过感知环境中的变化（如通过传感器或数据输入），根据自身学习到的知识和算法进行判断和决策，进而执行动作以影响环境或达到预定的目标。 - 百度百科</p>
+</blockquote>
+<p>常见 AI Agent 平台: 字节扣子 (Coze)、腾讯元器、Dify、FastGPT</p>
+<blockquote>
+<p>所有妄图通过缩短工序而提升效率的低代码平台都会死. (Agent 平台就是 LLM 时代的低代码平台) - 小红书评论</p>
+</blockquote>
+<hr>
+<h1 id="检索增强生成-rag">检索增强生成 RAG</h1>
+<blockquote>
+<p>Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so <mark>it references an authoritative knowledge base <strong>outside of its training data</strong> sources before generating a response.</mark> Large Language Models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences. <mark>RAG extends the already powerful capabilities of LLMs to specific domains or an organization&rsquo;s internal knowledge base, all without the need to retrain the model.</mark> It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts. - AWS</p>
+<p><mark>检索增强生成</mark>（英语：Retrieval-augmented generation, RAG ) 是赋予生成式人工智能模型信息检索能力的技术。检索增强生成优化大型语言模型(LLM) 的交互方式，让模型根据指定的一组文件回应用户的查询，并使用这些信息增强模型从自身庞大的静态训练数据中提取的信息。检索增强生成技术促使大型语言模型能够使用特定领域或更新后的信息。 - Wikipedia</p>
+</blockquote>
+<p>可以将RAG理解为&quot;<strong>知识库</strong>+LLM&quot;, &ldquo;<mark>AI 老员工</mark>&ldquo;的比喻十分形象。</p>
+<p>主流 RAG 框架: LangChain、RAGFlow、AnythingLLM</p>
+<h2 id="rag-具体工作逻辑">RAG 具体工作逻辑</h2>
+<p>参考 <a href="https://docs.anythingllm.com/llm-not-using-my-docs#llms-do-not-introspect">Why does the LLM not use my documents?</a></p>
+<ol>
+<li>RAG 对知识库中的文件，并不是以一个文档一个文档地对待的，而是将所有文档都“打碎”并进行词嵌入；</li>
+<li>当用户发起对话时，也将用户发送的对话内容“打碎”并进行词嵌入；</li>
+<li>通过余弦相似度从知识库中寻找与用户发送内容“相似”的“碎片”。</li>
+<li>整合 LLM，最后输出</li>
+</ol>
+<blockquote>
+<p>RAG (which is what we use) enables us to chunk the document and then ask retrieve only the bits and pieces the make sense for your question and use that in the context window. This makes larger documents easier to use, but it is at the expense of these types of &ldquo;whole document&rdquo; understandings.- AnythingLLM 社区
+RAG, by its very nature is <em>pieces</em> of relevant content. <strong>Not the entire text</strong> - AnythingLLM 社区</p>
+</blockquote>
+<p>总结：RAG 的作用不是全文理解，而是从知识库找到与我们所问的问题相关的“碎片”。至于全文理解，这件事是智能体干的事情，当然 LLM 也干得不错。为什么不本地部署一个强悍的 LLM ? 可以参考这里[[#总结]].</p>
+<hr>
+<h1 id="微调-fine-tuning">微调 Fine-tuning</h1>
+<blockquote>
+<p>微调（又称大模型微调，英语：fine-tuning）是<mark>深度学习中迁移学习的一种方法</mark>，其中预训练模型的权重会在新数据上进行训练。微调可以在整个神经网络上执行，也可以仅在其部分层上执行，此时未进行微调的层会被“<strong>冻结</strong>”（在反向传播步骤中不更新） - Wikipedia
+微调通常通过<mark>监督学习</mark>完成，但也有使用弱监督进行模型微调的技术。 - Wikipedia
+Low-rank adaptation (<mark>LoRA</mark>) is an adapter-based technique for efficiently fine-tuning models. - Wikipedia</p>
+</blockquote>
+<p>LLM 总不能样样精通.</p>
+<p>可以理解为：通过利用已有的知识来提高模型在新任务上的表现。</p>
+<p>任何预训练好的模型都能微调！预训练-微调方法属于基于模型的迁移方法（Parameter/Model-based TransferLearning）</p>
+<hr>
+<h1 id="总结">总结</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">角色</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">依赖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">知识库</td>
+<td style="text-align:center"><mark>专业知识库</mark>，提供事实性、权威性的知识数据</td>
+<td style="text-align:center">被RAG或智能体查询</td>
+</tr>
+<tr>
+<td style="text-align:center">智能体</td>
+<td style="text-align:center"><mark>Agent</mark>，负责与用户交互，并调用RAG或知识库来回答问题</td>
+<td style="text-align:center">可能使用RAG提升回答能力</td>
+</tr>
+<tr>
+<td style="text-align:center">RAG</td>
+<td style="text-align:center"><mark>一种AI架构</mark>，从知识库检索信息，并结合语言模型生成答案</td>
+<td style="text-align:center">需要知识库作为数据来源</td>
+</tr>
+<tr>
+<td style="text-align:center">微调</td>
+<td style="text-align:center"><mark>迁移学习的一种方法</mark>，使通用模型适配特定领域任务</td>
+<td style="text-align:center">需要知识库作为微调数据</td>
+</tr>
+</tbody>
+</table>
+<p>形象的比喻：微调是<strong>考前复习</strong>，RAG 是开卷考试。</p>
+<p>然而本地部署并微调一个大模型，对于个人来说成本是极大的；如果退而求其次，微调一个小一点的模型，效果又可能不好；所以实践证实:<mark>在本地部署一个蒸馏版的大模型+RAG 技术是一个更优的解决方案</mark>。</p>
+
 
     </div>
 
