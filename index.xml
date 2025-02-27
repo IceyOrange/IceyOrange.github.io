@@ -16,6 +16,13 @@
       <description>本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &amp;#34;content/posts/3. Resources-资源 未来/AI人工智能&amp;#34; 4 target: &amp;#34;content/posts/AI人工智能&amp;#</description>
     </item>
     <item>
+      <title>忘记 Twikoo 管理面板的密码怎么办</title>
+      <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
+      <description>参考: # hexo之mongodb修改twikoo评论的管理密码 以及 # Twikoo 找回暗号及密码 核心目标: 把 MongoDB 中的&amp;quot;ADMIN_PASS&amp;quot;值删除.</description>
+    </item>
+    <item>
       <title>关于主观能动性</title>
       <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
