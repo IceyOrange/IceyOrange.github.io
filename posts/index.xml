@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on IceyOrange&#39;s Blog</title>
+    <title>Posts on Lovegood&#39;s Blog</title>
     <link>https://iceyorange.github.io/posts/</link>
-    <description>Recent content in Posts on IceyOrange&#39;s Blog</description>
+    <description>Recent content in Posts on Lovegood&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://iceyorange.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 渲染及主页展示白名单</title>
+      <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
+      <description>本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &amp;#34;content/posts/3. Resources-资源 未来/AI人工智能&amp;#34; 4 target: &amp;#34;content/posts/AI人工智能&amp;#</description>
+    </item>
     <item>
       <title>关于主观能动性</title>
       <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</link>
@@ -35,13 +42,6 @@
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B6%E5%AE%83/</guid>
       <description>人会借势是强者的表现 思虑过多的人, 应该去多感受大千世界. 一件事情, 明知道没有希望, 却在尘埃落定之前, 一直抱有希望. 就像宣判死刑前心怀侥幸的十恶不赦的罪犯.</description>
-    </item>
-    <item>
-      <title>未命名</title>
-      <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
-      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
-      <description>这是一个归档测试!</description>
     </item>
     <item>
       <title>毛选读书笔记</title>
