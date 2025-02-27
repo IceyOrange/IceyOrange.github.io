@@ -58,12 +58,11 @@
       <description>本地部署都很吃配置 知识库 KB 知识库（Knowledge base）是用于知识管理的一种==特殊的数据库==，以便于有关领域知识的采集、整理以及提取。知识库中的知识源于领域专家，它是求解问题所需领域知识的集合，包括基本事实、规则和其它有关信息。 - Wikipedia 例如：法院判例库、医院病例库、产品数据</description>
     </item>
     <item>
-      <title>About Me</title>
+      <title>关于我</title>
       <link>https://iceyorange.github.io/about/</link>
-      <pubDate>Fri, 05 Apr 2024 10:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://iceyorange.github.io/about/</guid>
-      <description>Name: Orange (Jude) Job: Student major in Statistics Interest: &amp;#x1f3c0;&amp;#x1f52d;&amp;#x1f3b8;&amp;#x1f3b5; Contact Information
-Email: uasgwr@gmail.com</description>
+      <description>✨ 关于我 ✨ 本科统计学在读, 统计学不是冷冰冰的数字, 而是渗透生活方方面面的认知科学. 📚 这里有什么 📚 ▫️ 机器学习相关：分享 ML 学习路上的「顿悟时刻」 ▫️ AI人工智能相关：分享 AI 相关体验 ▫️ 一些阅读笔记：最近在拜读毛选, 收获颇丰 相遇即是缘, 欢迎同好一同交流 🤝</description>
     </item>
   </channel>
 </rss>
