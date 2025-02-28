@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Lovegood&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://iceyorange.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用知识库提升考研复试准备效率</title>
+      <link>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</guid>
+      <description>本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作</description>
+    </item>
     <item>
       <title>Hugo 渲染及主页展示白名单</title>
       <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>

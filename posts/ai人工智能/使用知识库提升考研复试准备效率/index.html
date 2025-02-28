@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Hugo 渲染及主页展示白名单 | Lovegood&#39;s Blog</title>
+<title>使用知识库提升考研复试准备效率 | Lovegood&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="本人通过 Obsidian &#43; Hugo &#43; Github Page &#43; Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &#34;content/posts/3. Resources-资源 未来/AI人工智能&#34; 4 target: &#34;content/posts/AI人工智能&#">
+<meta name="description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作">
 <meta name="author" content="Lovegood">
-<link rel="canonical" href="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/">
+<link rel="canonical" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
 <meta name="google-site-verification" content="G-LZESR1K8WK">
 <link crossorigin="anonymous" href="../../../assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iceyorange.github.io/img/xx.gif">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://iceyorange.github.io/xx.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/">
+<link rel="alternate" hreflang="en" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,16 +68,16 @@ if (!doNotTrack) {
 	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Hugo 渲染及主页展示白名单" />
-<meta property="og:description" content="本人通过 Obsidian &#43; Hugo &#43; Github Page &#43; Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &#34;content/posts/3. Resources-资源 未来/AI人工智能&#34; 4 target: &#34;content/posts/AI人工智能&#" />
+<meta property="og:title" content="使用知识库提升考研复试准备效率" />
+<meta property="og:description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-02-27T00:00:00+00:00" />
+<meta property="og:url" content="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-02-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-02-28T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo 渲染及主页展示白名单"/>
-<meta name="twitter:description" content="本人通过 Obsidian &#43; Hugo &#43; Github Page &#43; Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &#34;content/posts/3. Resources-资源 未来/AI人工智能&#34; 4 target: &#34;content/posts/AI人工智能&#"/>
+<meta name="twitter:title" content="使用知识库提升考研复试准备效率"/>
+<meta name="twitter:description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作"/>
 
 
 <script type="application/ld+json">
@@ -94,8 +94,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Hugo 渲染及主页展示白名单",
-      "item": "https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/"
+      "name": "使用知识库提升考研复试准备效率",
+      "item": "https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/"
     }
   ]
 }
@@ -104,24 +104,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Hugo 渲染及主页展示白名单",
-  "name": "Hugo 渲染及主页展示白名单",
-  "description": "本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: \u0026#34;content/posts/3. Resources-资源 未来/AI人工智能\u0026#34; 4 target: \u0026#34;content/posts/AI人工智能\u0026#",
+  "headline": "使用知识库提升考研复试准备效率",
+  "name": "使用知识库提升考研复试准备效率",
+  "description": "本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作",
   "keywords": [
     
   ],
-  "articleBody": "本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建.\nHugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹.\n1module: 2 mounts: 3 - source: \"content/posts/3. Resources-资源 未来/AI人工智能\" 4 target: \"content/posts/AI人工智能\" 5 - source: \"content/posts/4. Archives-归档/技术类归档\" 6 target: \"content/posts/技术类归档\" 7\t...... 8 - source: \"content/about.md\" 9 target: \"content/about.md\" 10\t...... Hugo 主页展示白名单 因为主要想在博客主页展示技术类相关博文, 所以需要对主页展示内容进行过滤, 在 layouts/_default/list.html 进行配置即可, 具体可参考下面的代码:\n1{{- if .IsHome }} 2{{- $pages = where site.RegularPages \"File.Dir\" \"in\" (slice \"posts\\\\AI人工智能\\\\\" \"posts\\\\技术类归档\\\\\") }} 3{{- $pages = where $pages \"Params.hiddenInHomeList\" \"!=\" \"true\" }} 4{{- end }} 倘若不知道文件夹(File. Dir)路径, 尤其是我这种有 mounts 映射的情况, 可以通过在 layouts/_default/list.html 中添加 {{ range site.RegularPages }} {{ .File.Path }} → {{ .File.Dir }}\n{{ end }} 代码块, Hugo 会输出文件夹 (File. Dir) 路径 (类似 Python 的 print 函数.), 见下图:\n踩坑记录: 一开始以为在 config.yml 里面设置 mainSections 相关参数即可, 折腾半天. 后面静下心来慢慢读 Hugo 的官网网站上的相关教程, 最后也多亏了 GPT 帮忙.\n上传 Github 白名单 可通过 .gitignore 文件进行设置.\n1 2content/posts/.obsidian/ # .obsidian文件夹内里面有很多杂七杂八的东西 3content/posts/-1. Books/ # 这一目录用于存放电子书, 占用空间 4 5.history/ # VSC的自动保存 6 7public # 无需上传public文件, 因为设置了Github Action自动部署 这个网上很多大佬都有教程 ",
-  "wordCount" : "623",
+  "articleBody": "本文使用腾讯 ima.copilt 来搭建知识库\n背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。\n具体操作步骤 首先进入 https://ima.qq.com/ 下载并安装软件客户端； 登录，进入知识库界面； 上传文件，等待系统自动解析； 通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。 🙏 希望能够顺利进入复试\n",
+  "wordCount" : "232",
   "inLanguage": "en",
-  "datePublished": "2025-02-27T00:00:00Z",
-  "dateModified": "2025-02-27T00:00:00Z",
+  "datePublished": "2025-02-28T00:00:00Z",
+  "dateModified": "2025-02-28T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Lovegood"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/"
+    "@id": "https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/"
   },
   "publisher": {
     "@type": "Organization",
@@ -224,7 +224,7 @@ if (!doNotTrack) {
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://iceyorange.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://iceyorange.github.io/posts/">Posts</a></div>
       <h1 class="post-title">
-        Hugo 渲染及主页展示白名单
+        使用知识库提升考研复试准备效率
       </h1>
       <div class="post-meta">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -245,20 +245,20 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2025-02-27
+        <span>2025-02-28
             &nbsp;&nbsp;
         </span>
     </span>
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>623 words
+        <span>232 words
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>2 minutes
+        <span>1 minutes
             &nbsp;&nbsp;
         </span>
     </span>
@@ -331,11 +331,9 @@ if (!doNotTrack) {
 
             <div class="inner"><ul>
                     <li>
-                        <a href="#hugo-%e6%b8%b2%e6%9f%93%e7%99%bd%e5%90%8d%e5%8d%95" aria-label="Hugo 渲染白名单">Hugo 渲染白名单</a></li>
+                        <a href="#%e8%83%8c%e6%99%af" aria-label="背景">背景</a></li>
                     <li>
-                        <a href="#hugo-%e4%b8%bb%e9%a1%b5%e5%b1%95%e7%a4%ba%e7%99%bd%e5%90%8d%e5%8d%95" aria-label="Hugo 主页展示白名单">Hugo 主页展示白名单</a></li>
-                    <li>
-                        <a href="#%e4%b8%8a%e4%bc%a0-github-%e7%99%bd%e5%90%8d%e5%8d%95" aria-label="上传 Github 白名单">上传 Github 白名单</a>
+                        <a href="#%e5%85%b7%e4%bd%93%e6%93%8d%e4%bd%9c%e6%ad%a5%e9%aa%a4" aria-label="具体操作步骤">具体操作步骤</a>
                     </li>
                 </ul>
             </div>
@@ -401,39 +399,23 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;   
     }
 </script>
-    <div class="post-content"><p>本人通过 <code>Obsidian + Hugo + Github Page + Github Action</code> 来实现文章管理及博客自动化搭建.</p>
-<h2 id="hugo-渲染白名单">Hugo 渲染白名单<a hidden class="anchor" aria-hidden="true" href="#hugo-渲染白名单">#</a></h2>
-<p>因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 <code>module.mounts</code> 来配置允许 Hugo 渲染的文件夹.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-config.yml" data-lang="config.yml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#f92672">module</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  <span style="color:#f92672">mounts</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    - <span style="color:#f92672">source</span>: <span style="color:#e6db74">&#34;content/posts/3. Resources-资源 未来/AI人工智能&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>      <span style="color:#f92672">target</span>: <span style="color:#e6db74">&#34;content/posts/AI人工智能&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    - <span style="color:#f92672">source</span>: <span style="color:#e6db74">&#34;content/posts/4. Archives-归档/技术类归档&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>      <span style="color:#f92672">target</span>: <span style="color:#e6db74">&#34;content/posts/技术类归档&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>	<span style="color:#ae81ff">......</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    - <span style="color:#f92672">source</span>: <span style="color:#e6db74">&#34;content/about.md&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>      <span style="color:#f92672">target</span>: <span style="color:#e6db74">&#34;content/about.md&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>	<span style="color:#ae81ff">......</span>
-</span></span></code></pre></div><h2 id="hugo-主页展示白名单">Hugo 主页展示白名单<a hidden class="anchor" aria-hidden="true" href="#hugo-主页展示白名单">#</a></h2>
-<p>因为主要想在博客主页展示技术类相关博文, 所以需要对主页展示内容进行过滤, 在 <code>layouts/_default/list.html</code> 进行配置即可, 具体可参考下面的代码:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>{{- if .IsHome }}
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>{{- $pages = where site.RegularPages &#34;File.Dir&#34; &#34;in&#34; (slice &#34;posts\\AI人工智能\\&#34; &#34;posts\\技术类归档\\&#34;) }}
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>{{- $pages = where $pages &#34;Params.hiddenInHomeList&#34; &#34;!=&#34; &#34;true&#34; }}
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>{{- end }}
-</span></span></code></pre></div><p>倘若不知道文件夹(<code>File. Dir</code>)路径, 尤其是我这种有 mounts 映射的情况, 可以通过在 <code>layouts/_default/list.html</code> 中添加 <code>{{ range site.RegularPages }} &lt;p&gt;{{ .File.Path }} → {{ .File.Dir }}&lt;/p&gt; {{ end }}</code> 代码块, Hugo 会输出文件夹 (<code>File. Dir</code>) 路径 (类似 Python 的 print 函数.), 见下图:</p>
-<p><img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502271949925.png" alt="PixPin_2025-02-27_18-08-47.png"  />
-</p>
-<p>踩坑记录: 一开始以为在 <code>config.yml</code> 里面设置 <code>mainSections</code> 相关参数即可, 折腾半天. 后面<strong>静下心来</strong>慢慢读 Hugo 的官网网站上的相关教程, 最后也多亏了 GPT 帮忙.</p>
-<h2 id="上传-github-白名单">上传 Github 白名单<a hidden class="anchor" aria-hidden="true" href="#上传-github-白名单">#</a></h2>
-<p>可通过 <code>.gitignore</code> 文件进行设置.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>content/posts/.obsidian/  # .obsidian文件夹内里面有很多杂七杂八的东西
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>content/posts/-1. Books/  # 这一目录用于存放电子书, 占用空间
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>.history/  # VSC的自动保存
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>public  # 无需上传public文件, 因为设置了Github Action自动部署 这个网上很多大佬都有教程 
-</span></span></code></pre></div>
+    <div class="post-content"><p>本文使用腾讯 <a href="https://ima.qq.com/">ima.copilt</a> 来搭建知识库</p>
+<h2 id="背景">背景<a hidden class="anchor" aria-hidden="true" href="#背景">#</a></h2>
+<p>在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。</p>
+<h2 id="具体操作步骤">具体操作步骤<a hidden class="anchor" aria-hidden="true" href="#具体操作步骤">#</a></h2>
+<ol>
+<li>首先进入 <a href="https://ima.qq.com/">https://ima.qq.com/</a> 下载并安装软件客户端；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502282207212.png" alt="image.png"  />
+</li>
+<li>登录，进入知识库界面；</li>
+<li>上传文件，等待系统自动解析；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502282215751.png" alt="image.png"  />
+</li>
+<li>通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。</li>
+</ol>
+<hr>
+<p>🙏 希望能够顺利进入复试</p>
+
 
     </div>
 
@@ -467,15 +449,10 @@ if (!doNotTrack) {
     <footer class="post-footer">
       
 <nav class="paginav">
-  <a class="prev" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
-    <span class="title">« </span>
-    <br>
-    <span>使用知识库提升考研复试准备效率</span>
-  </a>
-  <a class="next" href="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/">
+  <a class="next" href="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/">
     <span class="title"> »</span>
     <br>
-    <span>忘记 Twikoo 管理面板的密码怎么办</span>
+    <span>Hugo 渲染及主页展示白名单</span>
   </a>
 </nav>
 
