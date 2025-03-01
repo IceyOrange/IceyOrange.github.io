@@ -28,36 +28,9 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript>
 
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZESR1K8WK"></script>
 <script>
 var doNotTrack = false;
@@ -139,10 +112,6 @@ if (!doNotTrack) {
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -220,6 +189,7 @@ if (!doNotTrack) {
 </style>
 
 <article class="post-single">
+  <div id="single-content">
   <div id="single-content">
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://iceyorange.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://iceyorange.github.io/posts/">Posts</a></div>
@@ -328,6 +298,8 @@ if (!doNotTrack) {
     </header> 
     <div class="post-content"><p>记得在看《被讨厌的勇气》后，里面有一句话让我印象特别深刻：“影响你的不是事件本身，而是你==看待事件的方式==。”比如精神内耗与否，就与==如何看待事情==息息相关[[关于精神内耗#内耗和复盘]]。再比如经验不是事情本身, 是我们理解事情的方式, 构成了经验。但是需要注意的是，==不要脱离或弱化了“物质的决定性”==。</p>
 
+<p>记得在看《被讨厌的勇气》后，里面有一句话让我印象特别深刻：“影响你的不是事件本身，而是你<mark>看待事件的方式</mark>。”比如精神内耗与否，就与<mark>如何看待事情</mark>息息相关[[关于精神内耗#内耗和复盘]]。再比如经验不是事情本身, 是我们理解事情的方式, 构成了经验。但是需要注意的是，<mark>不要脱离或弱化了“物质的决定性”</mark>。</p>
+<p>记得在看《被讨厌的勇气》后，里面有一句话让我印象特别深刻：“影响你的不是事件本身，而是你<mark>看待事件的方式</mark>。”比如精神内耗与否，就与<mark>如何看待事情</mark>息息相关[[关于精神内耗#内耗和复盘]]。再比如经验不是事情本身, 是我们理解事情的方式, 构成了经验。但是需要注意的是，<mark>不要脱离或弱化了“物质的决定性”</mark>。</p>
 
     </div>
 

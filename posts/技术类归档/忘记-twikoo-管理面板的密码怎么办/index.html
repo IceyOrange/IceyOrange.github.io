@@ -28,36 +28,9 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript>
 
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZESR1K8WK"></script>
 <script>
 var doNotTrack = false;
@@ -139,10 +112,6 @@ if (!doNotTrack) {
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -220,6 +189,7 @@ if (!doNotTrack) {
 </style>
 
 <article class="post-single">
+  <div id="single-content">
   <div id="single-content">
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://iceyorange.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://iceyorange.github.io/posts/">Posts</a></div>
@@ -326,6 +296,10 @@ if (!doNotTrack) {
     <div class="post-content"><p>参考: <a href="https://www.kidsmiless.cn/2025/01/17/hexo%E4%B9%8Bmongodb%E4%BF%AE%E6%94%B9twikoo%E8%AF%84%E8%AE%BA%E7%9A%84%E7%AE%A1%E7%90%86%E5%AF%86%E7%A0%81/"># hexo之mongodb修改twikoo评论的管理密码</a> 以及 <a href="https://www.zeker.top/posts/bb3290a1/"># Twikoo 找回暗号及密码</a></p>
 <p>核心目标: 把 MongoDB 中的&quot;ADMIN_PASS&quot;值删除.</p>
 
+<p>参考: <a href="https://www.kidsmiless.cn/2025/01/17/hexo%E4%B9%8Bmongodb%E4%BF%AE%E6%94%B9twikoo%E8%AF%84%E8%AE%BA%E7%9A%84%E7%AE%A1%E7%90%86%E5%AF%86%E7%A0%81/"># hexo之mongodb修改twikoo评论的管理密码</a> 以及 <a href="https://www.zeker.top/posts/bb3290a1/"># Twikoo 找回暗号及密码</a></p>
+<p>核心目标: 把 MongoDB 中的&quot;ADMIN_PASS&quot;值删除.</p>
+<p>参考: <a href="https://www.kidsmiless.cn/2025/01/17/hexo%E4%B9%8Bmongodb%E4%BF%AE%E6%94%B9twikoo%E8%AF%84%E8%AE%BA%E7%9A%84%E7%AE%A1%E7%90%86%E5%AF%86%E7%A0%81/"># hexo之mongodb修改twikoo评论的管理密码</a> 以及 <a href="https://www.zeker.top/posts/bb3290a1/"># Twikoo 找回暗号及密码</a></p>
+<p>核心目标: 把 MongoDB 中的&quot;ADMIN_PASS&quot;值删除.</p>
 
     </div>
 

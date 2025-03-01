@@ -28,36 +28,9 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript>
 
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZESR1K8WK"></script>
 <script>
 var doNotTrack = false;
@@ -139,10 +112,6 @@ if (!doNotTrack) {
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -220,6 +189,7 @@ if (!doNotTrack) {
 </style>
 
 <article class="post-single">
+  <div id="single-content">
   <div id="single-content">
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://iceyorange.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://iceyorange.github.io/posts/">Posts</a></div>
@@ -420,6 +390,38 @@ if (!doNotTrack) {
 <hr>
 <p>🙏 希望能够顺利进入复试</p>
 
+<p>本文使用腾讯 <a href="https://ima.qq.com/">ima.copilt</a> 来搭建知识库</p>
+<h2 id="背景">背景</h2>
+<p>在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。</p>
+<h2 id="具体操作步骤">具体操作步骤</h2>
+<ol>
+<li>首先进入 <a href="https://ima.qq.com/">https://ima.qq.com/</a> 下载并安装软件客户端；</li>
+<li>登录，进入知识库界面；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502282207212.png" alt="image.png"  />
+</li>
+<li>上传文件，等待系统自动解析；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202503010018939.png" alt="image.png"  />
+</li>
+<li>通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。</li>
+</ol>
+<hr>
+<p>🙏 希望能够顺利进入复试</p>
+<p>本文使用腾讯 <a href="https://ima.qq.com/">ima.copilt</a> 来搭建知识库</p>
+<h2 id="背景">背景</h2>
+<p>在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。</p>
+<h2 id="具体操作步骤">具体操作步骤</h2>
+<ol>
+<li>首先进入 <a href="https://ima.qq.com/">https://ima.qq.com/</a> 下载并安装软件客户端；</li>
+<li>登录，进入知识库界面；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502282207212.png" alt="image.png"  />
+</li>
+<li>上传文件，等待系统自动解析；
+<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202503010018939.png" alt="image.png"  />
+</li>
+<li>通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。</li>
+</ol>
+<hr>
+<p>🙏 希望能够顺利进入复试</p>
 
     </div>
 
