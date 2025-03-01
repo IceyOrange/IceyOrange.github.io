@@ -16,6 +16,13 @@
       <description>假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。 假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断</description>
     </item>
     <item>
+      <title>关于概率论中的独立</title>
+      <link>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</guid>
+      <description>随机事件层面的独立 两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。 多个随机事件间的独立性定义：设有 N 个事件 $A_1, A_2, &amp;hellip;, A_N$ 对任意的 $1 ≤ i ≤ j ≤ k ≤ N$ 如下式成立： $$ \begin{equation} \left{ \begin{aligned} P(A_i A_j) &amp;amp;= P(A_i) P(A_j) \quad 两两独立 \\ P(A_i A_j A_k) &amp;amp;= P(A_i) P(A_j) P(A_k) \quad 三三独立 \\ &amp;amp;\quad \vdots \\ P(A_i A_j \cdots A_N) &amp;amp;= P(A_i) P(A_j) \cdots P(A_N) \quad NN独立</description>
+    </item>
+    <item>
       <title>使用知识库提升考研复试准备效率</title>
       <link>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
