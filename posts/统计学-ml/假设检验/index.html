@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>使用知识库提升考研复试准备效率 | Lovegood&#39;s Blog</title>
-<meta name="keywords" content="AI, 知识库">
-<meta name="description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作">
+<title>假设检验 | Lovegood&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进">
 <meta name="author" content="Lovegood">
-<link rel="canonical" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
+<link rel="canonical" href="https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
 <meta name="google-site-verification" content="G-LZESR1K8WK">
 <link crossorigin="anonymous" href="../../../assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iceyorange.github.io/img/xx.gif">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://iceyorange.github.io/xx.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
+<link rel="alternate" hreflang="en" href="https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,16 +68,16 @@ if (!doNotTrack) {
 	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="使用知识库提升考研复试准备效率" />
-<meta property="og:description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作" />
+<meta property="og:title" content="假设检验" />
+<meta property="og:description" content="假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-28T00:00:00+00:00" />
+<meta property="og:url" content="https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-03-01T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="使用知识库提升考研复试准备效率"/>
-<meta name="twitter:description" content="本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作"/>
+<meta name="twitter:title" content="假设检验"/>
+<meta name="twitter:description" content="假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进"/>
 
 
 <script type="application/ld+json">
@@ -94,8 +94,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "使用知识库提升考研复试准备效率",
-      "item": "https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/"
+      "name": "假设检验",
+      "item": "https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/"
     }
   ]
 }
@@ -104,16 +104,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "使用知识库提升考研复试准备效率",
-  "name": "使用知识库提升考研复试准备效率",
-  "description": "本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作",
+  "headline": "假设检验",
+  "name": "假设检验",
+  "description": "假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进",
   "keywords": [
-    "AI", "知识库"
+    
   ],
-  "articleBody": "本文使用腾讯 ima.copilt 来搭建知识库\n背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。\n具体操作步骤 首先进入 https://ima.qq.com/ 下载并安装软件客户端； 登录，进入知识库界面； 上传文件，等待系统自动解析； 通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。 🙏 希望能够顺利进入复试\n",
-  "wordCount" : "232",
+  "articleBody": "假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进行假设检验，称其为参数假设检验；若对总体分布形式所知甚少，需要对未知分布函数的形式及其他特征进行假设检验，通常称之为非参数假设检验。此外，根据研究者感兴趣的备择假设的内容不同，假设检验还可分为单侧检验（单尾检验）和双侧检验（双尾检验），而单侧检验又分为左侧检验和右侧检验。 - 国家统计局\n假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。\n所谓假设检验，就是通过样本来推测总体是否具备某种性质。\n假设检验的原理 假设检验使用的是“证伪”的思想，是一种“反证法”。\n假设检验的基本思想是反证法思想和小概率事件原理。反证法的思想是首先提出假设（由于未经检验是否成立，所以称为零假设、原假设或无效假设），然后用适当的统计方法确定假设成立的可能性大小，如果可能性小，则认为假设不成立，拒绝它；如果可能性大，还不能认为它不成立。小概率事件原理，是指小概率事件在一次随机试验中几乎不可能发生，小概率事件发生的概率一般称之为“显著性水平”或“检验水平”，用 $\\alpha$ 表示，而概率小于多少算小概率是相对的，在进行统计分析时要事先规定，通常取 $\\alpha=0.01、0.05、0.10$ 等。 - 国家统计局\n假设检验具体是如何操作的？ 代入给定的 $H_0$ 的参数值建立分布 看看样本“像不像”是从这个分布里头出来的（是否落入拒绝域） 若“像”（落入接受域），这帮样本就是从 $H_0$ 那个分布来的，说明 $H_0$ 对应的参数有可能就是真实参数； 若“不像”（落入拒绝域），好家伙这帮样本不是从 $H_0$ 那个分布来的，说明 $H_0$ 对应的参数大概率不是真实参数（拒绝 $H_0$）。但是 $H_0$ 错误，不代表 $H_1$ 就正确，所以只能说“拒绝 $H_0$”，而不能说“接受 $H_1$”） Over 下结论。 知道了假设检验具体是如何操作的，也就知道了:\n为什么假设检验要将等号放在原假设? 因为检验统计量的计算需要给定一个（假想的）参数值，否则就无法建立相应的分布，不方便计算。比如说，简单的单总体均值检验中，假定 $H_0: \\mu = 20$ 这样才能简单地把确定在这个假想均值确定的抽样分布下，把检验统计量给算出来。不带等号的话，这个分布的确定就困难了。\n假如 $H_0: \\mu \u003c 20$ 我取 $\\mu$ 等于多少来建立分布呢？是 19？还是 15？亦或是 10？\n感受假设检验中的不平衡 假设检验中，原假设 $H_0$ 和备择假设 $H_1$ 的地位是不对等的：\n$H_0$ 通常是被默认为真的假设，需要足够的证据才能拒绝； 而 $H_1$ 则与 $H_0$ 相对立，通常是研究者试图去证明的假设。 打个比方：\n$H_0$ 像是“正统”，“权威”，“传统”，具有一定的“优先权”，默认情况下它都是正确的 而 $H_1$ 则像是“新教”，“创新”，甚至有些“备胎”的味道，需要在将 $H_0$ 拒绝后，才可能“喧宾夺主”，有“翻身”的机会。这里使用的“可能”、“机会”两词是严谨的，因为在实际的假设检验中： 哪怕拒绝了原假设，我们会说在 xx 的显著性水平下能够“拒绝 $H_0$”，而不是“接受 $H_1$”； 同样若没拒绝原假设，我们会说在 xx 的显著性水平下不能“拒绝 $H_0$”，而不是“接受 $H_0$”。 总结：判断一个假设是否『正确』是很难的，然而判断一个假设是否『错误』相对来说就容易多了：因为证伪只需要一个特例就足够了，==一个特例足以推翻一个论点，却远远不能支撑一个论点==。 之所以如此不平衡地设计“假设检验”这个东西，是为了给原假设一定“优先权”，这样有助于控制做出错误结论的风险（特别是第一类错误）。打个比方：“传统”的 $H_0$ 一般都是正确的，为防止左倾冒进分子冲动地推翻，于是在设计上给了它（即 $H_0$）一定的“优先权”。（备胎想要成为上位？很难的啦）\n矛盾无处不在，这种“不平衡”的设计，同样具有双面性：虽然确实有助于控制做出错误结论的风险，但如此不平衡的设计导致它并非使用于所有问题。如：\n现有一堆 0-2 之间的样本，判断是来自 $U(0, 1)$ 还是 $U(1, 2)$ 。这个问题就不适用于假设检验。因为在这个问题中 $U(0, 1)$ 和 $U(1, 2)$ 的“地位”是平等的。可通过极大似然估计 MLE 来解决这个问题。（分别计算样本在 $U(0, 1)$ 和 $U(1, 2)$ 的对数似然值即可，看哪个大）\n做出原假设的依据 根据现有理论或知识：原假设往往基于现有的理论或广泛接受的知识。例如，如果现有理论表明两种药物效果相同，那么原假设可能就是\"这两种药物的效果没有差异”。 简单性或保守性：在统计学中，原假设通常是一个简单假设，它提出了最简单、最保守的情况。例如，“新药与安慰剂效果无差别”是一个比“新药比安慰剂效果好”更简单、更保守的假设。 研究目的：研究者可能会根据研究目的来确定原假设。如果研究目的是证明一种新的干预措施有效，那么原假设可能就是“新干预措施与现有措施效果相同”。 来自北京师范大学-432统计学-2024年-解析\n",
+  "wordCount" : "2013",
   "inLanguage": "en",
-  "datePublished": "2025-02-28T00:00:00Z",
+  "datePublished": "2025-03-01T00:00:00Z",
   "dateModified": "2025-03-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -121,7 +121,7 @@ if (!doNotTrack) {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/"
+    "@id": "https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/"
   },
   "publisher": {
     "@type": "Organization",
@@ -224,7 +224,7 @@ if (!doNotTrack) {
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://iceyorange.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://iceyorange.github.io/posts/">Posts</a></div>
       <h1 class="post-title">
-        使用知识库提升考研复试准备效率
+        假设检验
       </h1>
       <div class="post-meta">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -245,20 +245,20 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2025-02-28
+        <span>2025-03-01
             &nbsp;&nbsp;
         </span>
     </span>
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>232 words
+        <span>2013 words
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>1 minutes
+        <span>5 minutes
             &nbsp;&nbsp;
         </span>
     </span>
@@ -271,10 +271,6 @@ if (!doNotTrack) {
     <span id="post_meta_style_6">
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
-            <span class="post-tags-meta">
-                <a href="https://iceyorange.github.io/tags/ai/" style="color: var(--secondary)!important;">AI</a>
-                &nbsp;<a href="https://iceyorange.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/" style="color: var(--secondary)!important;">知识库</a>
-            </span>
         </span>
     </span>
 </span><span style="opacity: 0.8;">
@@ -335,9 +331,19 @@ if (!doNotTrack) {
 
             <div class="inner"><ul>
                     <li>
-                        <a href="#%e8%83%8c%e6%99%af" aria-label="背景">背景</a></li>
+                        <a href="#%e5%81%87%e8%ae%be%e6%a3%80%e9%aa%8c%e7%9a%84%e5%ae%9a%e4%b9%89" aria-label="假设检验的定义">假设检验的定义</a></li>
                     <li>
-                        <a href="#%e5%85%b7%e4%bd%93%e6%93%8d%e4%bd%9c%e6%ad%a5%e9%aa%a4" aria-label="具体操作步骤">具体操作步骤</a>
+                        <a href="#%e5%81%87%e8%ae%be%e6%a3%80%e9%aa%8c%e7%9a%84%e5%8e%9f%e7%90%86" aria-label="假设检验的原理">假设检验的原理</a></li>
+                    <li>
+                        <a href="#%e5%81%87%e8%ae%be%e6%a3%80%e9%aa%8c%e5%85%b7%e4%bd%93%e6%98%af%e5%a6%82%e4%bd%95%e6%93%8d%e4%bd%9c%e7%9a%84" aria-label="假设检验具体是如何操作的？">假设检验具体是如何操作的？</a><ul>
+                            
+                    <li>
+                        <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e5%81%87%e8%ae%be%e6%a3%80%e9%aa%8c%e8%a6%81%e5%b0%86%e7%ad%89%e5%8f%b7%e6%94%be%e5%9c%a8%e5%8e%9f%e5%81%87%e8%ae%be" aria-label="为什么假设检验要将等号放在原假设?">为什么假设检验要将等号放在原假设?</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e6%84%9f%e5%8f%97%e5%81%87%e8%ae%be%e6%a3%80%e9%aa%8c%e4%b8%ad%e7%9a%84%e4%b8%8d%e5%b9%b3%e8%a1%a1" aria-label="感受假设检验中的不平衡">感受假设检验中的不平衡</a></li>
+                    <li>
+                        <a href="#%e5%81%9a%e5%87%ba%e5%8e%9f%e5%81%87%e8%ae%be%e7%9a%84%e4%be%9d%e6%8d%ae" aria-label="做出原假设的依据">做出原假设的依据</a>
                     </li>
                 </ul>
             </div>
@@ -403,22 +409,61 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;   
     }
 </script>
-    <div class="post-content"><p>本文使用腾讯 <a href="https://ima.qq.com/">ima.copilt</a> 来搭建知识库</p>
-<h2 id="背景">背景<a hidden class="anchor" aria-hidden="true" href="#背景">#</a></h2>
-<p>在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。</p>
-<h2 id="具体操作步骤">具体操作步骤<a hidden class="anchor" aria-hidden="true" href="#具体操作步骤">#</a></h2>
+    <div class="post-content"><h2 id="假设检验的定义">假设检验的定义<a hidden class="anchor" aria-hidden="true" href="#假设检验的定义">#</a></h2>
+<blockquote>
+<p>假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断。如果进行假设检验时总体的分布形式已知，需要对总体的未知参数进行假设检验，称其为参数假设检验；若对总体分布形式所知甚少，需要对未知分布函数的形式及其他特征进行假设检验，通常称之为非参数假设检验。此外，根据研究者感兴趣的备择假设的内容不同，假设检验还可分为单侧检验（单尾检验）和双侧检验（双尾检验），而单侧检验又分为左侧检验和右侧检验。 - <a href="https://www.stats.gov.cn/zs/tjll/csgj/202302/t20230215_1905713.html">国家统计局</a></p>
+</blockquote>
+<p>假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。</p>
+<blockquote>
+<p>所谓假设检验，就是通过<strong>样本</strong>来推测<strong>总体</strong>是否具备某种性质。</p>
+</blockquote>
+<h2 id="假设检验的原理">假设检验的原理<a hidden class="anchor" aria-hidden="true" href="#假设检验的原理">#</a></h2>
+<p>假设检验使用的是“证伪”的思想，是一种“反证法”。</p>
+<blockquote>
+<p>假设检验的基本思想是反证法思想和小概率事件原理。反证法的思想是首先提出假设（由于未经检验是否成立，所以称为零假设、原假设或无效假设），然后用适当的统计方法确定假设成立的可能性大小，如果可能性小，则认为假设不成立，拒绝它；如果可能性大，还不能认为它不成立。小概率事件原理，是指小概率事件在一次随机试验中几乎不可能发生，小概率事件发生的概率一般称之为“显著性水平”或“检验水平”，用 $\alpha$ 表示，而概率小于多少算小概率是相对的，在进行统计分析时要事先规定，通常取 $\alpha=0.01、0.05、0.10$ 等。 - <a href="https://www.stats.gov.cn/zs/tjll/csgj/202302/t20230215_1905713.html">国家统计局</a></p>
+</blockquote>
+<h2 id="假设检验具体是如何操作的">假设检验具体是如何操作的？<a hidden class="anchor" aria-hidden="true" href="#假设检验具体是如何操作的">#</a></h2>
 <ol>
-<li>首先进入 <a href="https://ima.qq.com/">https://ima.qq.com/</a> 下载并安装软件客户端；</li>
-<li>登录，进入知识库界面；
-<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202502282207212.png" alt="image.png"  />
+<li>代入给定的 $H_0$ 的参数值建立分布</li>
+<li>看看样本“像不像”是从这个分布里头出来的（是否落入拒绝域）
+<ul>
+<li>若“像”（落入接受域），这帮样本就是从 $H_0$ 那个分布来的，说明 $H_0$ 对应的参数有可能就是真实参数；</li>
+<li>若“不像”（落入拒绝域），好家伙这帮样本不是从 $H_0$ 那个分布来的，说明 $H_0$ 对应的参数大概率不是真实参数（拒绝 $H_0$）。但是 $H_0$ 错误，不代表 $H_1$ 就正确，所以只能说“拒绝 $H_0$”，而不能说“接受 $H_1$”）</li>
+</ul>
 </li>
-<li>上传文件，等待系统自动解析；
-<img loading="lazy" src="https://raw.githubusercontent.com/IceyOrange/PicHost/main/img/202503010018939.png" alt="image.png"  />
-</li>
-<li>通过 RAG 技术，ima 会根据你所上传的文件（即你搭建的知识库）来回答你问的问题。</li>
+<li>Over 下结论。</li>
 </ol>
-<hr>
-<p>🙏 希望能够顺利进入复试</p>
+<p>知道了假设检验具体是如何操作的，也就知道了:</p>
+<h3 id="为什么假设检验要将等号放在原假设">为什么假设检验要将等号放在原假设?<a hidden class="anchor" aria-hidden="true" href="#为什么假设检验要将等号放在原假设">#</a></h3>
+<p>因为检验统计量的计算需要给定一个（假想的）参数值，否则就无法建立相应的分布，不方便计算。比如说，简单的单总体均值检验中，假定 $H_0: \mu = 20$ 这样才能简单地把确定在这个假想均值确定的抽样分布下，把检验统计量给算出来。不带等号的话，这个分布的确定就困难了。</p>
+<p>假如 $H_0: \mu &lt; 20$ 我取 $\mu$ 等于多少来建立分布呢？是 19？还是 15？亦或是 10？</p>
+<h2 id="感受假设检验中的不平衡">感受假设检验中的不平衡<a hidden class="anchor" aria-hidden="true" href="#感受假设检验中的不平衡">#</a></h2>
+<p>假设检验中，原假设 $H_0$ 和备择假设 $H_1$ 的地位是不对等的：</p>
+<ul>
+<li>$H_0$ 通常是被默认为真的假设，需要足够的证据才能拒绝；</li>
+<li>而 $H_1$ 则与 $H_0$ 相对立，通常是研究者试图去证明的假设。</li>
+</ul>
+<p>打个比方：</p>
+<ul>
+<li>$H_0$ 像是“正统”，“权威”，“传统”，具有一定的“优先权”，默认情况下它都是正确的</li>
+<li>而 $H_1$ 则像是“新教”，“创新”，甚至有些“备胎”的味道，需要在将 $H_0$ 拒绝后，才<strong>可能</strong>“喧宾夺主”，有“翻身”的<strong>机会</strong>。这里使用的“可能”、“机会”两词是严谨的，因为在实际的假设检验中：
+<ul>
+<li>哪怕拒绝了原假设，我们会说在 xx 的显著性水平下能够“拒绝 $H_0$”，而不是“接受 $H_1$”；</li>
+<li>同样若没拒绝原假设，我们会说在 xx 的显著性水平下不能“拒绝 $H_0$”，而不是“接受 $H_0$”。</li>
+<li>总结：判断一个假设是否『正确』是很难的，然而判断一个假设是否『错误』相对来说就容易多了：因为证伪只需要一个特例就足够了，==一个特例足以推翻一个论点，却远远不能支撑一个论点==。</li>
+</ul>
+</li>
+</ul>
+<p>之所以如此不平衡地设计“假设检验”这个东西，是为了给原假设一定“优先权”，这样有助于控制做出错误结论的风险（特别是第一类错误）。打个比方：“传统”的 $H_0$ 一般都是正确的，为防止左倾冒进分子冲动地推翻，于是在设计上给了它（即 $H_0$）一定的“优先权”。（备胎想要成为上位？很难的啦）</p>
+<p>矛盾无处不在，这种“不平衡”的设计，同样具有双面性：虽然确实有助于控制做出错误结论的风险，但如此不平衡的设计导致它并非使用于所有问题。如：</p>
+<p>现有一堆 0-2 之间的样本，判断是来自 $U(0, 1)$ 还是 $U(1, 2)$ 。这个问题就不适用于假设检验。因为在这个问题中 $U(0, 1)$ 和 $U(1, 2)$ 的“地位”是平等的。可通过极大似然估计 MLE 来解决这个问题。（分别计算样本在 $U(0, 1)$ 和 $U(1, 2)$ 的对数似然值即可，看哪个大）</p>
+<h2 id="做出原假设的依据">做出原假设的依据<a hidden class="anchor" aria-hidden="true" href="#做出原假设的依据">#</a></h2>
+<ul>
+<li>根据现有理论或知识：原假设往往基于现有的理论或广泛接受的知识。例如，如果现有理论表明两种药物效果相同，那么原假设可能就是&quot;这两种药物的效果没有差异”。</li>
+<li>简单性或保守性：在统计学中，原假设通常是一个简单假设，它提出了最简单、最保守的情况。例如，“新药与安慰剂效果无差别”是一个比“新药比安慰剂效果好”更简单、更保守的假设。</li>
+<li>研究目的：研究者可能会根据研究目的来确定原假设。如果研究目的是证明一种新的干预措施有效，那么原假设可能就是“新干预措施与现有措施效果相同”。</li>
+</ul>
+<p>来自<a href="https://www.dsxtj9y.com/2024/04/02/bnu432/key/bnu432_2024_key/">北京师范大学-432统计学-2024年-解析</a></p>
 
 
     </div>
@@ -453,15 +498,10 @@ if (!doNotTrack) {
     <footer class="post-footer">
       
 <nav class="paginav">
-  <a class="prev" href="https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
-    <span class="title">« </span>
-    <br>
-    <span>假设检验</span>
-  </a>
-  <a class="next" href="https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/">
+  <a class="next" href="https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/">
     <span class="title"> »</span>
     <br>
-    <span>Hugo 渲染及主页展示白名单</span>
+    <span>使用知识库提升考研复试准备效率</span>
   </a>
 </nav>
 
