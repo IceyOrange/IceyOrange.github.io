@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Lovegood&#39;s Blog</title>
-    <link>https://iceyorange.github.io/posts/</link>
+    <link>https://20250303.xyz/posts/</link>
     <description>Recent content in Posts on Lovegood&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 02 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iceyorange.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://20250303.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>九阳真经 - 假设检验篇</title>
-      <link>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</link>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</guid>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</guid>
       <description>假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。 假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断</description>
     </item>
     <item>
       <title>关于概率论中的独立</title>
-      <link>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</link>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</guid>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</guid>
       <description>随机事件层面的独立 两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。 多个随机事件间的独立性定义：设有 N 个事件 $A_1, A_2, &amp;hellip;, A_N$ 对任意的 $1 ≤ i ≤ j ≤ k ≤ N$ 如下式成立： $$ \begin{equation} \left{ \begin{aligned} P(A_i A_j) &amp;amp;= P(A_i) P(A_j) \quad 两两独立 \\ P(A_i A_j A_k) &amp;amp;= P(A_i) P(A_j) P(A_k) \quad 三三独立 \\ &amp;amp;\quad \vdots \\ P(A_i A_j \cdots A_N) &amp;amp;= P(A_i) P(A_j) \cdots P(A_N) \quad NN独立</description>
     </item>
     <item>
       <title>使用知识库提升考研复试准备效率</title>
-      <link>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</link>
+      <link>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</guid>
+      <guid>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</guid>
       <description>本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作</description>
     </item>
     <item>
       <title>Hugo 渲染及主页展示白名单</title>
-      <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>
+      <link>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
+      <guid>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
       <description>本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许 Hugo 渲染的文件夹. 1module: 2 mounts: 3 - source: &amp;#34;content/posts/3. Resources-资源 未来/AI人工智能&amp;#34; 4 target: &amp;#34;content/posts/AI人工智能&amp;#</description>
     </item>
     <item>
       <title>忘记 Twikoo 管理面板的密码怎么办</title>
-      <link>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
+      <link>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
+      <guid>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
       <description>参考: # hexo之mongodb修改twikoo评论的管理密码 以及 # Twikoo 找回暗号及密码 核心目标: 把 MongoDB 中的&amp;quot;ADMIN_PASS&amp;quot;值删除.</description>
     </item>
     <item>
       <title>关于主观能动性</title>
-      <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</link>
+      <link>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</guid>
+      <guid>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7/</guid>
       <description>记得在看《被讨厌的勇气》后，里面有一句话让我印象特别深刻：“影响你的不是事件本身，而是你==看待事件的方式==。”比如精神内耗与否，就与==如何看待事情==息息相关[[关于精神内耗#内耗和复盘]]。再比如经验不是事情本身, 是我们理解事情的方式, 构成了经验。但是需要注意的是，==不</description>
     </item>
     <item>
       <title>关于精神内耗</title>
-      <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E7%B2%BE%E7%A5%9E%E5%86%85%E8%80%97/</link>
+      <link>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E7%B2%BE%E7%A5%9E%E5%86%85%E8%80%97/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E7%B2%BE%E7%A5%9E%E5%86%85%E8%80%97/</guid>
+      <guid>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E7%B2%BE%E7%A5%9E%E5%86%85%E8%80%97/</guid>
       <description>如果你因为失去了太阳而流泪，那么你也将失去群星。 - 泰戈尔 什么是精神内耗 精神内耗表现为个体对未知不确定事件可能的消极原因或后果进行反复的揣摩、思考与分析。 - 百度百科 心理内耗是指人的自我控制需要消耗心理资源，当资源不足时，个体即处于一种所谓内耗的状态，长期的内耗会让人感到疲惫。 - MB</description>
     </item>
     <item>
       <title>关于马哲中矛盾与阴阳</title>
-      <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E9%A9%AC%E5%93%B2%E4%B8%AD%E7%9F%9B%E7%9B%BE%E4%B8%8E%E9%98%B4%E9%98%B3/</link>
+      <link>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E9%A9%AC%E5%93%B2%E4%B8%AD%E7%9F%9B%E7%9B%BE%E4%B8%8E%E9%98%B4%E9%98%B3/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E9%A9%AC%E5%93%B2%E4%B8%AD%E7%9F%9B%E7%9B%BE%E4%B8%8E%E9%98%B4%E9%98%B3/</guid>
+      <guid>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E9%A9%AC%E5%93%B2%E4%B8%AD%E7%9F%9B%E7%9B%BE%E4%B8%8E%E9%98%B4%E9%98%B3/</guid>
       <description>&amp;ldquo;矛盾&amp;quot;的意思即&amp;quot;两面性&amp;rdquo;(道家的&amp;quot;阴阳&amp;quot;)? 思考的两面性 - 人类认知边界 × 语言符号系统 思考的正面性，或者通俗来说，思考的优点，是显而易见的。 下面主要来说说==思考的反面性==： 语言的界限就是世界的界限。 - 《维特根斯坦</description>
     </item>
     <item>
       <title>其它</title>
-      <link>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B6%E5%AE%83/</link>
+      <link>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B6%E5%AE%83/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E9%9A%8F%E7%AC%94/%E5%85%B6%E5%AE%83/</guid>
+      <guid>https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B6%E5%AE%83/</guid>
       <description>人会借势是强者的表现 思虑过多的人, 应该去多感受大千世界. 一件事情, 明知道没有希望, 却在尘埃落定之前, 一直抱有希望. 就像宣判死刑前心怀侥幸的十恶不赦的罪犯.</description>
     </item>
     <item>
       <title>毛选读书笔记</title>
-      <link>https://iceyorange.github.io/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <link>https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       <description>《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉. 政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度. 引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的 《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开.</description>
     </item>
     <item>
       <title>知识库、智能体、RAG、微调</title>
-      <link>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</link>
+      <link>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://iceyorange.github.io/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</guid>
+      <guid>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</guid>
       <description>本地部署都很吃配置 知识库 KB 知识库（Knowledge base）是用于知识管理的一种==特殊的数据库==，以便于有关领域知识的采集、整理以及提取。知识库中的知识源于领域专家，它是求解问题所需领域知识的集合，包括基本事实、规则和其它有关信息。 - Wikipedia 例如：法院判例库、医院病例库、产品数据</description>
     </item>
   </channel>
