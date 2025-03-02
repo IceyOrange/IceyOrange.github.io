@@ -295,8 +295,8 @@ if (!doNotTrack) {
                   finalUrl = '/' + finalUrl
                 }
                 twikoo.getCommentsCount({
-                  envId: "https://twikoo.20250303.xyz/", 
-                  region: "ap-guangzhou", 
+                  envId: "https://twikoo.20250303.xyz", 
+                  region:  null , 
                   urls: [ 
                   
                   finalUrl,
@@ -474,10 +474,10 @@ if (!doNotTrack) {
     </script>
     <script>
         twikoo.init({
-            envId: "https://twikoo.20250303.xyz/",
+            envId: "https://twikoo.20250303.xyz",
             el: "#tcomment",
             lang: 'zh-CN',
-            region: "ap-guangzhou",
+            region:  null ,
             path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
         })
     </script>
