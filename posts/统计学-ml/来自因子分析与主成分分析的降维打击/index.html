@@ -498,6 +498,7 @@ if (!doNotTrack) {
 <p>个人感觉无脑使用相关系数矩阵即可，不知道协方差矩阵在相关系数矩阵面前有什么优势？如有知道的朋友，还请指教。</p>
 <h3 id="主成分分析与聚类分析">主成分分析与聚类分析<a hidden class="anchor" aria-hidden="true" href="#主成分分析与聚类分析">#</a></h3>
 <p>挖个坑先。</p>
+<hr>
 <h2 id="因子分析">因子分析<a hidden class="anchor" aria-hidden="true" href="#因子分析">#</a></h2>
 <p>面对主成分分析中主成分难以解释的问题，因子分析，被当做主成分分析的推广和发展，得到广泛应用。</p>
 <h3 id="因子模型">因子模型<a hidden class="anchor" aria-hidden="true" href="#因子模型">#</a></h3>
@@ -514,6 +515,7 @@ if (!doNotTrack) {
 <h3 id="因子载荷矩阵常用的估计方法">因子载荷矩阵常用的估计方法<a hidden class="anchor" aria-hidden="true" href="#因子载荷矩阵常用的估计方法">#</a></h3>
 <p>主成分法、主因子法、极大似然法</p>
 <p>未完待续</p>
+<hr>
 <h2 id="原始变量与主成分因子间的关系">原始变量与主成分/因子间的关系<a hidden class="anchor" aria-hidden="true" href="#原始变量与主成分因子间的关系">#</a></h2>
 <h3 id="主成分分析相关系数和载荷">主成分分析：相关系数和载荷<a hidden class="anchor" aria-hidden="true" href="#主成分分析相关系数和载荷">#</a></h3>
 <p>$x_i = t_{i1}y_1 + t_{i2}y_2 + \cdots + t_{ip}y_p, \quad i = 1, 2, \ldots, p$</p>
@@ -526,6 +528,7 @@ if (!doNotTrack) {
 <p>在解释主成分时，看哪个呢？马哲告诉我们：<strong>既需要</strong>考察相关系数，<strong>又需要</strong>考察载荷。</p>
 <h3 id="因子分析因子载荷矩阵">因子分析：因子载荷矩阵<a hidden class="anchor" aria-hidden="true" href="#因子分析因子载荷矩阵">#</a></h3>
 <p>未完待续</p>
+<hr>
 <h2 id="旋转">旋转<a hidden class="anchor" aria-hidden="true" href="#旋转">#</a></h2>
 <p>主成分分析和因子分析中的旋转，目的是为了提高可解释性。</p>
 <ul>
@@ -538,6 +541,7 @@ if (!doNotTrack) {
 <li><strong>让主成分/因子更加符合实际意义</strong>（即调整主成分/因子，使其更接近数据中方差较大的方向，同时减少信息混杂）。</li>
 </ul>
 <p>可以看作一种对“主成分”或“因子”的优化。</p>
+<hr>
 <h2 id="时序数据能进行-pca-和因子分析吗">时序数据能进行 PCA 和因子分析吗？<a hidden class="anchor" aria-hidden="true" href="#时序数据能进行-pca-和因子分析吗">#</a></h2>
 <p>绝大多数情况都不能，因为时间序列数据在绝大多数情况下都存在自相关性，不是简单随机样本 (要求 iid)，样本协方差矩阵 (相关系数矩阵) 不是总体协方差矩阵 (相关系数矩阵) 的无偏估计，贸然应用样本协方差矩阵 (相关系数矩阵) 会产生较大偏差。</p>
 <p>如处理后的数据消除了自相关性，则可考虑进行 PCA 和因子分析。</p>
