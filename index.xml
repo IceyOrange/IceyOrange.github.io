@@ -27,7 +27,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</guid>
-      <description>随机事件层面的独立 两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。 多个随机事件间的独立性定义：设有 N 个事件 $A_1, A_2, &amp;hellip;, A_N$ 对任意的 $1 ≤ i ≤ j ≤ k ≤ N$ 如下式成立： $$ \begin{aligned} P(A_i A_j) &amp;amp;= P(A_i) P(A_j) \quad \text{两两独立} \\ P(A_i A_j A_k) &amp;amp;= P(A_i) P(A_j) P(A_k) \quad \text{三三独立} \\ &amp;amp;\quad \vdots \\ P(A_i A_j</description>
+      <description>随机事件层面的独立 在概率论里，&amp;ldquo;独立&amp;quot;并不意味着两个事件没有任何关系。 独立意味着一个事件的发生与否都不改变另一个事件发生的概率。 - 知乎文章 数学定义见下： 两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。 多个随机事件间的独立</description>
     </item>
     <item>
       <title>使用知识库提升考研复试准备效率</title>
