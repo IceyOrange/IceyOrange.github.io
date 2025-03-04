@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>毛选读书笔记 | Lovegood&#39;s Blog</title>
-<meta name="keywords" content="哲学">
-<meta name="description" content="《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉. 政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度. 引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的 《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开.">
+<title>点估计相关归纳 | Lovegood&#39;s Blog</title>
+<meta name="keywords" content="统计学">
+<meta name="description" content="定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！ 补充统计量定义：设 $x_1​, x_2​, &hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &hellip;, x_n​)$ 中不含有任何未知参数，则称">
 <meta name="author" content="Lovegood">
-<link rel="canonical" href="https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/">
 <meta name="google-site-verification" content="G-LZESR1K8WK">
 <link crossorigin="anonymous" href="../../../assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://20250303.xyz/img/xx.gif">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://20250303.xyz/xx.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,16 +69,16 @@ if (!doNotTrack) {
 	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="毛选读书笔记" />
-<meta property="og:description" content="《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉. 政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度. 引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的 《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开." />
+<meta property="og:title" content="点估计相关归纳" />
+<meta property="og:description" content="定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！ 补充统计量定义：设 $x_1​, x_2​, &hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &hellip;, x_n​)$ 中不含有任何未知参数，则称" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-02-26T00:00:00+00:00" />
+<meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-04T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="毛选读书笔记"/>
-<meta name="twitter:description" content="《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉. 政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度. 引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的 《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开."/>
+<meta name="twitter:title" content="点估计相关归纳"/>
+<meta name="twitter:description" content="定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！ 补充统计量定义：设 $x_1​, x_2​, &hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &hellip;, x_n​)$ 中不含有任何未知参数，则称"/>
 
 
 <script type="application/ld+json">
@@ -95,8 +95,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "毛选读书笔记",
-      "item": "https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+      "name": "点估计相关归纳",
+      "item": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/"
     }
   ]
 }
@@ -105,24 +105,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "毛选读书笔记",
-  "name": "毛选读书笔记",
-  "description": "《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉. 政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度. 引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的 《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开.",
+  "headline": "点估计相关归纳",
+  "name": "点估计相关归纳",
+  "description": "定义：用于估计未知参数 $\\theta$ 的统计量 $\\hat{\\theta}=\\theta(x_1, x_2, \u0026hellip;, x_n)$ 称为 $\\theta$ 的估计量，或称为 $\\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！ 补充统计量定义：设 $x_1​, x_2​, \u0026hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, \u0026hellip;, x_n​)$ 中不含有任何未知参数，则称",
   "keywords": [
-    "哲学"
+    "统计学"
   ],
-  "articleBody": "《湖南农民运动考察报告》 矫枉必须过正, 不过正不能矫枉.\n政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度.\n引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的\n《井冈山的斗争》 民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开.\n家族主义: 一个村子一个姓, 支部会议简直同时就是家族会议.\n群众的政治训练 - 群众需要有政治素养\n党与政府的关系\n民权主义革命 - 民权主义是三民主义之一.\n《关于纠正党内的错误思想》 ==本位主义==, 一切只知道为四军打仗, 不知道武装地方群众是红军的重要任务之一. 这是一种放大了的小团体主义.\n俘虏兵的加入, 带来了浓厚的雇佣军队的思想, 使单纯军事观点有了==下层基础==.\n过分相信军事力量, 而不相信人民群众的力量.\n党对军事工作没有积极的注意和讨论, 也是形成一部分同志的单纯军事观点的原因.\n==关于极端民主化==, 『由下而上的民主集权制』, 『先交下级讨论, 再交上级决议』?\n有争论的问题, 要把是非弄明白, 不要调和敷衍.\n党内批评, 不要成了攻击个人.\n绝对平均主义的来源, 和政治上的极端民主化一样, 是手工业者和小农经济的产物, 不过一则见之于政治方面, 一则见之于物质生活方面罢了.\n看这篇文章有看加缪的《堕落》的感觉，被作者当面揭露出劣根性的感觉。原来自己曾经有过的许多想法，其实都有一个专有名词（如 xx 主义），一下抓住事情的本质并提炼成文字，伟人果然是伟人。\n",
-  "wordCount" : "603",
+  "articleBody": "定义：用于估计未知参数 $\\theta$ 的统计量 $\\hat{\\theta}=\\theta(x_1, x_2, …, x_n)$ 称为 $\\theta$ 的估计量，或称为 $\\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！\n补充统计量定义：设 $x_1​, x_2​, …, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, …, x_n​)$ 中不含有任何未知参数，则称 $T$ 为统计量。统计量的分布称为抽样分布。\n常用的点估计方法包括矩估计、极大似然估计、MUVE、BLUE、最大后验估计等\n点估计是指使用样本数据构造样本统计量来估计总体参数时，使用一个点的数值表示“最佳估计值”。\n与区间估计形成对比：区间估计通常是一个置信区间。\n矩估计 用样本矩替换总体矩，用经验分布替换总体函数。\n理论基础：\n格列文科定理（茆定理 5.2.1：当样本量相当大时，经验分布函数 $F_n(x) = \\frac{1}{n} \\sum_{i=1}^{n} I(X_i \\leq x)$ 是总体分布函数 $F(x)$ 的一个良好的近似，这也正是经典统计学中一切统计推断都以样本为依据的原因） 一阶矩的收敛：若一阶矩存在（如 $E(X)\u003c∞$），辛钦大数定律，或切比雪夫大数定律。 高阶矩的收敛：若高阶矩存在（如 $E(X^k)\u003c∞$），强大数定律。 ⚠️注意！\n分母为$N-1$的方差的无偏估计 $\\hat{\\sigma}^2 = \\frac{1}{N-1} \\sum_{i=1}^{N} (x_i - \\hat{\\mu})^2$ 不是矩估计！有偏估计 $\\hat{\\sigma}^2 = \\frac{1}{N} \\sum_{i=1}^{N} (x_i - \\hat{\\mu})^2$ 才是。\n极大似然估计 又名“事后诸葛亮估计” 极大似然估计（Maximum Likelihood Estimation, MLE）是一种基于样本数据估计概率模型参数的经典方法。其核心思想是：在给定观测数据的情况下，选择使得这些数据出现概率最大的参数值作为点估计值。\nMLE完全依赖已观测数据，通过调整参数使模型“完美”拟合现有数据。 —— 类似“事后”根据结果反推原因。\n矩估计 VS 极大似然估计 常考！ 矩估计 极大似然估计 原理简单、使用方便、计算便捷 计算复杂 可以在不知道总体分布但知道样本矩的情况下对总体进行推断 需在总体分布已知的情况下才能使用（需对总体分布做假设） 未充分利用样本信息，即不一定是充分统计量的函数,估计精度不高，只有当样本量较大时才能保证其优良性 充分利用样本信息，一般都与充分统计量有关，估计精度高 一般情况下具有相合性 具有不变性和渐进正态性，大样本下也具有相合性 不适用于总体矩不存在的分布，如柯西分布 评估点估计的标准 很多概念，需要多过几遍，晕🥴\n无偏性 定义：若对 $\\forall \\theta \\in \\Theta,$ 有 $E_\\theta(\\hat{\\theta}) = \\theta$ 则称 $\\hat{\\theta}$ 为 $\\theta$ 的无偏估计。\n并非所有参数都存在无偏估计。\n参数是否可估：取决于是否有无偏估计。\n有效性 无偏估计比较方差，有偏估计比较均方误差。\n方差一般用来计算样本的离散程度，而均方误差则可以用做衡量模型拟合的一个度量\n无偏估计量不一定是最有效的！\n附：MSE 分解公式推导： 大样本情形 - 相合性，又称一致性 Consistency ==弱相合性==，当样本量 $n \\to \\infty$ 时，估计量 $\\hat{\\theta}_n$ 依概率收敛于真实参数 $\\theta$. 记为 $\\hat{\\theta}n \\xrightarrow{P} \\theta.$ 即 $\\forall \\epsilon \u003e 0, \\quad \\lim{n \\to \\infty} P\\left (|\\hat{\\theta}_n - \\theta| \\geq \\epsilon\\right) = 0.$\n弱相合性被认为是对估计的一个最基本的要求，如果一个估计量，在样本量不断增大的时，他都不能把被估参数估计到任意的指定的精度 $\\varepsilon$，那么这个估计是很值得怀疑的。通常，不满足弱相合性要求的估计不予考虑。\n弱相合估计不止一个：样本有偏方差和样本无偏方差都是 $\\sigma^2$ 的相合估计。\n弱相合性判定：$lim_{n \\to \\infty}E(\\hat{\\theta}n)=\\theta, \\quad lim{n \\to \\infty}Var(\\hat{\\theta}_n)=0$\n==强相合性==，当样本量 $n \\to \\infty$ 时，估计量 $\\hat{\\theta}n$ 几乎必然收敛于真实参数 $\\theta$ ，即 $P\\left (\\lim{n \\to \\infty} \\hat{\\theta}_n = \\theta\\right) = 1$. 也称 $\\hat{\\theta}_n$ 几乎必然(Alomst Sure)收敛到 $\\theta$，记为 $\\hat{\\theta}_n \\xrightarrow{a.s.} \\theta.$\n强弱相合性之间的差异类似强弱大数定律之间的差异：\n弱大数定律 强大数定律 依概率收敛 几乎必然收敛 $\\bar{X}_n \\xrightarrow{P} \\mu$ $\\bar{X}_n \\xrightarrow{a.s.} \\mu$ 允许样本均值无限次偏离 $\\mu$（但概率趋近于零）例如抛硬币实验中偶尔出现连续多次正面 彻底排除了无限次偏离的可能，确保样本均值最终“锁定”在 $\\mu$ 附近 由强大数定律可知，矩估计总是相合的。 大样本情形 - 渐进正态性 当样本容量趋向无穷大时，某些估计量（如最大似然估计）会收敛到一个正态分布。\n在相合性的基础上进一步关注收敛速度和分布特性。\n极大似然估计具有渐进正态性。\n衡量点估计的标准的不变性 定义：如果某一个统计量 $T(x)$ 是某个参数 $\\theta$ 的无偏估计，将统计量经过 $g$ 变换之后为 $g(T(x))$，它也是变换后的参数 $g(\\theta)$ 的无偏估计。\n极大似然估计具有不变性，完备性具有不变性，矩估计也具有不变性\n无偏估计不具有不变性，若 $\\hat{\\theta}$ 是 $\\theta$ 的无偏估计， $g(\\hat{\\theta})$ 则不一定是 $\\theta$ 的无偏估计，除非 $g(\\theta)$ 是线性函数；\n充分性不具有不变性，除非 $g(\\theta)$ 是严格单调函数\n相合性不具有不变性，除非 $g(\\theta)$ 是连续函数\n",
+  "wordCount" : "1771",
   "inLanguage": "en",
-  "datePublished": "2025-02-26T00:00:00Z",
-  "dateModified": "2025-02-26T00:00:00Z",
+  "datePublished": "2025-03-04T00:00:00Z",
+  "dateModified": "2025-03-04T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Lovegood"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://20250303.xyz/posts/%E9%98%85%E8%AF%BB/%E6%AF%9B%E9%80%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+    "@id": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/"
   },
   "publisher": {
     "@type": "Organization",
@@ -222,7 +222,7 @@ if (!doNotTrack) {
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://20250303.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://20250303.xyz/posts/">Posts</a></div>
       <h1 class="post-title">
-        毛选读书笔记
+        点估计相关归纳
       </h1>
       <div class="post-meta">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -243,20 +243,20 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2025-02-26
+        <span>2025-03-04
             &nbsp;&nbsp;
         </span>
     </span>
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>603 words
+        <span>1771 words
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>2 minutes
+        <span>4 minutes
             &nbsp;&nbsp;
         </span>
     </span>
@@ -270,7 +270,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://20250303.xyz/tags/%E5%93%B2%E5%AD%A6/" style="color: var(--secondary)!important;">哲学</a>
+                <a href="https://20250303.xyz/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" style="color: var(--secondary)!important;">统计学</a>
             </span>
         </span>
     </span>
@@ -332,11 +332,25 @@ if (!doNotTrack) {
 
             <div class="inner"><ul>
                     <li>
-                        <a href="#%e6%b9%96%e5%8d%97%e5%86%9c%e6%b0%91%e8%bf%90%e5%8a%a8%e8%80%83%e5%af%9f%e6%8a%a5%e5%91%8a" aria-label="《湖南农民运动考察报告》">《湖南农民运动考察报告》</a></li>
+                        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1" aria-label="矩估计">矩估计</a></li>
                     <li>
-                        <a href="#%e4%ba%95%e5%86%88%e5%b1%b1%e7%9a%84%e6%96%97%e4%ba%89" aria-label="《井冈山的斗争》">《井冈山的斗争》</a></li>
+                        <a href="#%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%8f%88%e5%90%8d%e4%ba%8b%e5%90%8e%e8%af%b8%e8%91%9b%e4%ba%ae%e4%bc%b0%e8%ae%a1" aria-label="极大似然估计 又名“事后诸葛亮估计”">极大似然估计 又名“事后诸葛亮估计”</a></li>
                     <li>
-                        <a href="#%e5%85%b3%e4%ba%8e%e7%ba%a0%e6%ad%a3%e5%85%9a%e5%86%85%e7%9a%84%e9%94%99%e8%af%af%e6%80%9d%e6%83%b3" aria-label="《关于纠正党内的错误思想》">《关于纠正党内的错误思想》</a>
+                        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1-vs-%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%b8%b8%e8%80%83" aria-label="矩估计 VS 极大似然估计 常考！">矩估计 VS 极大似然估计 常考！</a></li>
+                    <li>
+                        <a href="#%e8%af%84%e4%bc%b0%e7%82%b9%e4%bc%b0%e8%ae%a1%e7%9a%84%e6%a0%87%e5%87%86" aria-label="评估点估计的标准">评估点估计的标准</a><ul>
+                            
+                    <li>
+                        <a href="#%e6%97%a0%e5%81%8f%e6%80%a7" aria-label="无偏性">无偏性</a></li>
+                    <li>
+                        <a href="#%e6%9c%89%e6%95%88%e6%80%a7" aria-label="有效性">有效性</a></li>
+                    <li>
+                        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e7%9b%b8%e5%90%88%e6%80%a7%e5%8f%88%e7%a7%b0%e4%b8%80%e8%87%b4%e6%80%a7-consistency" aria-label="大样本情形 - 相合性，又称一致性 Consistency">大样本情形 - 相合性，又称一致性 Consistency</a></li>
+                    <li>
+                        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e6%b8%90%e8%bf%9b%e6%ad%a3%e6%80%81%e6%80%a7" aria-label="大样本情形 - 渐进正态性">大样本情形 - 渐进正态性</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e8%a1%a1%e9%87%8f%e7%82%b9%e4%bc%b0%e8%ae%a1%e7%9a%84%e6%a0%87%e5%87%86%e7%9a%84%e4%b8%8d%e5%8f%98%e6%80%a7" aria-label="衡量点估计的标准的不变性">衡量点估计的标准的不变性</a>
                     </li>
                 </ul>
             </div>
@@ -403,58 +417,115 @@ if (!doNotTrack) {
     }
 </script>
     <div class="post-content">
-      <h2 id="湖南农民运动考察报告">《湖南农民运动考察报告》<a hidden class="anchor" aria-hidden="true" href="#湖南农民运动考察报告">#</a></h2>
+      <p>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：<mark>点估计是统计量（样本的函数）</mark>！</p>
+<p>补充统计量定义：设 $x_1​, x_2​, &hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &hellip;, x_n​)$ 中不含有任何未知参数，则称 $T$ 为统计量。统计量的分布称为抽样分布。</p>
+<p>常用的点估计方法包括矩估计、极大似然估计、MUVE、BLUE、最大后验估计等</p>
+<p>点估计是指使用样本数据构造样本统计量来估计总体参数时，使用一个点的数值表示“最佳估计值”。</p>
+<p><img loading="lazy" src="https://picx.zhimg.com/70/v2-1f8c13ab2688c8f7947815548f4132d6_1440w.avis?source=172ae18b&amp;biz_tag=Post" alt="点估计对比区间估计"  />
+</p>
+<p>与区间估计形成对比：区间估计通常是一个置信区间。</p>
+<h2 id="矩估计">矩估计<a hidden class="anchor" aria-hidden="true" href="#矩估计">#</a></h2>
+<p>用样本矩替换总体矩，用经验分布替换总体函数。</p>
+<p>理论基础：</p>
+<ul>
+<li>格列文科定理（茆定理 5.2.1：当样本量相当大时，经验分布函数 $F_n(x) = \frac{1}{n} \sum_{i=1}^{n} I(X_i \leq x)$ 是总体分布函数 $F(x)$ 的一个良好的近似，这也正是经典统计学中一切统计推断都以样本为依据的原因）</li>
+<li>一阶矩的收敛：若一阶矩存在（如 $E(X)&lt;∞$），辛钦大数定律，或切比雪夫大数定律。</li>
+<li>高阶矩的收敛：若高阶矩存在（如 $E(X^k)&lt;∞$），强大数定律。</li>
+</ul>
+<p>⚠️注意！</p>
+<p>分母为$N-1$的方差的无偏估计 $\hat{\sigma}^2 = \frac{1}{N-1} \sum_{i=1}^{N} (x_i - \hat{\mu})^2$ 不是矩估计！有偏估计 $\hat{\sigma}^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \hat{\mu})^2$ 才是。</p>
+<h2 id="极大似然估计-又名事后诸葛亮估计">极大似然估计 又名“事后诸葛亮估计”<a hidden class="anchor" aria-hidden="true" href="#极大似然估计-又名事后诸葛亮估计">#</a></h2>
+<p>极大似然估计（Maximum Likelihood Estimation, MLE）是一种基于样本数据估计概率模型参数的经典方法。其核心思想是：<strong>在给定观测数据的情况下，选择使得这些数据出现概率最大的参数值</strong>作为点估计值。</p>
+<p>MLE完全依赖已观测数据，通过调整参数使模型“完美”拟合现有数据。 —— 类似“事后”根据结果反推原因。</p>
+<h2 id="矩估计-vs-极大似然估计-常考">矩估计 VS 极大似然估计 常考！<a hidden class="anchor" aria-hidden="true" href="#矩估计-vs-极大似然估计-常考">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>矩估计</th>
+<th>极大似然估计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原理简单、使用方便、计算便捷</td>
+<td>计算复杂</td>
+</tr>
+<tr>
+<td>可以在不知道总体分布但知道样本矩的情况下对总体进行推断</td>
+<td>需在总体分布已知的情况下才能使用（需对总体分布做假设）</td>
+</tr>
+<tr>
+<td>未充分利用样本信息，即不一定是充分统计量的函数,估计精度不高，只有当样本量较大时才能保证其优良性</td>
+<td>充分利用样本信息，一般都与充分统计量有关，估计精度高</td>
+</tr>
+<tr>
+<td>一般情况下具有相合性</td>
+<td>具有不变性和渐进正态性，大样本下也具有相合性</td>
+</tr>
+<tr>
+<td>不适用于总体矩不存在的分布，如柯西分布</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="评估点估计的标准">评估点估计的标准<a hidden class="anchor" aria-hidden="true" href="#评估点估计的标准">#</a></h2>
+<p>很多概念，需要多过几遍，晕🥴</p>
+<h3 id="无偏性">无偏性<a hidden class="anchor" aria-hidden="true" href="#无偏性">#</a></h3>
+<p>定义：若对 $\forall \theta \in \Theta,$ 有 $E_\theta(\hat{\theta}) = \theta$ 则称 $\hat{\theta}$ 为 $\theta$ 的无偏估计。</p>
+<p>并非所有参数都存在无偏估计。</p>
+<p>参数是否可估：取决于是否有无偏估计。</p>
+<h3 id="有效性">有效性<a hidden class="anchor" aria-hidden="true" href="#有效性">#</a></h3>
+<p>无偏估计比较方差，有偏估计比较均方误差。</p>
 <blockquote>
-<p>矫枉必须过正, 不过正不能矫枉.</p>
+<p>方差一般用来计算样本的离散程度，而均方误差则可以用做衡量模型拟合的一个度量</p>
 </blockquote>
-<blockquote>
-<p>政权、族权、神权、夫权这四种权利代表了全部封建宗法的思想与制度.</p>
-</blockquote>
-<blockquote>
-<p>引而不发，跃如也。 - 农民的使命要农民去完成, 别人代庖是不对的</p>
-</blockquote>
-<h2 id="井冈山的斗争">《井冈山的斗争》<a hidden class="anchor" aria-hidden="true" href="#井冈山的斗争">#</a></h2>
-<blockquote>
-<p>民主主义: 官长不打士兵, 官兵待遇平等, 士兵有开会说话的自由, 废除繁琐的礼节, 经济公开.</p>
-</blockquote>
-<blockquote>
-<p>家族主义: 一个村子一个姓, 支部会议简直同时就是家族会议.</p>
-</blockquote>
-<blockquote>
-<p>群众的政治训练 - 群众需要有政治素养</p>
-</blockquote>
-<blockquote>
-<p>党与政府的关系</p>
-</blockquote>
-<blockquote>
-<p>民权主义革命 - 民权主义是三民主义之一.</p>
-</blockquote>
-<h2 id="关于纠正党内的错误思想">《关于纠正党内的错误思想》<a hidden class="anchor" aria-hidden="true" href="#关于纠正党内的错误思想">#</a></h2>
-<blockquote>
-<p><mark>本位主义</mark>, 一切只知道为四军打仗, 不知道武装地方群众是红军的重要任务之一. 这是一种放大了的小团体主义.</p>
-</blockquote>
-<blockquote>
-<p>俘虏兵的加入, 带来了浓厚的雇佣军队的思想, 使单纯军事观点有了<mark>下层基础</mark>.</p>
-</blockquote>
-<blockquote>
-<p>过分相信军事力量, 而不相信人民群众的力量.</p>
-</blockquote>
-<blockquote>
-<p>党对军事工作没有积极的注意和讨论, 也是形成一部分同志的单纯军事观点的原因.</p>
-</blockquote>
-<blockquote>
-<p><mark>关于极端民主化</mark>, 『由下而上的民主集权制』, 『先交下级讨论, 再交上级决议』?</p>
-</blockquote>
-<blockquote>
-<p>有争论的问题, 要把是非弄明白, 不要调和敷衍.</p>
-</blockquote>
-<blockquote>
-<p>党内批评, 不要成了攻击个人.</p>
-</blockquote>
-<blockquote>
-<p>绝对平均主义的来源, 和政治上的极端民主化一样, 是手工业者和小农经济的产物, 不过一则见之于政治方面, 一则见之于物质生活方面罢了.</p>
-</blockquote>
-<p>看这篇文章有看加缪的《堕落》的感觉，被作者当面揭露出劣根性的感觉。原来自己曾经有过的许多想法，其实都有一个专有名词（如 xx 主义），一下抓住事情的本质并提炼成文字，伟人果然是伟人。</p>
+<p>无偏估计量不一定是最有效的！</p>
+<p>附：MSE 分解公式推导：
+<img loading="lazy" src="https://pictest.20250303.xyz/img/202503042040164.png" alt="image.png"  />
+</p>
+<h3 id="大样本情形---相合性又称一致性-consistency">大样本情形 - 相合性，又称一致性 Consistency<a hidden class="anchor" aria-hidden="true" href="#大样本情形---相合性又称一致性-consistency">#</a></h3>
+<p><mark>弱相合性</mark>，当样本量 $n \to \infty$ 时，估计量 $\hat{\theta}_n$ 依概率收敛于真实参数 $\theta$. 记为 $\hat{\theta}<em>n \xrightarrow{P} \theta.$ 即 $\forall \epsilon &gt; 0, \quad \lim</em>{n \to \infty} P\left (|\hat{\theta}_n - \theta| \geq \epsilon\right) = 0.$</p>
+<p>弱相合性被认为是对估计的一个最基本的要求，如果一个估计量，在样本量不断增大的时，他都不能把被估参数估计到任意的指定的精度 $\varepsilon$，那么这个估计是很值得怀疑的。通常，不满足弱相合性要求的估计不予考虑。</p>
+<p>弱相合估计不止一个：样本有偏方差和样本无偏方差都是 $\sigma^2$ 的相合估计。</p>
+<p>弱相合性判定：$lim_{n \to \infty}E(\hat{\theta}<em>n)=\theta, \quad lim</em>{n \to \infty}Var(\hat{\theta}_n)=0$</p>
+<p><mark>强相合性</mark>，当样本量 $n \to \infty$ 时，估计量 $\hat{\theta}<em>n$ 几乎必然收敛于真实参数 $\theta$ ，即 $P\left (\lim</em>{n \to \infty} \hat{\theta}_n = \theta\right) = 1$. 也称 $\hat{\theta}_n$ 几乎必然(Alomst Sure)收敛到 $\theta$，记为 $\hat{\theta}_n \xrightarrow{a.s.} \theta.$</p>
+<p>强弱相合性之间的差异类似强弱大数定律之间的差异：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">弱大数定律</th>
+<th style="text-align:center">强大数定律</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">依概率收敛</td>
+<td style="text-align:center">几乎必然收敛</td>
+</tr>
+<tr>
+<td style="text-align:center">$\bar{X}_n \xrightarrow{P} \mu$</td>
+<td style="text-align:center">$\bar{X}_n \xrightarrow{a.s.} \mu$</td>
+</tr>
+<tr>
+<td style="text-align:center">允许样本均值无限次偏离 $\mu$（但概率趋近于零）例如抛硬币实验中偶尔出现连续多次正面</td>
+<td style="text-align:center">彻底排除了无限次偏离的可能，确保样本均值最终“锁定”在 $\mu$ 附近</td>
+</tr>
+<tr>
+<td style="text-align:center">由强大数定律可知，矩估计总是相合的。</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="大样本情形---渐进正态性">大样本情形 - 渐进正态性<a hidden class="anchor" aria-hidden="true" href="#大样本情形---渐进正态性">#</a></h3>
+<p>当样本容量趋向无穷大时，某些估计量（如最大似然估计）会收敛到一个正态分布。</p>
+<p>在相合性的基础上进一步关注收敛速度和分布特性。</p>
+<p>极大似然估计具有渐进正态性。</p>
+<h2 id="衡量点估计的标准的不变性">衡量点估计的标准的不变性<a hidden class="anchor" aria-hidden="true" href="#衡量点估计的标准的不变性">#</a></h2>
+<p>定义：如果某一个统计量 $T(x)$ 是某个参数 $\theta$ 的无偏估计，将统计量经过 $g$ 变换之后为 $g(T(x))$，它也是变换后的参数 $g(\theta)$ 的无偏估计。</p>
+<p>极大似然估计具有不变性，完备性具有不变性，<a href="https://www.zhihu.com/question/263404457/answer/1151851273">矩估计也具有不变性</a></p>
+<p>无偏估计不具有不变性，若 $\hat{\theta}$ 是 $\theta$ 的无偏估计， $g(\hat{\theta})$ 则不一定是 $\theta$ 的无偏估计，除非 $g(\theta)$ 是<strong>线性函数</strong>；</p>
+<p>充分性不具有不变性，除非 $g(\theta)$ 是<strong>严格单调函数</strong></p>
+<p>相合性不具有不变性，除非 $g(\theta)$ 是<strong>连续函数</strong></p>
 
 
     </div>
@@ -462,15 +533,10 @@ if (!doNotTrack) {
     <footer class="post-footer">
       
 <nav class="paginav">
-  <a class="prev" href="https://20250303.xyz/posts/%E9%9A%8F%E7%AC%94/%E5%85%B3%E4%BA%8E%E9%A9%AC%E5%93%B2%E4%B8%AD%E7%9F%9B%E7%9B%BE%E4%B8%8E%E9%98%B4%E9%98%B3/">
-    <span class="title">« </span>
-    <br>
-    <span>关于马哲中矛盾与阴阳</span>
-  </a>
-  <a class="next" href="https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/">
+  <a class="next" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9D%A5%E8%87%AA%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90%E4%B8%8E%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90%E7%9A%84%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/">
     <span class="title"> »</span>
     <br>
-    <span>知识库、智能体、RAG、微调</span>
+    <span>来自因子分析与主成分分析的降维打击</span>
   </a>
 </nav>
 
