@@ -1,6 +1,7 @@
 name: Baidu URL Submit
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main  # 确保这个分支是 GitHub Pages 的部署分支
