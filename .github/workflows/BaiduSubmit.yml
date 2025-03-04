@@ -17,4 +17,4 @@ jobs:
       - name: Submit Sitemap to Baidu
         run: |
           echo "https://20250303.xyz/sitemap.xml" > urls.txt
-          curl -H "Content-Type:text/plain" --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=https://20250303.xyz.com&token=${{ secrets.BAIDU_TOKEN }}"
+          curl -H "Content-Type:text/plain" --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=https://20250303.xyz&token=${{ secrets.BAIDU_TOKEN }}"
