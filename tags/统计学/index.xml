@@ -13,7 +13,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/</link>
       <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/</guid>
-      <description>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &amp;hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）==！ 补充统计量定义：设 $x_1​, x_2​, &amp;hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &amp;hellip;, x_n​)$ 中不含有任何未知参数，则称</description>
+      <description>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &amp;hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）== 补充统计量定义：设 $x_1​, x_2​, &amp;hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &amp;hellip;, x_n​)$ 中不含有任何未知参数，则称 $T$</description>
     </item>
     <item>
       <title>来自因子分析与主成分分析的降维打击</title>
