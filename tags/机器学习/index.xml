@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>机器学习 on Lovegood&#39;s Blog</title>
+    <link>https://20250303.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 机器学习 on Lovegood&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://20250303.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>机器学习 Machine Learning</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</guid>
+      <description>算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法</description>
+    </item>
+  </channel>
+</rss>

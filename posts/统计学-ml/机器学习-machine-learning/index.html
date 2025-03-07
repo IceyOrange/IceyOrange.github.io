@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>分布的可加性 | Lovegood&#39;s Blog</title>
-<meta name="keywords" content="统计学">
-<meta name="description" content="独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim Poisson(\lambda_1&#43;\lambda_2)$. 伽马分布，设 $X_1 \sim \Gamma(\alpha_1, \lambda), X_2 \sim \Gamma(\alpha_2, \lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim \Gamma(\alpha_1&#43;\alpha_2, \lambda)$. 二项分布，设 $X_1 \sim b(n, p), X_2 \sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim b(n&#43;m, p)$. 正态分布，设 $X \sim N(\mu_1, \sigma_1^2), Y \sim N(\mu_y, \sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX &#43; bY \sim">
+<title>机器学习 Machine Learning | Lovegood&#39;s Blog</title>
+<meta name="keywords" content="统计学, 机器学习">
+<meta name="description" content="算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法">
 <meta name="author" content="Lovegood">
-<link rel="canonical" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/">
+<link rel="canonical" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/">
 <meta name="google-site-verification" content="G-LZESR1K8WK">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -22,7 +22,7 @@
 <link rel="mask-icon" href="https://20250303.xyz/xx.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/">
+<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,16 +72,16 @@ if (!doNotTrack) {
 	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="分布的可加性" />
-<meta property="og:description" content="独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim Poisson(\lambda_1&#43;\lambda_2)$. 伽马分布，设 $X_1 \sim \Gamma(\alpha_1, \lambda), X_2 \sim \Gamma(\alpha_2, \lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim \Gamma(\alpha_1&#43;\alpha_2, \lambda)$. 二项分布，设 $X_1 \sim b(n, p), X_2 \sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim b(n&#43;m, p)$. 正态分布，设 $X \sim N(\mu_1, \sigma_1^2), Y \sim N(\mu_y, \sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX &#43; bY \sim" />
+<meta property="og:title" content="机器学习 Machine Learning" />
+<meta property="og:description" content="算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-03-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-03-06T00:00:00+00:00" />
+<meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-07T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="分布的可加性"/>
-<meta name="twitter:description" content="独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim Poisson(\lambda_1&#43;\lambda_2)$. 伽马分布，设 $X_1 \sim \Gamma(\alpha_1, \lambda), X_2 \sim \Gamma(\alpha_2, \lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim \Gamma(\alpha_1&#43;\alpha_2, \lambda)$. 二项分布，设 $X_1 \sim b(n, p), X_2 \sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1&#43;X_2 \sim b(n&#43;m, p)$. 正态分布，设 $X \sim N(\mu_1, \sigma_1^2), Y \sim N(\mu_y, \sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX &#43; bY \sim"/>
+<meta name="twitter:title" content="机器学习 Machine Learning"/>
+<meta name="twitter:description" content="算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法"/>
 
 
 <script type="application/ld+json">
@@ -98,8 +98,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "分布的可加性",
-      "item": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/"
+      "name": "机器学习 Machine Learning",
+      "item": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/"
     }
   ]
 }
@@ -108,24 +108,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "分布的可加性",
-  "name": "分布的可加性",
-  "description": "独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \\sim Poisson(\\lambda_1), X_2 \\sim Poisson(\\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim Poisson(\\lambda_1+\\lambda_2)$. 伽马分布，设 $X_1 \\sim \\Gamma(\\alpha_1, \\lambda), X_2 \\sim \\Gamma(\\alpha_2, \\lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim \\Gamma(\\alpha_1+\\alpha_2, \\lambda)$. 二项分布，设 $X_1 \\sim b(n, p), X_2 \\sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim b(n+m, p)$. 正态分布，设 $X \\sim N(\\mu_1, \\sigma_1^2), Y \\sim N(\\mu_y, \\sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX + bY \\sim",
+  "headline": "机器学习 Machine Learning",
+  "name": "机器学习 Machine Learning",
+  "description": "算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法",
   "keywords": [
-    "统计学"
+    "统计学", "机器学习"
   ],
-  "articleBody": "独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。\n具有可加性的分布：\n泊松分布，设 $X_1 \\sim Poisson(\\lambda_1), X_2 \\sim Poisson(\\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim Poisson(\\lambda_1+\\lambda_2)$. 伽马分布，设 $X_1 \\sim \\Gamma(\\alpha_1, \\lambda), X_2 \\sim \\Gamma(\\alpha_2, \\lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim \\Gamma(\\alpha_1+\\alpha_2, \\lambda)$. 二项分布，设 $X_1 \\sim b(n, p), X_2 \\sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim b(n+m, p)$. 正态分布，设 $X \\sim N(\\mu_1, \\sigma_1^2), Y \\sim N(\\mu_y, \\sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX + bY \\sim N\\left(a\\mu_1 + b\\mu_2, a^2\\sigma_1^2 + b^2\\sigma_2^2\\right)$. 负二项分布（r 取整数时为帕斯卡分布），设 $X_1 \\sim Nb(r_1, p), X_2 \\sim Nb(r_2, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim Nb(r_1+r_2, p)$. 卡方分布，设 $X_1 \\sim \\chi^2(n), X_2 \\sim \\chi^2(m)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \\sim \\chi^2(n+m)$. 柯西分布。 不具有可加性的分布：\n0-1分布，参数 $p$ 相同的 $0-1$ 分布相加为二项分布，不是 $0-1$ 分布。 几何分布。 均匀分布。 指数分布，$Exp(\\lambda) \\sim Ga(1, \\lambda)$, 参数 $\\lambda$ 相同的指数分布相加为伽马分布，不是指数分布。 贝塔分布。 超几何分布。 补充 - 神通广大的伽马和贝塔分布（函数）：\n伽马分布不仅可以与指数分布关联，也可与卡方分布相关联: $Ga(\\frac{n}{2}, \\frac{1}{2}) \\sim \\chi^2(n)$. 若 $X\\sim Ga(\\alpha, \\lambda)$, 则当 $k\u003e0$ 时，$kX \\sim Ga(\\alpha, \\frac{\\lambda}{k})$. 伽马函数（注意不是伽马分布）:\n$n \\in N^+, \\Gamma(n+1)=n\\Gamma(n)=n!$ $\\Gamma(1)=0!=1, \\quad \\Gamma(\\frac{1}{2})=\\sqrt{\\pi}$. 贝塔函数（注意不是贝塔分布）:\n$B(a, b)=B(b, a)=\\frac{\\Gamma(a)\\Gamma(b)}{\\Gamma(a+b)}$. 贝塔分布：\n$Be(1, 1)=U(0, 1)$. ",
-  "wordCount" : "436",
+  "articleBody": "算法 各种激活函数 参考\n模型融合\n模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。\n机器学习-集成学习（模型融合）方法概述\n逻辑回归 逻辑回归是在线性回归的基础上加了一个Sigmoid 函数（非线形）映射，使得逻辑回归称为了一个优秀的分类算法。\n参考 这篇知乎\n评价模型的指标 混淆矩阵\n准确率\n精确率\n召回率\nF1\nROC\nAUC\n",
+  "wordCount" : "229",
   "inLanguage": "en",
-  "datePublished": "2025-03-06T00:00:00Z",
-  "dateModified": "2025-03-06T00:00:00Z",
+  "datePublished": "2025-03-07T00:00:00Z",
+  "dateModified": "2025-03-07T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Lovegood"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/"
+    "@id": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/"
   },
   "publisher": {
     "@type": "Organization",
@@ -225,7 +225,7 @@ if (!doNotTrack) {
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://20250303.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://20250303.xyz/posts/">Posts</a></div>
       <h1 class="post-title">
-        分布的可加性
+        机器学习 Machine Learning
       </h1>
       <div class="post-meta">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -246,14 +246,14 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2025-03-06
+        <span>2025-03-07
             &nbsp;&nbsp;
         </span>
     </span>
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>436 words
+        <span>229 words
             &nbsp;&nbsp;
         </span>
     </span>
@@ -274,6 +274,7 @@ if (!doNotTrack) {
         <span>
             <span class="post-tags-meta">
                 <a href="https://20250303.xyz/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" style="color: var(--secondary)!important;">统计学</a>
+                &nbsp;<a href="https://20250303.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="color: var(--secondary)!important;">机器学习</a>
             </span>
         </span>
     </span>
@@ -328,47 +329,104 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> 
+    </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e7%ae%97%e6%b3%95" aria-label="算法">算法</a><ul>
+                            
+                    <li>
+                        <a href="#%e9%80%bb%e8%be%91%e5%9b%9e%e5%bd%92" aria-label="逻辑回归">逻辑回归</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e8%af%84%e4%bb%b7%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%8c%87%e6%a0%87" aria-label="评价模型的指标">评价模型的指标</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
     <div class="post-content">
-      <p>独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。</p>
-<p>具有可加性的分布：</p>
-<ul>
-<li>泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim Poisson(\lambda_1+\lambda_2)$.</li>
-<li>伽马分布，设 $X_1 \sim \Gamma(\alpha_1, \lambda), X_2 \sim \Gamma(\alpha_2, \lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim \Gamma(\alpha_1+\alpha_2, \lambda)$.</li>
-<li>二项分布，设 $X_1 \sim b(n, p), X_2 \sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim b(n+m, p)$.</li>
-<li>正态分布，设 $X \sim N(\mu_1, \sigma_1^2), Y \sim N(\mu_y, \sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX + bY \sim N\left(a\mu_1 + b\mu_2, a^2\sigma_1^2 + b^2\sigma_2^2\right)$.</li>
-<li>负二项分布（r 取整数时为帕斯卡分布），设 $X_1 \sim Nb(r_1, p), X_2 \sim Nb(r_2, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim Nb(r_1+r_2, p)$.</li>
-<li>卡方分布，设 $X_1 \sim \chi^2(n), X_2 \sim \chi^2(m)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim \chi^2(n+m)$.</li>
-<li>柯西分布。</li>
-</ul>
-<p>不具有可加性的分布：</p>
-<ul>
-<li>0-1分布，参数 $p$ 相同的 $0-1$ 分布相加为二项分布，不是 $0-1$ 分布。</li>
-<li>几何分布。</li>
-<li>均匀分布。</li>
-<li>指数分布，$Exp(\lambda) \sim Ga(1, \lambda)$, 参数 $\lambda$ 相同的指数分布相加为伽马分布，不是指数分布。</li>
-<li>贝塔分布。</li>
-<li>超几何分布。</li>
-</ul>
-<hr>
-<p>补充 - 神通广大的伽马和贝塔分布（函数）：</p>
-<ul>
-<li>伽马分布不仅可以与指数分布关联，也可与卡方分布相关联: $Ga(\frac{n}{2}, \frac{1}{2}) \sim \chi^2(n)$.</li>
-<li>若 $X\sim Ga(\alpha, \lambda)$, 则当 $k&gt;0$ 时，$kX \sim Ga(\alpha, \frac{\lambda}{k})$.</li>
-</ul>
-<p>伽马函数（注意不是伽马分布）:</p>
-<ul>
-<li>$n \in N^+, \Gamma(n+1)=n\Gamma(n)=n!$</li>
-<li>$\Gamma(1)=0!=1, \quad \Gamma(\frac{1}{2})=\sqrt{\pi}$.</li>
-</ul>
-<p>贝塔函数（注意不是贝塔分布）:</p>
-<ul>
-<li>$B(a, b)=B(b, a)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$.</li>
-</ul>
-<p>贝塔分布：</p>
-<ul>
-<li>$Be(1, 1)=U(0, 1)$.</li>
-</ul>
+      <h2 id="算法">算法<a hidden class="anchor" aria-hidden="true" href="#算法">#</a></h2>
+<p>各种激活函数 <a href="https://blog.csdn.net/qq_61712022/article/details/124735903">参考</a></p>
+<p>模型融合</p>
+<p>模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。</p>
+<p><a href="https://blog.csdn.net/weixin_41140174/article/details/126291940">机器学习-集成学习（模型融合）方法概述</a></p>
+<h3 id="逻辑回归">逻辑回归<a hidden class="anchor" aria-hidden="true" href="#逻辑回归">#</a></h3>
+<p>逻辑回归是在线性回归的基础上加了一个Sigmoid 函数（非线形）映射，使得逻辑回归称为了一个优秀的分类算法。</p>
+<p>参考 <a href="https://zhuanlan.zhihu.com/p/74874291">这篇知乎</a></p>
+<h2 id="评价模型的指标">评价模型的指标<a hidden class="anchor" aria-hidden="true" href="#评价模型的指标">#</a></h2>
+<p>混淆矩阵</p>
+<p>准确率</p>
+<p>精确率</p>
+<p>召回率</p>
+<p>F1</p>
+<p>ROC</p>
+<p>AUC</p>
 
 
     </div>
@@ -376,10 +434,15 @@ if (!doNotTrack) {
     <footer class="post-footer">
       
 <nav class="paginav">
-  <a class="next" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%8A%BD%E6%A0%B7%E6%8A%80%E6%9C%AF/">
+  <a class="prev" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">
+    <span class="title">« </span>
+    <br>
+    <span>数据可视化</span>
+  </a>
+  <a class="next" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/">
     <span class="title"> »</span>
     <br>
-    <span>抽样技术</span>
+    <span>分布的可加性</span>
   </a>
 </nav>
 

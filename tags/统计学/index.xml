@@ -6,14 +6,28 @@
     <description>Recent content in 统计学 on Lovegood&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://20250303.xyz/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>pdf pmf cdf</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/</guid>
+      <description>概率质量函数 pmf，用于离散型随机变量：非负性、正则性。pmf 的函数值不能大于 1 概率密度函数 pdf，用于连续型随机变量：非负性、正则性。pdf 函数值可能大于 1（用密度去理解） ⚠️存在既非离散又非连续型的随机变量！ 概率分布函数 cdf，单调性（单调非减）、有界性、右连续性、非负性 连续</description>
+    </item>
+    <item>
+      <title>机器学习 Machine Learning</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</guid>
+      <description>算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法</description>
+    </item>
+    <item>
       <title>分布的可加性</title>
-      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/</link>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%AF%E5%8A%A0%E6%80%A7/</guid>
-      <description>独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim Poisson(\lambda_1+\lambda_2)$. 伽马分布，设 $X_1 \sim \Gamma(\alpha_1, \lambda), X_2 \sim \Gamma(\alpha_2, \lambda)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim \Gamma(\alpha_1+\alpha_2, \lambda)$. 二项分布，设 $X_1 \sim b(n, p), X_2 \sim b(m, p)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim b(n+m, p)$. 正态分布，设 $X \sim N(\mu_1, \sigma_1^2), Y \sim N(\mu_y, \sigma_y^2)$, $X$ 和 $Y$ 相互独立，则 $aX + bY \sim</description>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</guid>
+      <description>二项分布的近似 n 大 p 小且 $np \rightarrow \infty$ 时可用正态分布近似（棣莫弗-拉普拉斯中心极限定理） n 小 p 大且 $np \rightarrow \lambda$ 时可用泊松分布近似 泊松分布与指数分布 分布的可加性 独立可加性定义：相互独立的 xx 分布加完之后还是 xx 分布。 具有可加性的分布： 泊松分布，设 $X_1 \sim Poisson(\lambda_1), X_2 \sim Poisson(\lambda_2)$, $X_1$ 和 $X_2$ 相互独立，则 $X_1+X_2 \sim Poisson(\lambda_1+\lambda_2)$. 伽马分布，设 $X_1 \sim \Gamma(\alpha_1,</description>
     </item>
     <item>
       <title>抽样技术</title>
@@ -27,7 +41,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A6%82%E7%8E%87%E7%9A%84%E5%AE%9A%E4%B9%89/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A6%82%E7%8E%87%E7%9A%84%E5%AE%9A%E4%B9%89/</guid>
-      <description>概率有古典定义、几何定义、频率定义（统计定义）和公理化定义共四种定义 具体介绍可参见该博文 # 概率的四种定义及公理化定义产生 区别古典概率与古典统计学派： 古典概率的定义基于等可能性假设，主要用于有限离散样本空间。 古典统计学派（频率学派），区别于贝叶斯学派，通过大量独立实验将概率解释为统</description>
+      <description>概率的定义 概率有古典定义、几何定义、频率定义（统计定义）和公理化定义共四种定义 具体介绍可参见该博文 # 概率的四种定义及公理化定义产生 区别古典概率与古典统计学派： 古典概率的定义基于等可能性假设，主要用于有限离散样本空间。 古典统计学派（频率学派），区别于贝叶斯学派，通过大量独立实验将概</description>
     </item>
     <item>
       <title>点估计相关归纳</title>
