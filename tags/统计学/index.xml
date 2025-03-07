@@ -16,14 +16,7 @@
       <description>概率质量函数 pmf，用于离散型随机变量：非负性、正则性。pmf 的函数值不能大于 1 概率密度函数 pdf，用于连续型随机变量：非负性、正则性。pdf 函数值可能大于 1（用密度去理解） ⚠️存在既非离散又非连续型的随机变量！ 概率分布函数 cdf，单调性（单调非减）、有界性、右连续性、非负性 连续</description>
     </item>
     <item>
-      <title>机器学习 Machine Learning</title>
-      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</link>
-      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</guid>
-      <description>算法 各种激活函数 参考 模型融合 模型融合（Model Fusion）指的是将多个不同的机器学习模型的预测结果进行组合，以提高最终的预测性能、稳定性和泛化能力。它的核心思想是利用多个模型的优势，减少单一模型的偏差和方差，通常用于提升分类或回归任务的精度。 机器学习-集成学习（模型融合）方法</description>
-    </item>
-    <item>
-      <title>分布的可加性</title>
+      <title>关于分布</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</guid>
