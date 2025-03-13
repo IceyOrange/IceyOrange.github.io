@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 13 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://20250303.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>样本统计量相关概念辨析</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</link>
+      <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</guid>
+      <description>辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）</description>
+    </item>
+    <item>
       <title>机器学习 Machine Learning</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
@@ -27,7 +34,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/</guid>
-      <description>概率质量函数 pmf，用于离散型随机变量：非负性、正则性。pmf 的函数值不能大于 1 概率密度函数 pdf，用于连续型随机变量：非负性、正则性。pdf 函数值可能大于 1（用密度去理解） ⚠️存在既非离散又非连续型的随机变量！ 概率分布函数 cdf，单调性（单调非减）、有界性、右连续性、非负性 连续</description>
+      <description>傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)</description>
     </item>
     <item>
       <title>数据可视化</title>
