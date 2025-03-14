@@ -13,7 +13,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/</guid>
-      <description>打开非线性空间的钥匙：激活函数 激活函数的主要作用是引入非线性，使神经网络能够处理非线性问题，从而增强模型的表达能力，使其能够拟合复杂的函数关系。 LSTM 便是通过激活函数实现“遗忘门”、“输入门”等功能： 各种算法 在二分类问题中，模型通常会输出一个概率得分（如 Softmax），然后通过设定</description>
+      <description>机器学习是统计学的当代延伸。个人感觉机器学习就是让算法“拟人”的过程。RNN、LSTM让算法有了“记忆”；Attention、BERT让算法有了“注意力”；CNN让算法学会了“提取特征”</description>
     </item>
   </channel>
 </rss>
