@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>样本统计量相关概念辨析 | Lovegood&#39;s Blog</title>
+<title>统计中的三大检验 | Lovegood&#39;s Blog</title>
 <meta name="keywords" content="统计学">
-<meta name="description" content="辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）">
+<meta name="description" content="主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。">
 <meta name="author" content="Lovegood">
-<link rel="canonical" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/">
+<link rel="canonical" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/">
 <meta name="google-site-verification" content="G-LZESR1K8WK">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -22,7 +22,7 @@
 <link rel="mask-icon" href="https://20250303.xyz/xx.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/">
+<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,16 +72,16 @@ if (!doNotTrack) {
 	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="样本统计量相关概念辨析" />
-<meta property="og:description" content="辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）" />
+<meta property="og:title" content="统计中的三大检验" />
+<meta property="og:description" content="主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-03-13T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-03-14T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="样本统计量相关概念辨析"/>
-<meta name="twitter:description" content="辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）"/>
+<meta name="twitter:title" content="统计中的三大检验"/>
+<meta name="twitter:description" content="主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。"/>
 
 
 <script type="application/ld+json">
@@ -98,8 +98,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "样本统计量相关概念辨析",
-      "item": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/"
+      "name": "统计中的三大检验",
+      "item": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/"
     }
   ]
 }
@@ -108,14 +108,14 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "样本统计量相关概念辨析",
-  "name": "样本统计量相关概念辨析",
-  "description": "辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）",
+  "headline": "统计中的三大检验",
+  "name": "统计中的三大检验",
+  "description": "主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。",
   "keywords": [
     "统计学"
   ],
-  "articleBody": "参数：描述总体特征，例如总体均值或标准差。\n统计量：描述样本特征，是样本的函数，它不依赖于未知参数。\n样本统计量：它是根据样本数据计算出来的一些描述样本特征的概括性数字度量，是样本的函数。如样本均值、样本标准差、样本比例等。\n⚠️区分统计量和枢轴量（检验统计量也是统计量）：\n统计量不含参，但统计量的分布含参；如 $\\bar{X} \\sim N(\\mu, \\frac{\\sigma^2}{n})$; 枢轴量含参，但枢轴量的分布不含参。如 $Z=\\frac{\\bar{X}-\\mu}{\\sigma/\\sqrt{n}}$. 枢轴量主要用于区间估计和假设检验中。 抽样分布：由样本统计量这个随机变量所形成的概率分布。区分样本分布：一个具体的样本数据点的分布。\n标准差：一个总体或样本分布中的离中趋势度量。\n标准误差（标准误、抽样平均误差）：样本统计量的标准差。\n在抽样调查中我们所说的“可以对抽样误差进行控制”指的就是“标准误差（又称抽样平均误差）”\n抽样平均误差 重复抽样 不重复抽样（需要修正） 样本均值 $\\frac{\\sigma}{\\sqrt{n}}$ $\\frac{\\sigma}{\\sqrt{n}}\\times\\sqrt{\\frac{N-n}{N-1}}$ 样本比例 $\\sqrt{\\frac{p(1-p)}{n}}$ $\\sqrt{\\frac{p(1-p)}{n}}\\times\\sqrt{\\frac{N-n}{N-1}}$ 相较于不重复抽样，重复抽样抽出来的样本对总体的代表性更差（显然的）。从抽样平均误差上也可以体现出来：重复抽样的标准误＞不重复抽样的标准误。\n",
-  "wordCount" : "435",
+  "articleBody": "t 检验 常用于:\n正态总体方差未知，单样本均值检验；（方差已知用 z-test, 非正态总体小样本用切比雪夫不等式）； 两独立正态总体，方差未知但相等，均值差检验；（方差已知用 z-test；方差未知且不等时使用 Welch’s t 检验，大样本下正态近似也能用 z-test）； 两独立正态总体，小样本，配对样本均值差检验；（大样本用 z-test）； 回归分析中单个回归系数的显著性检验。 卡方检验 ⽤于⽐较观测频数与期望频数的差异，常⽤于分类数据\n常用于：\n正态总体单样本方差检验，适用于对正态总体的单样本的方差进行检验； 卡方拟合度检验：主要用于确定某个非连续型变量是否可能来自指定的分布（连续型可将连续变量离散化为几个区间，亦可使用 K-S 检验）； 卡方独立性检验：用于检验两个分类变量之间是否存在关联或独立。 F 检验 常用于：\n两独立正态总体，方差比检验； 回归分析中整体回归模型的显著性检验； 单因素/多因素方差分析，比较多个组均值差异。 ",
+  "wordCount" : "387",
   "inLanguage": "en",
   "datePublished": "2025-03-13T00:00:00Z",
   "dateModified": "2025-03-14T00:00:00Z",
@@ -125,7 +125,7 @@ if (!doNotTrack) {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/"
+    "@id": "https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/"
   },
   "publisher": {
     "@type": "Organization",
@@ -225,10 +225,10 @@ if (!doNotTrack) {
     <header class="post-header">
       <div class="breadcrumbs"><a href="https://20250303.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://20250303.xyz/posts/">Posts</a></div>
       <h1 class="post-title">
-        样本统计量相关概念辨析
+        统计中的三大检验
       </h1>
       <div class="post-description">
-        辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）
+        主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。
       </div>
       <div class="post-meta">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -256,7 +256,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>435 words
+        <span>387 words
             &nbsp;&nbsp;
         </span>
     </span>
@@ -331,43 +331,109 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> 
+    </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#t-%e6%a3%80%e9%aa%8c" aria-label="t 检验">t 检验</a></li>
+                    <li>
+                        <a href="#%e5%8d%a1%e6%96%b9%e6%a3%80%e9%aa%8c" aria-label="卡方检验">卡方检验</a></li>
+                    <li>
+                        <a href="#f-%e6%a3%80%e9%aa%8c" aria-label="F 检验">F 检验</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
     <div class="post-content">
-      <p>参数：描述总体特征，例如总体均值或标准差。</p>
-<p>统计量：描述样本特征，是样本的函数，它不依赖于未知参数。</p>
-<p>样本统计量：它是根据样本数据计算出来的一些描述样本特征的概括性数字度量，是样本的函数。如样本均值、样本标准差、样本比例等。</p>
-<p>⚠️区分统计量和枢轴量（检验统计量也是统计量）：</p>
+      <h2 id="t-检验">t 检验<a hidden class="anchor" aria-hidden="true" href="#t-检验">#</a></h2>
+<p>常用于:</p>
 <ul>
-<li>统计量不含参，但统计量的分布含参；如 $\bar{X} \sim N(\mu, \frac{\sigma^2}{n})$;</li>
-<li>枢轴量含参，但枢轴量的分布不含参。如 $Z=\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}$. 枢轴量主要用于区间估计和假设检验中。</li>
+<li>正态总体方差未知，单样本均值检验；（方差已知用 z-test, 非正态总体小样本用切比雪夫不等式）；</li>
+<li>两独立正态总体，方差未知但相等，均值差检验；（方差已知用 z-test；方差未知且不等时使用 Welch&rsquo;s t 检验，大样本下正态近似也能用 z-test）；</li>
+<li>两独立正态总体，小样本，配对样本均值差检验；（大样本用 z-test）；</li>
+<li>回归分析中单个回归系数的显著性检验。</li>
 </ul>
-<p>抽样分布：由样本统计量这个随机变量所形成的概率分布。区分样本分布：一个具体的样本数据点的分布。</p>
-<hr>
-<p>标准差：一个总体或样本分布中的离中趋势度量。</p>
-<p>标准误差（标准误、抽样平均误差）：样本统计量的标准差。</p>
-<p>在抽样调查中我们所说的“可以对抽样误差进行控制”指的就是“标准误差（又称抽样平均误差）”</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">抽样平均误差</th>
-<th style="text-align:center">重复抽样</th>
-<th style="text-align:center">不重复抽样（需要修正）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">样本均值</td>
-<td style="text-align:center">$\frac{\sigma}{\sqrt{n}}$</td>
-<td style="text-align:center">$\frac{\sigma}{\sqrt{n}}\times\sqrt{\frac{N-n}{N-1}}$</td>
-</tr>
-<tr>
-<td style="text-align:center">样本比例</td>
-<td style="text-align:center">$\sqrt{\frac{p(1-p)}{n}}$</td>
-<td style="text-align:center">$\sqrt{\frac{p(1-p)}{n}}\times\sqrt{\frac{N-n}{N-1}}$</td>
-</tr>
-</tbody>
-</table>
-<p>相较于不重复抽样，重复抽样抽出来的样本对总体的代表性更差（显然的）。从抽样平均误差上也可以体现出来：重复抽样的标准误＞不重复抽样的标准误。</p>
+<h2 id="卡方检验">卡方检验<a hidden class="anchor" aria-hidden="true" href="#卡方检验">#</a></h2>
+<p>⽤于⽐较观测<strong>频数</strong>与期望<strong>频数</strong>的差异，常⽤于分类数据</p>
+<p>常用于：</p>
+<ul>
+<li>正态总体单样本方差检验，适用于对正态总体的单样本的方差进行检验；</li>
+<li>卡方拟合度检验：主要用于确定某个非连续型变量是否可能来自指定的分布（连续型可将连续变量离散化为几个区间，亦可使用 K-S 检验）；</li>
+<li>卡方独立性检验：用于检验两个分类变量之间是否存在关联或独立。</li>
+</ul>
+<h2 id="f-检验">F 检验<a hidden class="anchor" aria-hidden="true" href="#f-检验">#</a></h2>
+<p>常用于：</p>
+<ul>
+<li>两独立正态总体，方差比检验；</li>
+<li>回归分析中整体回归模型的显著性检验；</li>
+<li>单因素/多因素方差分析，比较多个组均值差异。</li>
+</ul>
 
 
     </div>
@@ -375,15 +441,15 @@ if (!doNotTrack) {
     <footer class="post-footer">
       
 <nav class="paginav">
-  <a class="prev" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/lln--clt/">
+  <a class="prev" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/">
     <span class="title">« </span>
     <br>
-    <span>LLN &amp; CLT</span>
+    <span>样本统计量相关概念辨析</span>
   </a>
-  <a class="next" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/">
+  <a class="next" href="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/">
     <span class="title"> »</span>
     <br>
-    <span>统计中的三大检验</span>
+    <span>机器学习 Machine Learning</span>
   </a>
 </nav>
 

@@ -6,14 +6,28 @@
     <description>Recent content in Posts on Lovegood&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://20250303.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLN &amp; CLT</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/lln--clt/</link>
+      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/lln--clt/</guid>
+      <description>大数定律和中心极限定理可以说是概率论与数理统计中最为重要的两个理论，将它们放在一起总结归纳，体会它们之间的区别与联系。</description>
+    </item>
     <item>
       <title>样本统计量相关概念辨析</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</link>
       <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</guid>
       <description>辨析统计量、样本统计量和抽样分布三个概念，以及另外一对容易混淆的概念：标准差和标准误差（标准误）</description>
+    </item>
+    <item>
+      <title>统计中的三大检验</title>
+      <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/</link>
+      <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%BB%9F%E8%AE%A1%E4%B8%AD%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A3%80%E9%AA%8C/</guid>
+      <description>主要是对三大抽样分布对应的三大检验进行归纳总结。从假设检验角度出发的总结放在假设检验博文中了。</description>
     </item>
     <item>
       <title>机器学习 Machine Learning</title>
@@ -76,7 +90,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%A4%9A%E5%85%83%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%A4%9A%E5%85%83%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>王学民《应用多元统计分析》笔记</description>
+      <description>参考教材：王学民《应用多元统计分析》</description>
     </item>
     <item>
       <title>九阳真经 - 假设检验篇</title>
