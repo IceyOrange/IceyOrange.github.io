@@ -77,7 +77,7 @@ if (!doNotTrack) {
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-03-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-20T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关于概率论中的独立"/>
@@ -114,11 +114,11 @@ if (!doNotTrack) {
   "keywords": [
     "统计学"
   ],
-  "articleBody": "随机事件层面的独立 在概率论里，“独立\"并不意味着两个事件没有任何关系。 独立意味着一个事件的发生与否都不改变另一个事件发生的概率。 - 知乎文章\n数学定义见下：\n两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。\n多个随机事件间的独立性定义：设有 N 个事件 $A_1, A_2, …, A_N$ 对任意的 $1 ≤ i ≤ j ≤ k ≤ N$ 如下式成立：为什么不使用 $i, j, k \\in [1, N]$ ？避免重复吗？\n$$ \\begin{aligned} P(A_i A_j) \u0026= P(A_i) P(A_j) \\quad \\text{两两独立} \\\\ P(A_i A_j A_k) \u0026= P(A_i) P(A_j) P(A_k) \\quad \\text{三三独立} \\\\ \u0026\\quad \\vdots \\\\ P(A_i A_j \\cdots A_N) \u0026= P(A_i) P(A_j) \\cdots P(A_N) \\quad \\text{NN独立} \\end{aligned} $$ 则称 N 个事件 $A_1, A_2, …, A_N$ 相互独立。\n多个事件间相互独立 \u003c=\u003e 多个事件间两两独立、三三独立、……、NN 独立\n概率为 0 的事件与任何事件都独立。\n将相互独立事件中的任一部分转换为对立事件，所得诸事件依然是相互独立的。\n如若事件 A 与事件 B 独立，则 $A$ 与 $\\bar{B}$, $\\bar{A}$ 与 $\\bar{B}$, $\\bar{A}$ 与 $B$ 均独立。\n多个随机事件情形同样满足\n随机试验层面的独立 独立性与相容性 相容性定义：如果 A 与 B 没有相同的样本点，则称 A 与 B 互不相容。即 A 与 B 不可能同时发生。\n==在事件概率不为 0 的前提==下讨论独立性与相容性的关系：\n独立 =\u003e 相容：$P(AB)=P(A)P(B)≠0$ 说明 A 与 B 之间有交集，两者可能同时发生；但反之则不成立：相容事件不一定独立，例如掷一枚骰子，A: 点数\u003c4 , B: 点数\u003e3，AB 有交集，两者可能同时发生，相容，但不独立。 逆否命题：互不相容 =\u003e 相依（不独立），互不相容 =\u003e $P(AB)=0≠P(A)P(B)$ 说明 A 与 B 不独立。反之同样不成立：相依事件可能相容，例如掷两枚骰子，A：第一次为 6，B：总和大于 8，AB 两事件既相容又相依。 独立性：概率层面，反映前后实验结果是否相互影响； 相容性：事件层面，反映不同事件能否同时发生。\n可以说，两者其实是不同维度的概念。\n独立性与相关性 不相关是指两个变量的相关系数为0，$E(XY)=E(X)E(Y)$，两个变量之间没有线性关系。\n相关与否，仅是线性层面的。而独立与否，不仅包括线性层面，还包括非线性层面。\n于是可以说：独立的要求，比不相关，要更加严格。\n独立 =\u003e 不相关，反之不成立，事件间不相关（无线性关系）≠\u003e 事件间独立（可能存在非线性关系） 逆否命题：相关 =\u003e 相依，反之同样不成立，相依（不独立，说明事件间有关系）≠\u003e 相关（因为可能不是线性关系，而是非线性关系） 拓展 Spearman 相关系数和 Kendell 相关系数 ==Spearman 相关性==的基本思想是：分别对两个变量X、Y做等级变换(rank transformation)，用等级 $R_x$ 和 $R_y$ 表示；然后按Pearson相关性分析的方法计算 $R_x$ 和 $R_y$ 的相关性。$\\rho = 1 - \\frac{6 \\sum_{i=1}^{N} d_i^2}{N(N^2 - 1)}$. 其中 $d_i$ 表示两个变量分别排序后成对的变量位置差，N 表示 N 个样本，减少异常值的影响。\n==Kendell 相关系数==：是一种非参数统计指标，用于衡量两个变量之间的排序一致性，即它们的相对排名是否一致。它特别适用于判断两个变量是否具有单调关系，而不要求线性关系。\n假设有两个变量 X 和 Y，分别对应 n 个观测值的排名：$(X_1, Y_1), (X_2, Y_2), …, (X_n, Y_n)$, 我们对所有可能的数据点对 $(X_i, Y_i)$ 和 $(X_j, Y_j)$ 进行比较：\n一致对（Concordant pairs）： 如果 $X_i \u003e X_j$ 且 $Y_i \u003e Y_j$（或 $X_i \u003c X_j$ 且 $Y_i \u003c Y_j$），则称为一致对，表示两者排序方向相同。 不一致对（Discordant pairs）： 如果 $X_i \u003e X_j$ 且 $Y_i \u003c Y_j$（或 $X_i \u003c X_j$ 且 $Y_i \u003e Y_j$），则称为不一致对，表示两者排序方向相反。 平局对（Tied pairs）： 如果 $X_i = X_j$ 且 $Y_i = Y_j$，则称为平局。如存在平局对则需要进行修正（具体如何修正略）。 计算 Kendall 相关系数，可以使用 Python 的 scipy.stats.kendalltau：\n1from scipy.stats import kendalltau 2 3X = [1, 2, 3, 4] 4Y = [2, 1, 3, 4] 5tau, p_value = kendalltau(X, Y) 6 7print(f\"Kendall's tau: {tau}, p-value: {p_value}\") ",
-  "wordCount" : "1525",
+  "articleBody": "随机事件层面的独立 在概率论里，“独立\"并不意味着两个事件没有任何关系。 独立意味着一个事件的发生与否都不改变另一个事件发生的概率。 - 知乎文章\n数学定义见下：\n两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。\n多个随机事件间的独立性定义：设有 N 个事件 $A_1, A_2, …, A_N$ 对任意的 $1 ≤ i ≤ j ≤ k ≤ N$ 如下式成立：为什么不使用 $i, j, k \\in [1, N]$ ？避免重复吗？\n$$ \\begin{aligned} P(A_i A_j) \u0026= P(A_i) P(A_j) \\quad \\text{两两独立} \\\\ P(A_i A_j A_k) \u0026= P(A_i) P(A_j) P(A_k) \\quad \\text{三三独立} \\\\ \u0026\\quad \\vdots \\\\ P(A_i A_j \\cdots A_N) \u0026= P(A_i) P(A_j) \\cdots P(A_N) \\quad \\text{NN独立} \\end{aligned} $$ 则称 N 个事件 $A_1, A_2, …, A_N$ 相互独立。\n多个事件间相互独立 \u003c=\u003e 多个事件间两两独立、三三独立、……、NN 独立\n概率为 0 的事件与任何事件都独立。\n将相互独立事件中的任一部分转换为对立事件，所得诸事件依然是相互独立的。\n如若事件 A 与事件 B 独立，则 $A$ 与 $\\bar{B}$, $\\bar{A}$ 与 $\\bar{B}$, $\\bar{A}$ 与 $B$ 均独立。\n多个随机事件情形同样满足\n随机试验层面的独立 独立性与相容性 相容性定义：如果 A 与 B 没有相同的样本点，则称 A 与 B 互不相容。即 A 与 B 不可能同时发生。\n==在事件概率不为 0 的前提==下讨论独立性与相容性的关系：\n独立 =\u003e 相容：$P(AB)=P(A)P(B)≠0$ 说明 A 与 B 之间有交集，两者可能同时发生；但反之则不成立：相容事件不一定独立，例如掷一枚骰子，A: 点数\u003c4 , B: 点数\u003e3，AB 有交集，两者可能同时发生，相容，但不独立。 逆否命题：互不相容 =\u003e 相依（不独立），互不相容 =\u003e $P(AB)=0≠P(A)P(B)$ 说明 A 与 B 不独立。反之同样不成立：相依事件可能相容，例如掷两枚骰子，A：第一次为 6，B：总和大于 8，AB 两事件既相容又相依。 独立性：概率层面，反映前后实验结果是否相互影响； 相容性：事件层面，反映不同事件能否同时发生。\n可以说，两者其实是不同维度的概念。\n独立性与相关性 不相关是指两个变量的相关系数为0，$E(XY)=E(X)E(Y)$，两个变量之间没有线性关系。\n相关与否，仅是线性层面的。而独立与否，不仅包括线性层面，还包括非线性层面。\n相关性是用矩来定义的，矩只能反映线性层面的关系；而独立性是用分布定义的，独立意味着信息/变量可分离，不仅包括线性层面的分离，还包括非线性层面的分离，条件更强。于是可以说：独立的要求，比不相关，要更加严格。\n独立 =\u003e 不相关，反之不成立，事件间不相关（无线性关系）≠\u003e 事件间独立（可能存在非线性关系） 逆否命题：相关 =\u003e 相依，反之同样不成立，相依（不独立，说明事件间有关系）≠\u003e 相关（因为可能不是线性关系，而是非线性关系） 拓展 Spearman 相关系数和 Kendell 相关系数 ==Spearman 相关性==的基本思想是：分别对两个变量X、Y做等级变换(rank transformation)，用等级 $R_x$ 和 $R_y$ 表示；然后按Pearson相关性分析的方法计算 $R_x$ 和 $R_y$ 的相关性。$\\rho = 1 - \\frac{6 \\sum_{i=1}^{N} d_i^2}{N(N^2 - 1)}$. 其中 $d_i$ 表示两个变量分别排序后成对的变量位置差，N 表示 N 个样本，减少异常值的影响。\n==Kendell 相关系数==：是一种非参数统计指标，用于衡量两个变量之间的排序一致性，即它们的相对排名是否一致。它特别适用于判断两个变量是否具有单调关系，而不要求线性关系。\n假设有两个变量 X 和 Y，分别对应 n 个观测值的排名：$(X_1, Y_1), (X_2, Y_2), …, (X_n, Y_n)$, 我们对所有可能的数据点对 $(X_i, Y_i)$ 和 $(X_j, Y_j)$ 进行比较：\n一致对（Concordant pairs）： 如果 $X_i \u003e X_j$ 且 $Y_i \u003e Y_j$（或 $X_i \u003c X_j$ 且 $Y_i \u003c Y_j$），则称为一致对，表示两者排序方向相同。 不一致对（Discordant pairs）： 如果 $X_i \u003e X_j$ 且 $Y_i \u003c Y_j$（或 $X_i \u003c X_j$ 且 $Y_i \u003e Y_j$），则称为不一致对，表示两者排序方向相反。 平局对（Tied pairs）： 如果 $X_i = X_j$ 且 $Y_i = Y_j$，则称为平局。如存在平局对则需要进行修正（具体如何修正略）。 计算 Kendall 相关系数，可以使用 Python 的 scipy.stats.kendalltau：\n1from scipy.stats import kendalltau 2 3X = [1, 2, 3, 4] 4Y = [2, 1, 3, 4] 5tau, p_value = kendalltau(X, Y) 6 7print(f\"Kendall's tau: {tau}, p-value: {p_value}\") 拓展施瓦茨不等式 如何理解施瓦茨不等式？\n",
+  "wordCount" : "1623",
   "inLanguage": "en",
   "datePublished": "2025-03-01T00:00:00Z",
-  "dateModified": "2025-03-19T00:00:00Z",
+  "dateModified": "2025-03-20T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Lovegood"
@@ -253,7 +253,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>1525 words
+        <span>1623 words
             &nbsp;&nbsp;
         </span>
     </span>
@@ -345,7 +345,9 @@ if (!doNotTrack) {
                     <li>
                         <a href="#%e7%8b%ac%e7%ab%8b%e6%80%a7%e4%b8%8e%e7%9b%b8%e5%85%b3%e6%80%a7" aria-label="独立性与相关性">独立性与相关性</a></li>
                     <li>
-                        <a href="#%e6%8b%93%e5%b1%95-spearman-%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0%e5%92%8c-kendell-%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0" aria-label="拓展 Spearman 相关系数和 Kendell 相关系数">拓展 Spearman 相关系数和 Kendell 相关系数</a>
+                        <a href="#%e6%8b%93%e5%b1%95-spearman-%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0%e5%92%8c-kendell-%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0" aria-label="拓展 Spearman 相关系数和 Kendell 相关系数">拓展 Spearman 相关系数和 Kendell 相关系数</a></li>
+                    <li>
+                        <a href="#%e6%8b%93%e5%b1%95%e6%96%bd%e7%93%a6%e8%8c%a8%e4%b8%8d%e7%ad%89%e5%bc%8f" aria-label="拓展施瓦茨不等式">拓展施瓦茨不等式</a>
                     </li>
                 </ul>
             </div>
@@ -446,7 +448,7 @@ $$
 <h2 id="独立性与相关性">独立性与相关性<a hidden class="anchor" aria-hidden="true" href="#独立性与相关性">#</a></h2>
 <p>不相关是指两个变量的相关系数为0，$E(XY)=E(X)E(Y)$，两个变量之间没有线性关系。</p>
 <p>相关与否，仅是线性层面的。而独立与否，不仅包括线性层面，还包括非线性层面。</p>
-<p>于是可以说：独立的要求，比不相关，要更加严格。</p>
+<p>相关性是用矩来定义的，矩只能反映线性层面的关系；而独立性是用分布定义的，独立意味着信息/变量可分离，不仅包括线性层面的分离，还包括非线性层面的分离，条件更强。于是可以说：独立的要求，比不相关，要更加严格。</p>
 <ul>
 <li><strong>独立 =&gt; 不相关</strong>，反之不成立，事件间不相关（无线性关系）≠&gt; 事件间独立（可能存在非线性关系）</li>
 <li>逆否命题：<strong>相关 =&gt; 相依</strong>，反之同样不成立，相依（不独立，说明事件间有关系）≠&gt; 相关（因为可能不是线性关系，而是非线性关系）</li>
@@ -470,7 +472,11 @@ $$
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>tau, p_value <span style="color:#f92672">=</span> kendalltau(X, Y)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Kendall&#39;s tau: </span><span style="color:#e6db74">{</span>tau<span style="color:#e6db74">}</span><span style="color:#e6db74">, p-value: </span><span style="color:#e6db74">{</span>p_value<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="拓展施瓦茨不等式">拓展施瓦茨不等式<a hidden class="anchor" aria-hidden="true" href="#拓展施瓦茨不等式">#</a></h2>
+<p>如何理解施瓦茨不等式？</p>
+<p><img loading="lazy" src="https://pictest.20250303.xyz/img/202503202355341.png" alt="image.png"  />
+</p>
+
 
     </div>
 
