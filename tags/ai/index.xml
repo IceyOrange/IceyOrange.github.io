@@ -13,14 +13,14 @@
       <link>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8F%90%E5%8D%87%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87%E6%95%88%E7%8E%87/</guid>
-      <description>本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在搜索信息上面，想到前几天在小红书看到很多人推荐用腾讯的 ima.copilt 来搭建知识库。于是灵机一动，便萌生了通过搭建知识库以提升信息检索效率的法子。 具体操作</description>
+      <description>本文使用腾讯 ima.copilt 来搭建知识库 背景 在准备复试时从小红书、闲鱼等各种渠道获取到很多复试资料。但是文件繁多，部分资料还存在重复问题，不想花太多时间在</description>
     </item>
     <item>
       <title>知识库、智能体、RAG、微调</title>
       <link>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%99%BA%E8%83%BD%E4%BD%93rag%E5%BE%AE%E8%B0%83/</guid>
-      <description>本地部署都很吃配置 知识库 KB 知识库（Knowledge base）是用于知识管理的一种==特殊的数据库==，以便于有关领域知识的采集、整理以及提取。知识库中的知识源于领域专家，它是求解问题所需领域知识的集合，包括基本事实、规则和其它有关信息。 - Wikipedia 例如：法院判例库、医院病例库、产品数据</description>
+      <description>本地部署都很吃配置 知识库 KB 知识库（Knowledge base）是用于知识管理的一种==特殊的数据库==，以便于有关领域知识的采集、整理以及提</description>
     </item>
   </channel>
 </rss>

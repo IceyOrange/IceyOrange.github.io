@@ -13,14 +13,14 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/</guid>
-      <description>德国学者 Gauss (1777‐1855) 于 1809 年提出最小二乘法。 英国遗传学家 Galton (1822‐1911) 于 1886 年发表关于回归的开山论文 《遗传结构中向中⼼的回归》Regression towards Mediocrity in heredity structure)。[[统计学史#^tp89te]] 回归分析是处理变量之间的==相关关系==的⼀种统计⽅法</description>
+      <description>德国学者 Gauss (1777‐1855) 于 1809 年提出最小二乘法。 英国遗传学家 Galton (1822‐1911) 于 1886 年发表关于回归的开山论文 《遗传结构中向中⼼的回</description>
     </item>
     <item>
       <title>九阳真经 - 假设检验篇</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E4%B9%9D%E9%98%B3%E7%9C%9F%E7%BB%8F---%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E7%AF%87/</guid>
-      <description>假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。 假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所做的一个假设开始，然后搜集样本数据，计算出样本统计量，进而运用这些数据测定假设的总体参数在多大程度上是可靠的，并做出承认还是拒绝该假设的判断</description>
+      <description>假设检验是统计推断的重要方法！统计推断包括假设检验和参数估计。 假设检验的定义 假设检验（hypothesis testing）是指从对总体参数所</description>
     </item>
     <item>
       <title>LLN &amp; CLT</title>
@@ -69,35 +69,35 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
-      <description>茎叶图 优点： 直观展示数据分布：茎叶图通过将数据分成“茎”和“叶”两部分，能够直观地展示数据的分布情况。 保留原始数据：与直⽅图不同，茎叶图保留了原始数据的详细信息，每个数据点都可以从图中直接读取。 简单易绘制：茎叶图不需要复杂的计算或⼯具，⼿⼯即可快速绘制。 适合⼩数据集：茎叶图特别适</description>
+      <description>茎叶图 优点： 直观展示数据分布：茎叶图通过将数据分成“茎”和“叶”两部分，能够直观地展示数据的分布情况。 保留原始数据：与直⽅图不同，茎叶图保留</description>
     </item>
     <item>
       <title>关于分布</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E5%88%86%E5%B8%83/</guid>
-      <description>——转自 《一张图说明二项分布、泊松分布、指数分布、几何分布、负二项分布、伽玛分布的联系》 🐈注：图片中的“连续情况”并非指“连续型随机变量”。有点“时间”的 sense？ 还有一张神图： 二项分布的近似 n 大 p 不是很小, $np \rightarrow \infty$, 实际中常用 $np&amp;gt;5, nq&amp;gt;5$ 来作为使用正态分布来近似二项分布的条件（棣莫弗-拉</description>
+      <description>——转自 《一张图说明二项分布、泊松分布、指数分布、几何分布、负二项分布、伽玛分布的联系》 🐈注：图片中的“连续情况”并非指“连续型随机变量”。</description>
     </item>
     <item>
       <title>抽样技术</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%8A%BD%E6%A0%B7%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%8A%BD%E6%A0%B7%E6%8A%80%E6%9C%AF/</guid>
-      <description>抽样方法 不同抽样方法各有千秋。抽样方法的选取，取决于研究目的和对性价比的考量。 抽样调查可以分为两类，即概率抽样和非概率抽样。==概率抽样==是按照随机原则进行抽样，不加主观因素，组成总体的每个单位都有被抽中的概率（非零概率），可以避免样本出现偏差，样本对总体有很强的代表性。==非</description>
+      <description>抽样方法 不同抽样方法各有千秋。抽样方法的选取，取决于研究目的和对性价比的考量。 抽样调查可以分为两类，即概率抽样和非概率抽样。==概率抽样==</description>
     </item>
     <item>
       <title>概率的定义</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A6%82%E7%8E%87%E7%9A%84%E5%AE%9A%E4%B9%89/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%A6%82%E7%8E%87%E7%9A%84%E5%AE%9A%E4%B9%89/</guid>
-      <description>概率的定义 概率有古典定义、几何定义、频率定义（统计定义）和公理化定义（柯尔莫戈洛夫公理）共四种定义。（算上茆书后面提到的主观定义，那就一共有 5 种定义） 其中古典定义、几何定义和频率定义（统计定义）都满足概率的公理化定义？ 具体介绍可参见该博文 概率的四种定义及公理化定义产生 区别古典概率</description>
+      <description>概率的定义 概率有古典定义、几何定义、频率定义（统计定义）和公理化定义（柯尔莫戈洛夫公理）共四种定义。（算上茆书后面提到的主观定义，那就一共有</description>
     </item>
     <item>
       <title>点估计相关归纳</title>
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/</link>
       <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E7%82%B9%E4%BC%B0%E8%AE%A1%E7%9B%B8%E5%85%B3%E5%BD%92%E7%BA%B3/</guid>
-      <description>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &amp;hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）== 补充统计量定义：设 $x_1​, x_2​, &amp;hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &amp;hellip;, x_n​)$ 中不含有任何未知参数，则称 $T$</description>
+      <description>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &amp;hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：==点估计是统计量（样本的函数）== 补充统计量定义</description>
     </item>
     <item>
       <title>多元统计分析复习笔记</title>
@@ -111,7 +111,7 @@
       <link>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://20250303.xyz/posts/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E5%85%B3%E4%BA%8E%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%AD%E7%9A%84%E7%8B%AC%E7%AB%8B/</guid>
-      <description>随机事件层面的独立 在概率论里，&amp;ldquo;独立&amp;quot;并不意味着两个事件没有任何关系。 独立意味着一个事件的发生与否都不改变另一个事件发生的概率。 - 知乎文章 数学定义见下： 两个随机事件间的独立性定义： $P(AB)=P(A)P(B)$，即 $P(A|B)=P(A)$ 。不独立，又称相依。 多个随机事件间的独立</description>
+      <description>随机事件层面的独立 在概率论里，&amp;ldquo;独立&amp;quot;并不意味着两个事件没有任何关系。 独立意味着一个事件的发生与否都不改变另一个事件发</description>
     </item>
   </channel>
 </rss>
