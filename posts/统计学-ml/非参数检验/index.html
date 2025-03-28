@@ -331,87 +331,18 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">Table of Contents</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e6%b8%b8%e7%a8%8b%e6%a3%80%e9%aa%8c-run-test" aria-label="游程检验 run test">游程检验 run test</a></li>
-                    <li>
-                        <a href="#%e7%ac%a6%e5%8f%b7%e6%a3%80%e9%aa%8c-sign-test" aria-label="符号检验 sign test">符号检验 sign test</a></li>
-                    <li>
-                        <a href="#wilcoxon-%e7%ac%a6%e5%8f%b7%e7%a7%a9%e6%a3%80%e9%aa%8c" aria-label="Wilcoxon 符号秩检验">Wilcoxon 符号秩检验</a></li>
-                    <li>
-                        <a href="#%e5%85%b6%e5%ae%83%e6%9b%b4%e5%a4%8d%e6%9d%82%e7%9a%84%e6%96%b9%e6%b3%95%e7%95%a5" aria-label="其它更复杂的方法略">其它更复杂的方法略</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">非参数检验</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e6%b8%b8%e7%a8%8b%e6%a3%80%e9%aa%8c-run-test" aria-label="游程检验 run test">游程检验 run test</a></li><li>
+        <a href="#%e7%ac%a6%e5%8f%b7%e6%a3%80%e9%aa%8c-sign-test" aria-label="符号检验 sign test">符号检验 sign test</a></li><li>
+        <a href="#wilcoxon-%e7%ac%a6%e5%8f%b7%e7%a7%a9%e6%a3%80%e9%aa%8c" aria-label="Wilcoxon 符号秩检验">Wilcoxon 符号秩检验</a></li><li>
+        <a href="#%e5%85%b6%e5%ae%83%e6%9b%b4%e5%a4%8d%e6%9d%82%e7%9a%84%e6%96%b9%e6%b3%95%e7%95%a5" aria-label="其它更复杂的方法略">其它更复杂的方法略</a></li></ul></div>
+    </details>
+  </div>
     <div class="post-content">
       <ul>
 <li><input disabled="" type="checkbox"> 需要做例题巩固！</li>

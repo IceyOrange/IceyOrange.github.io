@@ -329,93 +329,22 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">Table of Contents</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e7%9f%a5%e8%af%86%e5%ba%93-kb" aria-label="知识库 KB">知识库 KB</a></li>
-                    <li>
-                        <a href="#%e6%99%ba%e8%83%bd%e4%bd%93-agent" aria-label="智能体 Agent">智能体 Agent</a></li>
-                    <li>
-                        <a href="#%e6%a3%80%e7%b4%a2%e5%a2%9e%e5%bc%ba%e7%94%9f%e6%88%90-rag" aria-label="检索增强生成 RAG">检索增强生成 RAG</a><ul>
-                            
-                    <li>
-                        <a href="#rag-%e5%85%b7%e4%bd%93%e5%b7%a5%e4%bd%9c%e9%80%bb%e8%be%91" aria-label="RAG 具体工作逻辑">RAG 具体工作逻辑</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e5%be%ae%e8%b0%83-fine-tuning" aria-label="微调 Fine-tuning">微调 Fine-tuning</a></li>
-                    <li>
-                        <a href="#%e6%80%bb%e7%bb%93" aria-label="总结">总结</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">知识库、智能体、RAG、微调</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e7%9f%a5%e8%af%86%e5%ba%93-kb" aria-label="知识库 KB">知识库 KB</a></li><li>
+        <a href="#%e6%99%ba%e8%83%bd%e4%bd%93-agent" aria-label="智能体 Agent">智能体 Agent</a></li><li>
+        <a href="#%e6%a3%80%e7%b4%a2%e5%a2%9e%e5%bc%ba%e7%94%9f%e6%88%90-rag" aria-label="检索增强生成 RAG">检索增强生成 RAG</a><ul>
+            <li>
+        <a href="#rag-%e5%85%b7%e4%bd%93%e5%b7%a5%e4%bd%9c%e9%80%bb%e8%be%91" aria-label="RAG 具体工作逻辑">RAG 具体工作逻辑</a></li></ul>
+    </li><li>
+        <a href="#%e5%be%ae%e8%b0%83-fine-tuning" aria-label="微调 Fine-tuning">微调 Fine-tuning</a></li><li>
+        <a href="#%e6%80%bb%e7%bb%93" aria-label="总结">总结</a></li></ul></div>
+    </details>
+  </div>
     <div class="post-content">
       <p>本地部署都很吃配置</p>
 <h1 id="知识库-kb">知识库 KB<a hidden class="anchor" aria-hidden="true" href="#知识库-kb">#</a></h1>

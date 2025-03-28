@@ -328,117 +328,36 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">Table of Contents</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1-momnet" aria-label="矩估计 Momnet">矩估计 Momnet</a></li>
-                    <li>
-                        <a href="#%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%8f%88%e5%90%8d%e4%ba%8b%e5%90%8e%e8%af%b8%e8%91%9b%e4%ba%ae%e4%bc%b0%e8%ae%a1" aria-label="极大似然估计 又名“事后诸葛亮估计”">极大似然估计 又名“事后诸葛亮估计”</a><ul>
-                            
-                    <li>
-                        <a href="#%e5%bc%95%e5%85%a5%e4%ba%bf%e7%82%b9%e8%b4%9d%e5%8f%b6%e6%96%af" aria-label="引入亿点贝叶斯">引入亿点贝叶斯</a><ul>
-                            
-                    <li>
-                        <a href="#%e7%90%86%e8%a7%a3%e8%b4%9d%e5%8f%b6%e6%96%af%e5%85%ac%e5%bc%8f" aria-label="理解贝叶斯公式">理解贝叶斯公式</a></li>
-                    <li>
-                        <a href="#mle-vs-mapmaximum-a-posteriori" aria-label="MLE VS MAP（Maximum A Posteriori）">MLE VS MAP（Maximum A Posteriori）</a></li>
-                    <li>
-                        <a href="#%e5%8f%a4%e5%85%b8%e9%a2%91%e7%8e%87%e5%ad%a6%e6%b4%be-vs-%e8%b4%9d%e5%8f%b6%e6%96%af%e5%ad%a6%e6%b4%be" aria-label="古典频率学派 VS 贝叶斯学派">古典频率学派 VS 贝叶斯学派</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e5%9b%9e%e5%bd%92-mle-mle-%e4%b8%8e-bayes-%e7%9a%84%e5%8c%ba%e5%88%ab" aria-label="回归 MLE: MLE 与 Bayes 的区别">回归 MLE: MLE 与 Bayes 的区别</a></li>
-                    <li>
-                        <a href="#mle-%e4%b8%8d%e5%85%b7%e6%9c%89%e5%94%af%e4%b8%80%e6%80%a7" aria-label="MLE 不具有唯一性">MLE 不具有唯一性</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1-vs-%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%b8%b8%e8%80%83" aria-label="矩估计 VS 极大似然估计 常考！">矩估计 VS 极大似然估计 常考！</a></li>
-                    <li>
-                        <a href="#mvue-%e7%ad%89" aria-label="MVUE 等">MVUE 等</a></li>
-                    <li>
-                        <a href="#%e8%af%84%e4%bc%b0%e7%82%b9%e4%bc%b0%e8%ae%a1%e7%9a%84%e6%a0%87%e5%87%86" aria-label="评估点估计的标准">评估点估计的标准</a><ul>
-                            
-                    <li>
-                        <a href="#%e6%97%a0%e5%81%8f%e6%80%a7" aria-label="无偏性">无偏性</a></li>
-                    <li>
-                        <a href="#%e6%9c%89%e6%95%88%e6%80%a7" aria-label="有效性">有效性</a></li>
-                    <li>
-                        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e7%9b%b8%e5%90%88%e6%80%a7%e5%8f%88%e7%a7%b0%e4%b8%80%e8%87%b4%e6%80%a7-consistency" aria-label="大样本情形 - 相合性，又称一致性 Consistency">大样本情形 - 相合性，又称一致性 Consistency</a></li>
-                    <li>
-                        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e6%b8%90%e8%bf%9b%e6%ad%a3%e6%80%81%e6%80%a7" aria-label="大样本情形 - 渐进正态性">大样本情形 - 渐进正态性</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e4%b8%8d%e5%8f%98%e6%80%a7" aria-label="不变性">不变性</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">点估计相关归纳</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1-momnet" aria-label="矩估计 Momnet">矩估计 Momnet</a></li><li>
+        <a href="#%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%8f%88%e5%90%8d%e4%ba%8b%e5%90%8e%e8%af%b8%e8%91%9b%e4%ba%ae%e4%bc%b0%e8%ae%a1" aria-label="极大似然估计 又名“事后诸葛亮估计”">极大似然估计 又名“事后诸葛亮估计”</a><ul>
+            <li>
+        <a href="#%e5%bc%95%e5%85%a5%e4%ba%bf%e7%82%b9%e8%b4%9d%e5%8f%b6%e6%96%af" aria-label="引入亿点贝叶斯">引入亿点贝叶斯</a><ul>
+            <li>
+        <a href="#%e7%90%86%e8%a7%a3%e8%b4%9d%e5%8f%b6%e6%96%af%e5%85%ac%e5%bc%8f" aria-label="理解贝叶斯公式">理解贝叶斯公式</a></li><li>
+        <a href="#mle-vs-mapmaximum-a-posteriori" aria-label="MLE VS MAP（Maximum A Posteriori）">MLE VS MAP（Maximum A Posteriori）</a></li><li>
+        <a href="#%e5%8f%a4%e5%85%b8%e9%a2%91%e7%8e%87%e5%ad%a6%e6%b4%be-vs-%e8%b4%9d%e5%8f%b6%e6%96%af%e5%ad%a6%e6%b4%be" aria-label="古典频率学派 VS 贝叶斯学派">古典频率学派 VS 贝叶斯学派</a></li></ul>
+    </li><li>
+        <a href="#%e5%9b%9e%e5%bd%92-mle-mle-%e4%b8%8e-bayes-%e7%9a%84%e5%8c%ba%e5%88%ab" aria-label="回归 MLE: MLE 与 Bayes 的区别">回归 MLE: MLE 与 Bayes 的区别</a></li><li>
+        <a href="#mle-%e4%b8%8d%e5%85%b7%e6%9c%89%e5%94%af%e4%b8%80%e6%80%a7" aria-label="MLE 不具有唯一性">MLE 不具有唯一性</a></li></ul>
+    </li><li>
+        <a href="#%e7%9f%a9%e4%bc%b0%e8%ae%a1-vs-%e6%9e%81%e5%a4%a7%e4%bc%bc%e7%84%b6%e4%bc%b0%e8%ae%a1-%e5%b8%b8%e8%80%83" aria-label="矩估计 VS 极大似然估计 常考！">矩估计 VS 极大似然估计 常考！</a></li><li>
+        <a href="#mvue-%e7%ad%89" aria-label="MVUE 等">MVUE 等</a></li><li>
+        <a href="#%e8%af%84%e4%bc%b0%e7%82%b9%e4%bc%b0%e8%ae%a1%e7%9a%84%e6%a0%87%e5%87%86" aria-label="评估点估计的标准">评估点估计的标准</a><ul>
+            <li>
+        <a href="#%e6%97%a0%e5%81%8f%e6%80%a7" aria-label="无偏性">无偏性</a></li><li>
+        <a href="#%e6%9c%89%e6%95%88%e6%80%a7" aria-label="有效性">有效性</a></li><li>
+        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e7%9b%b8%e5%90%88%e6%80%a7%e5%8f%88%e7%a7%b0%e4%b8%80%e8%87%b4%e6%80%a7-consistency" aria-label="大样本情形 - 相合性，又称一致性 Consistency">大样本情形 - 相合性，又称一致性 Consistency</a></li><li>
+        <a href="#%e5%a4%a7%e6%a0%b7%e6%9c%ac%e6%83%85%e5%bd%a2---%e6%b8%90%e8%bf%9b%e6%ad%a3%e6%80%81%e6%80%a7" aria-label="大样本情形 - 渐进正态性">大样本情形 - 渐进正态性</a></li></ul>
+    </li><li>
+        <a href="#%e4%b8%8d%e5%8f%98%e6%80%a7" aria-label="不变性">不变性</a></li></ul></div>
+    </details>
+  </div>
     <div class="post-content">
       <p>定义：用于估计未知参数 $\theta$ 的统计量 $\hat{\theta}=\theta(x_1, x_2, &hellip;, x_n)$ 称为 $\theta$ 的估计量，或称为 $\theta$ 的点估计，简称估计。注意：<mark>点估计是统计量（样本的函数）</mark></p>
 <p>补充统计量定义：设 $x_1​, x_2​, &hellip;, x_n​$ 为取自某总体的样本，若样本函数 $T=T(x_1​, x_2​, &hellip;, x_n​)$ 中不含有任何未知参数，则称 $T$ 为统计量。统计量的分布称为抽样分布。</p>

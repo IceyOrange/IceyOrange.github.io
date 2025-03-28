@@ -328,105 +328,28 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">Table of Contents</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e6%a8%a1%e5%9e%8b%e5%81%87%e8%ae%be" aria-label="模型假设">模型假设</a></li>
-                    <li>
-                        <a href="#%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%98%be%e8%91%97%e6%80%a7%e6%a3%80%e9%aa%8c" aria-label="模型的显著性检验">模型的显著性检验</a></li>
-                    <li>
-                        <a href="#%e8%bf%9d%e8%83%8c%e5%9f%ba%e6%9c%ac%e5%81%87%e8%ae%be%e7%9a%84%e5%87%a0%e7%a7%8d%e6%83%85%e5%86%b5" aria-label="违背基本假设的几种情况">违背基本假设的几种情况</a></li>
-                    <li>
-                        <a href="#%e5%8f%98%e9%87%8f%e9%80%89%e6%8b%a9%e4%b8%ad%e8%af%84%e4%bb%b7%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%8c%87%e6%a0%87" aria-label="变量选择中评价模型的指标">变量选择中评价模型的指标</a></li>
-                    <li>
-                        <a href="#%e8%af%af%e5%b7%ae%e6%ae%8b%e5%b7%ae%e4%b8%8e%e5%81%8f%e5%b7%ae" aria-label="误差、残差与偏差">误差、残差与偏差</a></li>
-                    <li>
-                        <a href="#%e5%90%84%e7%a7%8d%e7%b3%bb%e6%95%b0%e6%a6%82%e5%bf%b5%e8%be%a8%e6%9e%90" aria-label="各种“系数”概念辨析">各种“系数”概念辨析</a><ul>
-                            
-                    <li>
-                        <a href="#%e4%b8%80%e5%85%83%e6%83%85%e5%bd%a2" aria-label="一元情形">一元情形</a></li>
-                    <li>
-                        <a href="#%e5%a4%9a%e5%85%83%e6%83%85%e5%bd%a2" aria-label="多元情形">多元情形</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e5%8c%ba%e9%97%b4%e4%bc%b0%e8%ae%a1--%e5%8c%ba%e9%97%b4%e9%a2%84%e6%b5%8b" aria-label="区间估计 &amp;amp; 区间预测">区间估计 &amp; 区间预测</a></li>
-                    <li>
-                        <a href="#%e6%9c%89%e6%88%aa%e8%b7%9d%e9%a1%b9-vs-%e6%97%a0%e6%88%aa%e8%b7%9d%e9%a1%b9" aria-label="有截距项 Vs 无截距项">有截距项 Vs 无截距项</a></li>
-                    <li>
-                        <a href="#%e5%9c%a8%e5%9b%9e%e5%bd%92%e5%88%86%e6%9e%90%e4%b8%ad%e5%a6%82%e4%bd%95%e5%a4%84%e7%90%86%e6%97%a0%e5%ba%8f%e5%8f%98%e9%87%8f" aria-label="在回归分析中，如何处理无序变量？">在回归分析中，如何处理无序变量？</a></li>
-                    <li>
-                        <a href="#%e5%86%99%e5%9c%a8%e5%90%8e%e9%9d%a2---%e5%8c%ba%e5%88%86%e5%9b%9e%e5%bd%92%e5%85%b3%e7%b3%bb%e5%9b%a0%e6%9e%9c%e5%85%b3%e7%b3%bb%e5%92%8c%e7%9b%b8%e5%85%b3%e5%85%b3%e7%b3%bb" aria-label="写在后面 - 区分回归关系、因果关系和相关关系">写在后面 - 区分回归关系、因果关系和相关关系</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">回归分析</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e6%a8%a1%e5%9e%8b%e5%81%87%e8%ae%be" aria-label="模型假设">模型假设</a></li><li>
+        <a href="#%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%98%be%e8%91%97%e6%80%a7%e6%a3%80%e9%aa%8c" aria-label="模型的显著性检验">模型的显著性检验</a></li><li>
+        <a href="#%e8%bf%9d%e8%83%8c%e5%9f%ba%e6%9c%ac%e5%81%87%e8%ae%be%e7%9a%84%e5%87%a0%e7%a7%8d%e6%83%85%e5%86%b5" aria-label="违背基本假设的几种情况">违背基本假设的几种情况</a></li><li>
+        <a href="#%e5%8f%98%e9%87%8f%e9%80%89%e6%8b%a9%e4%b8%ad%e8%af%84%e4%bb%b7%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%8c%87%e6%a0%87" aria-label="变量选择中评价模型的指标">变量选择中评价模型的指标</a></li><li>
+        <a href="#%e8%af%af%e5%b7%ae%e6%ae%8b%e5%b7%ae%e4%b8%8e%e5%81%8f%e5%b7%ae" aria-label="误差、残差与偏差">误差、残差与偏差</a></li><li>
+        <a href="#%e5%90%84%e7%a7%8d%e7%b3%bb%e6%95%b0%e6%a6%82%e5%bf%b5%e8%be%a8%e6%9e%90" aria-label="各种“系数”概念辨析">各种“系数”概念辨析</a><ul>
+            <li>
+        <a href="#%e4%b8%80%e5%85%83%e6%83%85%e5%bd%a2" aria-label="一元情形">一元情形</a></li><li>
+        <a href="#%e5%a4%9a%e5%85%83%e6%83%85%e5%bd%a2" aria-label="多元情形">多元情形</a></li></ul>
+    </li><li>
+        <a href="#%e5%8c%ba%e9%97%b4%e4%bc%b0%e8%ae%a1--%e5%8c%ba%e9%97%b4%e9%a2%84%e6%b5%8b" aria-label="区间估计 &amp;amp; 区间预测">区间估计 &amp; 区间预测</a></li><li>
+        <a href="#%e6%9c%89%e6%88%aa%e8%b7%9d%e9%a1%b9-vs-%e6%97%a0%e6%88%aa%e8%b7%9d%e9%a1%b9" aria-label="有截距项 Vs 无截距项">有截距项 Vs 无截距项</a></li><li>
+        <a href="#%e5%9c%a8%e5%9b%9e%e5%bd%92%e5%88%86%e6%9e%90%e4%b8%ad%e5%a6%82%e4%bd%95%e5%a4%84%e7%90%86%e6%97%a0%e5%ba%8f%e5%8f%98%e9%87%8f" aria-label="在回归分析中，如何处理无序变量？">在回归分析中，如何处理无序变量？</a></li><li>
+        <a href="#%e5%86%99%e5%9c%a8%e5%90%8e%e9%9d%a2---%e5%8c%ba%e5%88%86%e5%9b%9e%e5%bd%92%e5%85%b3%e7%b3%bb%e5%9b%a0%e6%9e%9c%e5%85%b3%e7%b3%bb%e5%92%8c%e7%9b%b8%e5%85%b3%e5%85%b3%e7%b3%bb" aria-label="写在后面 - 区分回归关系、因果关系和相关关系">写在后面 - 区分回归关系、因果关系和相关关系</a></li></ul></div>
+    </details>
+  </div>
     <div class="post-content">
       <ul>
 <li>德国学者 Gauss (1777‐1855) 于 1809 年提出最小二乘法。</li>

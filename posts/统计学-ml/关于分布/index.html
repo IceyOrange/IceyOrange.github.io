@@ -328,91 +328,20 @@ if (!doNotTrack) {
         </span>
 
 </div>
-    </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">Table of Contents</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e4%ba%8c%e9%a1%b9%e5%88%86%e5%b8%83%e7%9a%84%e8%bf%91%e4%bc%bc" aria-label="二项分布的近似">二项分布的近似</a></li>
-                    <li>
-                        <a href="#%e6%b3%8a%e6%9d%be%e5%88%86%e5%b8%83%e4%b8%8e%e6%8c%87%e6%95%b0%e5%88%86%e5%b8%83" aria-label="泊松分布与指数分布">泊松分布与指数分布</a></li>
-                    <li>
-                        <a href="#%e5%87%a0%e4%bd%95%e5%88%86%e5%b8%83%e4%b8%8e%e8%b6%85%e5%87%a0%e4%bd%95%e5%88%86%e5%b8%83" aria-label="几何分布与超几何分布">几何分布与超几何分布</a></li>
-                    <li>
-                        <a href="#%e5%88%86%e5%b8%83%e7%9a%84%e5%8f%af%e5%8a%a0%e6%80%a7" aria-label="分布的可加性">分布的可加性</a></li>
-                    <li>
-                        <a href="#%e7%a5%9e%e9%80%9a%e5%b9%bf%e5%a4%a7%e7%9a%84%e4%bc%bd%e9%a9%ac%e5%92%8c%e8%b4%9d%e5%a1%94%e5%88%86%e5%b8%83-%e5%87%bd%e6%95%b0" aria-label="神通广大的伽马和贝塔分布 （函数）：">神通广大的伽马和贝塔分布 （函数）：</a></li>
-                    <li>
-                        <a href="#%e5%88%86%e5%b8%83%e7%9a%84%e6%97%a0%e8%ae%b0%e5%bf%86%e6%80%a7" aria-label="分布的无记忆性">分布的无记忆性</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">关于分布</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e4%ba%8c%e9%a1%b9%e5%88%86%e5%b8%83%e7%9a%84%e8%bf%91%e4%bc%bc" aria-label="二项分布的近似">二项分布的近似</a></li><li>
+        <a href="#%e6%b3%8a%e6%9d%be%e5%88%86%e5%b8%83%e4%b8%8e%e6%8c%87%e6%95%b0%e5%88%86%e5%b8%83" aria-label="泊松分布与指数分布">泊松分布与指数分布</a></li><li>
+        <a href="#%e5%87%a0%e4%bd%95%e5%88%86%e5%b8%83%e4%b8%8e%e8%b6%85%e5%87%a0%e4%bd%95%e5%88%86%e5%b8%83" aria-label="几何分布与超几何分布">几何分布与超几何分布</a></li><li>
+        <a href="#%e5%88%86%e5%b8%83%e7%9a%84%e5%8f%af%e5%8a%a0%e6%80%a7" aria-label="分布的可加性">分布的可加性</a></li><li>
+        <a href="#%e7%a5%9e%e9%80%9a%e5%b9%bf%e5%a4%a7%e7%9a%84%e4%bc%bd%e9%a9%ac%e5%92%8c%e8%b4%9d%e5%a1%94%e5%88%86%e5%b8%83-%e5%87%bd%e6%95%b0" aria-label="神通广大的伽马和贝塔分布 （函数）：">神通广大的伽马和贝塔分布 （函数）：</a></li><li>
+        <a href="#%e5%88%86%e5%b8%83%e7%9a%84%e6%97%a0%e8%ae%b0%e5%bf%86%e6%80%a7" aria-label="分布的无记忆性">分布的无记忆性</a></li></ul></div>
+    </details>
+  </div>
     <div class="post-content">
       <p><img loading="lazy" src="https://pictest.20250303.xyz/img/202503161153182.png" alt="一张图说明二项分布、泊松分布、指数分布、几何分布、负二项分布、伽玛分布的联系"  />
 </p>
