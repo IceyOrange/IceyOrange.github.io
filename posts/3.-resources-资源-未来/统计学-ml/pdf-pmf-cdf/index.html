@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>pdf pmf cdf | Lovegood&#39;s Blog</title>
+<meta name="keywords" content="统计学">
+<meta name="description" content="傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)；除了破大防外，还介绍了离散型、连续型以及既非离散又非连续型随机变量。">
+<meta name="author" content="Lovegood">
+<link rel="canonical" href="https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/">
+<meta name="google-site-verification" content="G-LZESR1K8WK">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="../../../../assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://20250303.xyz/img/xx.gif">
+<link rel="icon" type="image/png" sizes="16x16" href="https://20250303.xyz/img/xx.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="https://20250303.xyz/img/xx.gif">
+<link rel="apple-touch-icon" href="https://20250303.xyz/xx.gif">
+<link rel="mask-icon" href="https://20250303.xyz/xx.gif">
+<meta name="theme-color" content="#576175">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZESR1K8WK"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-LZESR1K8WK', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="pdf pmf cdf" />
+<meta property="og:description" content="傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)；除了破大防外，还介绍了离散型、连续型以及既非离散又非连续型随机变量。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-25T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="pdf pmf cdf"/>
+<meta name="twitter:description" content="傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)；除了破大防外，还介绍了离散型、连续型以及既非离散又非连续型随机变量。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://20250303.xyz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "pdf pmf cdf",
+      "item": "https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "pdf pmf cdf",
+  "name": "pdf pmf cdf",
+  "description": "傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)；除了破大防外，还介绍了离散型、连续型以及既非离散又非连续型随机变量。",
+  "keywords": [
+    "统计学"
+  ],
+  "articleBody": "pmf pdf cdf 概念辨析 其实就是英文单词的首字母缩写。\n概率质量函数 pmf，用于离散型随机变量：非负性、正则性。pmf 的函数值不能大于 1\n概率密度函数 pdf，用于连续型随机变量：非负性、正则性。pdf 函数值可能大于 1（用密度去理解）\n概率分布函数 cdf，单调性（单调非减）、有界性、右连续性、非负性\n二维 r.v. 的一个特殊性质 连续型 r.v. 的分布函数必是连续函数, 证明；但其 pdf 不一定连续，可能有跳跃间断点。\n特例 - 既非离散又非连续型随机变量 ⚠️存在既非离散又非连续型的随机变量！如：\n$$ F(x) = \\begin{cases} 0, \u0026 x \u003c 0 \\\\ \\frac{1+x}{2}, \u0026 0 \\leq x \u003c 1 \\\\ 1, \u0026 x \\geq 1 \\end{cases} $$\ncdf 不连续，说明不是连续型随机变量；样本点充满了整个区间，说明不是离散型随机变量。\n",
+  "wordCount" : "290",
+  "inLanguage": "en",
+  "datePublished": "2025-03-07T00:00:00Z",
+  "dateModified": "2025-03-25T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Lovegood"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/pdf-pmf-cdf/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lovegood's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://20250303.xyz/img/xx.gif"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://20250303.xyz/" accesskey="h" title="Lovegood&#39;s Blog (Alt + H)">
+                <img src="https://20250303.xyz/img/xx.gif" alt="" aria-label="logo"
+                    height="35">Lovegood&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://20250303.xyz/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://20250303.xyz/" title="🏠主页">
+                    <span>🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://20250303.xyz/posts" title="📚博文">
+                    <span>📚博文</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://20250303.xyz/archives/" title="⏱时间轴">
+                    <span>⏱时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://20250303.xyz/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://20250303.xyz/about" title="🙋🏻‍♂️关于我">
+                    <span>🙋🏻‍♂️关于我</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+</style>
+
+<article class="post-single">
+  <div id="single-content">
+  <div id="single-content">
+    <header class="post-header">
+      <div class="breadcrumbs"><a href="https://20250303.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://20250303.xyz/posts/">Posts</a></div>
+      <h1 class="post-title">
+        pdf pmf cdf
+      </h1>
+      <div class="post-description">
+        傻傻分不清概率密度函数、概率质量函数和概率分布函数的因为缩写，真是PDF(破大防)；除了破大防外，还介绍了离散型、连续型以及既非离散又非连续型随机变量。
+      </div>
+      <div class="post-meta">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    .parent-post-meta {
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.8;
+    }
+</style>
+
+<span class="parent-post-meta">
+    <span id="post_meta_style_1">
+        <span class="fa fa-calendar-check-o"></span>
+        <span>2025-03-07
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    
+    <span id="post_meta_style_3">
+        <span class="fa fa-file-word-o"></span>
+        <span>290 words
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_4">
+        <span class="fa fa-clock-o"></span>
+        <span>1 minutes
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_5">
+        <span class="fa fa-user-o"></span>
+        <span>Lovegood
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_6">
+        <span class="fa fa-tags" style="opacity: 0.8"></span>
+        <span>
+            <span class="post-tags-meta">
+                <a href="https://20250303.xyz/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" style="color: var(--secondary)!important;">统计学</a>
+            </span>
+        </span>
+    </span>
+</span>
+        
+        <span style="opacity: 0.8;">
+          <span id="post_meta_style_7">
+            &nbsp;&nbsp;
+            <span class="fa fa-eye"></span>
+            <span>
+              <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+              &nbsp;&nbsp;
+            </span>
+          </span>
+          <span id="post_meta_style_8">
+            <span class="fa fa-commenting-o"></span>
+            <span>
+              <script
+                src="https://cdn.staticfile.org/twikoo/1.6.41/twikoo.all.min.js"></script>
+              <script>
+                let url = document.documentURI
+                
+                let dnsUrl = "https://20250303.xyz/"
+                let urlSplit = url.split(dnsUrl)
+                let finalUrl = urlSplit[1]
+                if (finalUrl[0] !== '/') {
+                  finalUrl = '/' + finalUrl
+                }
+                twikoo.getCommentsCount({
+                  envId: "https://twikoo.20250303.xyz", 
+                  region:  null , 
+                  urls: [ 
+                  
+                  finalUrl,
+                ],
+                  includeReply: false 
+                                }).then(function (res) {
+                    let count = res[0].count
+                    const obj = document.getElementById("comment_count");
+                    obj.innerText = count
+                    
+                    
+                    
+                  }).catch(function (err) {
+                    
+                    console.error(err);
+                  });
+              </script>
+              <span id="comment_count"></span>
+            </span>
+          </span>
+        </span>
+
+</div>
+    </header>   <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">pdf pmf cdf</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#pmf-pdf-cdf-%e6%a6%82%e5%bf%b5%e8%be%a8%e6%9e%90" aria-label="pmf pdf cdf 概念辨析">pmf pdf cdf 概念辨析</a></li><li>
+        <a href="#%e4%ba%8c%e7%bb%b4-rv-%e7%9a%84%e4%b8%80%e4%b8%aa%e7%89%b9%e6%ae%8a%e6%80%a7%e8%b4%a8" aria-label="二维 r.v. 的一个特殊性质">二维 r.v. 的一个特殊性质</a></li><li>
+        <a href="#%e7%89%b9%e4%be%8b---%e6%97%a2%e9%9d%9e%e7%a6%bb%e6%95%a3%e5%8f%88%e9%9d%9e%e8%bf%9e%e7%bb%ad%e5%9e%8b%e9%9a%8f%e6%9c%ba%e5%8f%98%e9%87%8f" aria-label="特例 - 既非离散又非连续型随机变量">特例 - 既非离散又非连续型随机变量</a></li></ul></div>
+    </details>
+  </div>
+    <div class="post-content">
+      <h2 id="pmf-pdf-cdf-概念辨析">pmf pdf cdf 概念辨析<a hidden class="anchor" aria-hidden="true" href="#pmf-pdf-cdf-概念辨析">#</a></h2>
+<p>其实就是英文单词的首字母缩写。</p>
+<p>概率质量函数 pmf，用于离散型随机变量：非负性、正则性。pmf 的函数值不能大于 1</p>
+<p>概率密度函数 pdf，用于连续型随机变量：非负性、正则性。pdf 函数值可能大于 1（用密度去理解）</p>
+<p>概率分布函数 cdf，单调性（单调非减）、有界性、右连续性、非负性</p>
+<h2 id="二维-rv-的一个特殊性质">二维 r.v. 的一个特殊性质<a hidden class="anchor" aria-hidden="true" href="#二维-rv-的一个特殊性质">#</a></h2>
+<p><img loading="lazy" src="https://pictest.20250303.xyz/img/202503071434610.png" alt="image.png"  />
+</p>
+<p>连续型 r.v. 的分布函数必是连续函数, <a href="https://blog.csdn.net/weixin_54952344/article/details/124833754">证明</a>；但其 pdf 不一定连续，可能有跳跃间断点。</p>
+<h2 id="特例---既非离散又非连续型随机变量">特例 - 既非离散又非连续型随机变量<a hidden class="anchor" aria-hidden="true" href="#特例---既非离散又非连续型随机变量">#</a></h2>
+<p>⚠️存在既非离散又非连续型的随机变量！如：</p>
+<p>$$
+F(x) =
+\begin{cases}
+0, &amp; x &lt; 0 \\
+\frac{1+x}{2}, &amp; 0 \leq x &lt; 1 \\
+1, &amp; x \geq 1
+\end{cases}
+$$</p>
+<p>cdf 不连续，说明不是连续型随机变量；样本点充满了整个区间，说明不是离散型随机变量。</p>
+
+
+    </div>
+
+    <footer class="post-footer">
+      
+<nav class="paginav">
+  <a class="prev" href="https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-machine-learning/">
+    <span class="title">« </span>
+    <br>
+    <span>机器学习 Machine Learning</span>
+  </a>
+  <a class="next" href="https://20250303.xyz/posts/3.-resources-%E8%B5%84%E6%BA%90-%E6%9C%AA%E6%9D%A5/%E7%BB%9F%E8%AE%A1%E5%AD%A6-ml/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">
+    <span class="title"> »</span>
+    <br>
+    <span>数据可视化</span>
+  </a>
+</nav>
+
+    </footer>
+  </div><style>
+    .comments_details summary::marker {
+        font-size: 20px;
+        content: '👉展开评论';
+        color: var(--content);
+    }
+    .comments_details[open] summary::marker{
+        font-size: 20px;
+        content: '👇关闭评论';
+        color: var(--content);
+    }
+</style>
+
+
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">...</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src=" https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.min.js 1.6.41/twikoo.all.min.js">
+    
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://twikoo.20250303.xyz",
+            el: "#tcomment",
+            lang: 'zh-CN',
+            region:  null ,
+            
+        })
+    </script>
+</div>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>
+        Copyright
+        &copy;
+        2024-2025
+        <a href="https://20250303.xyz/" style="color:#939393;">Lovegood&#39;s Blog</a>
+        All Rights Reserved.
+    </span>
+    
+    <div class="busuanzi-footer">
+        <span id="busuanzi_container_site_pv">
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span id="busuanzi_container_site_uv">
+            本站访客数<span id="busuanzi_value_site_uv"></span>人次
+        </span>
+        </div>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+
+<script>
+    document.body.addEventListener('copy', function (e) {
+        if (window.getSelection().toString() && window.getSelection().toString().length > 50) {
+            let clipboardData = e.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                e.preventDefault();
+                let htmlData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lovegood's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                let textData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lovegood's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                clipboardData.setData('text/html', htmlData);
+                clipboardData.setData('text/plain', textData);
+            }
+        }
+    });
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                let text = codeblock.textContent +
+                    '\r\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Lovegood's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                navigator.clipboard.writeText(text);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) {}
+            selection.removeRange(range);
+        });
+
+        let language = codeblock.className.replaceAll("language-", "")
+        let macTool = document.createElement("div")
+        let macTool1 = document.createElement("div")
+        let macTool2 = document.createElement("div")
+        let macTool3 = document.createElement("div")
+        let languageType = document.createElement("div")
+        languageType.innerText = language
+        macTool.setAttribute('class', 'mac-tool')
+        macTool1.setAttribute('class', 'mac bb1')
+        macTool2.setAttribute('class', 'mac bb2')
+        macTool3.setAttribute('class', 'mac bb3')
+        languageType.setAttribute('class', 'language-type')
+        macTool.appendChild(macTool1)
+        macTool.appendChild(macTool2)
+        macTool.appendChild(macTool3)
+        macTool.appendChild(languageType)
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+            
+        }
+    });
+</script></body>
+
+
+
+
+
+
+
+</html>

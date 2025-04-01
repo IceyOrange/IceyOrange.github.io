@@ -10,16 +10,16 @@
     <atom:link href="https://20250303.xyz/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 渲染及主页展示白名单</title>
-      <link>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>
+      <link>https://20250303.xyz/posts/4.-archives-%E5%BD%92%E6%A1%A3/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
+      <guid>https://20250303.xyz/posts/4.-archives-%E5%BD%92%E6%A1%A3/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/hugo-%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%B8%BB%E9%A1%B5%E5%B1%95%E7%A4%BA%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
       <description>本人通过 Obsidian + Hugo + Github Page + Github Action 来实现文章管理及博客自动化搭建. Hugo 渲染白名单 因为不想将 Obsidian 仓库中的一些隐私笔记发布到博客上, 于是选择使用 module.mounts 来配置允许</description>
     </item>
     <item>
       <title>忘记 Twikoo 管理面板的密码怎么办</title>
-      <link>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
+      <link>https://20250303.xyz/posts/4.-archives-%E5%BD%92%E6%A1%A3/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://20250303.xyz/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
+      <guid>https://20250303.xyz/posts/4.-archives-%E5%BD%92%E6%A1%A3/%E6%8A%80%E6%9C%AF%E7%B1%BB%E5%BD%92%E6%A1%A3/%E5%BF%98%E8%AE%B0-twikoo-%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF%E7%9A%84%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
       <description>参考: # hexo之mongodb修改twikoo评论的管理密码 以及 # Twikoo 找回暗号及密码 核心目标: 把 MongoDB 中的&amp;quot;ADMIN_PASS&amp;qu</description>
     </item>
   </channel>
